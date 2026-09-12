@@ -172,7 +172,18 @@ export const TABLES = {
   settings: 'id',
   dailyActivity: 'date',
   backupMeta: 'id',
+  examState: 'key',
 } as const;
+
+/** Durable exam-run state (2026-09-12): sessionStorage is wiped on tab
+ *  close, which used to destroy an in-progress exam. Runs, per-section
+ *  answers, and section deadlines are write-through mirrored here so an
+ *  exam survives tab close, crash, and browser restart. */
+export interface ExamStateRecord {
+  key: string;      // e.g. exam-run:<runId>, exam-answers:<runId>:<idx>, exam-deadline:<runId>:<idx>
+  value: string;    // JSON payload
+  updatedAt: number;
+}
 
 /* ------------------------------------------------------------------ */
 /* Backup format (§10)                                                 */

@@ -46,6 +46,10 @@ interface EngineInputs {
   testDateMs: number | null;
   recentTimedAccuracy: number | null; // last 20 timed attempts
   untimedAccuracy: number | null;
+  /** Untimed sample size backing untimedAccuracy (last-20 window). Timed
+   *  work is gated on MIN_UNTIMED_EVIDENCE so a 2-for-2 lucky streak or a
+   *  bare test date cannot push a novice into time pressure. */
+  untimedAttempts?: number;
 }
 
 /** Next uncompleted lesson whose prerequisites are at least 'developing'. */
@@ -169,9 +173,16 @@ export function buildTodayPlan(inp: EngineInputs): TodayPlan {
   }
 
   // 7. Timed work — when untimed accuracy is solid, or test date is near.
+  // Min-evidence gate (2026-09-12): BOTH paths require ≥10 untimed attempts.
+  // Previously (untimedAccuracy ?? 0) >= 0.72 let a 2-for-2 streak qualify,
+  // and daysToTest <= 45 alone qualified a user with zero practice evidence —
+  // pushing novices into time pressure before any foundation exists.
+  const MIN_UNTIMED_EVIDENCE = 10;
+  const untimedN = inp.untimedAttempts ?? 0;
   const daysToTest = inp.testDateMs ? (inp.testDateMs - inp.now) / DAY_MS : null;
-  const timedReady = (inp.untimedAccuracy ?? 0) >= 0.72 ||
-    (daysToTest !== null && daysToTest <= 45);
+  const timedReady = untimedN >= MIN_UNTIMED_EVIDENCE &&
+    ((inp.untimedAccuracy ?? 0) >= 0.72 ||
+      (daysToTest !== null && daysToTest <= 45));
   if (timedReady && remaining >= 10) {
     push({
       kind: 'timed',

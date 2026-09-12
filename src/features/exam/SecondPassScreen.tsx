@@ -5,7 +5,7 @@ import { getQuestion } from '../../content';
 import { Button, EmptyState, LoadingSkeleton, Screen, StatCard } from '../../components';
 import { QuestionRunner } from '../practice/QuestionRunner';
 import type { RunnerResult } from '../practice/QuestionRunner';
-import { formatClock, loadRun, loadSectionAnswers } from './examStore';
+import { formatClock, loadRunDurable, loadSectionAnswers } from './examStore';
 import type { ExamAnswerRecord, ExamRunState } from './examStore';
 import './exam.css';
 
@@ -72,15 +72,16 @@ export default function SecondPassScreen() {
       setPhase('list');
       return;
     }
-    const loaded = loadRun(runId);
-    if (!loaded) {
-      setLoadError('This exam run could not be found. It may have expired — session data only lives in this tab.');
-      setPhase('list');
-      return;
-    }
-    setRun(loaded);
     let cancelled = false;
     (async () => {
+      const loaded = await loadRunDurable(runId);
+      if (cancelled) return;
+      if (!loaded) {
+        setLoadError('This exam run could not be found. It may have been cleared with site data.');
+        setPhase('list');
+        return;
+      }
+      setRun(loaded);
       const scored = loaded.sections.filter((s) => !s.variable);
       const out: Candidate[] = [];
       for (const s of scored) {

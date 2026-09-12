@@ -288,7 +288,7 @@ function Trends({ attempts }: { attempts: QuestionAttemptRecord[] }) {
       );
       return {
         key,
-        label: d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }),
+        label: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
         count: dayAttempts.length,
         accuracy: accuracyOf(dayAttempts),
       };

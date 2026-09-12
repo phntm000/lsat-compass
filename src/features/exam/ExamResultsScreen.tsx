@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useStudy } from '../../state/study';
 import { getQuestion } from '../../content';
 import { Button, EmptyState, LoadingSkeleton, Screen, StatCard } from '../../components';
-import { formatAvgMs, loadRun, loadSectionAnswers } from './examStore';
+import { formatAvgMs, loadRunDurable, loadSectionAnswers } from './examStore';
 import type { ExamAnswerRecord, ExamRunState, ExamSectionDef } from './examStore';
 import './exam.css';
 
@@ -74,11 +74,12 @@ export default function ExamResultsScreen() {
 
   useEffect(() => {
     if (!ready || !runId) return;
-    const loaded = loadRun(runId);
-    setRun(loaded);
-    if (!loaded) return;
     let cancelled = false;
     (async () => {
+      const loaded = await loadRunDurable(runId);
+      if (cancelled) return;
+      setRun(loaded);
+      if (!loaded) return;
       const scored = loaded.sections.filter((s) => !s.variable);
       const out: SectionReport[] = [];
       for (const s of scored) {

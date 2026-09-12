@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useStudy } from '../../state/study';
 import { Button, EmptyState, LoadingSkeleton, Screen, Timer } from '../../components';
-import { BREAK_SECONDS, loadRun } from './examStore';
+import { BREAK_SECONDS, loadRunDurable } from './examStore';
+import type { ExamRunState } from './examStore';
 import './exam.css';
 
 export default function BreakScreen() {
@@ -13,7 +14,24 @@ export default function BreakScreen() {
   const doneRef = useRef(false);
 
   const runId = searchParams.get('runId');
-  const run = runId ? loadRun(runId) : null;
+  const [run, setRun] = useState<ExamRunState | null>(null);
+  const [runLoaded, setRunLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!runId) {
+      setRunLoaded(true);
+      return;
+    }
+    let cancelled = false;
+    loadRunDurable(runId).then((r) => {
+      if (cancelled) return;
+      setRun(r);
+      setRunLoaded(true);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [runId]);
 
   const resume = () => {
     if (doneRef.current) return;
@@ -37,7 +55,7 @@ export default function BreakScreen() {
     return () => window.clearInterval(id);
   }, []);
 
-  if (!ready) {
+  if (!ready || !runLoaded) {
     return (
       <Screen title="Intermission">
         <LoadingSkeleton lines={6} />
@@ -50,7 +68,7 @@ export default function BreakScreen() {
       <Screen title="Intermission">
         <EmptyState
           title="Break not found"
-          body="This intermission doesn't belong to an active exam run. It may have expired — session data only lives in this tab."
+          body="This intermission doesn't belong to an active exam run. It may have been cleared with site data."
           actionLabel="Back to exam setup"
           onAction={() => navigate('/exam')}
         />
@@ -84,8 +102,9 @@ export default function BreakScreen() {
           </Button>
         </div>
         <p className="ex-note">
-          Your progress is saved. If you leave now, you can resume from section{' '}
-          {nextSection} while this tab stays open.
+          Your progress is saved on this device. If you leave now, you can
+          resume from section {nextSection} — the section clock keeps its
+          original deadline.
         </p>
       </div>
     </Screen>

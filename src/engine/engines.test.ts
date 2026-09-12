@@ -62,9 +62,31 @@ describe('buildTodayPlan', () => {
       now: T0, minutes: 30, lessons: [], lessonProgress: {},
       reviews: [], masteryBySkill: {}, remediationNeeded: [],
       confusionPairs: [], testDateMs: T0 + 10 * 86_400_000,
-      recentTimedAccuracy: null, untimedAccuracy: 0.6,
+      recentTimedAccuracy: null, untimedAccuracy: 0.6, untimedAttempts: 20,
     });
     expect(plan.blocks.some(b => b.kind === 'timed')).toBe(true);
+  });
+  it('gates timed work on minimum untimed evidence (2026-09-12)', () => {
+    const base = {
+      now: T0, minutes: 30, lessons: [], lessonProgress: {},
+      reviews: [], masteryBySkill: {}, remediationNeeded: [],
+      confusionPairs: [], recentTimedAccuracy: null,
+    };
+    // Near test date but only 3 untimed attempts: no timed block.
+    expect(buildTodayPlan({
+      ...base, testDateMs: T0 + 10 * 86_400_000,
+      untimedAccuracy: 0.6, untimedAttempts: 3,
+    }).blocks.some(b => b.kind === 'timed')).toBe(false);
+    // Perfect accuracy on a 2-for-2 streak: still no timed block.
+    expect(buildTodayPlan({
+      ...base, testDateMs: null,
+      untimedAccuracy: 1.0, untimedAttempts: 2,
+    }).blocks.some(b => b.kind === 'timed')).toBe(false);
+    // Solid accuracy on a real sample: timed block appears.
+    expect(buildTodayPlan({
+      ...base, testDateMs: null,
+      untimedAccuracy: 0.8, untimedAttempts: 15,
+    }).blocks.some(b => b.kind === 'timed')).toBe(true);
   });
 });
 

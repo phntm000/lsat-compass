@@ -1,9 +1,11 @@
 /**
- * Exam feature — shared run state + sessionStorage persistence.
+ * Exam feature — shared run state + durable persistence.
  *
- * Runs are built at setup time and persisted to sessionStorage so the exam
- * survives reloads and the break screen. Timed answers are persisted per
- * section (needed for second-pass review) with a Dexie fallback.
+ * Runs are built at setup time and persisted to sessionStorage (fast sync
+ * reads) with a write-through IndexedDB mirror (examState table), so the
+ * exam survives reloads, the break screen, tab closes, crashes, and
+ * browser restarts. Timed answers are persisted per section (needed for
+ * second-pass review) with a Dexie fallback.
  */
 import type { MasteryResult } from '../../engine/types';
 import { PASSAGES, QUESTIONS, getPassage } from '../../content';
@@ -56,13 +58,47 @@ export interface ExamRunState {
 
 const RUN_KEY = (runId: string) => `exam-run:${runId}`;
 const ANSWERS_KEY = (runId: string, sectionIdx: number) => `exam-answers:${runId}:${sectionIdx}`;
+const DEADLINE_KEY = (runId: string, sectionIdx: number) => `exam-deadline:${runId}:${sectionIdx}`;
+
+/* Durable exam state (2026-09-12): sessionStorage alone meant a tab close
+ * or crash destroyed an in-progress exam — unacceptable exam integrity.
+ * Every write is mirrored fire-and-forget into IndexedDB (examState
+ * table); the durable loaders below rehydrate sessionStorage on a miss,
+ * so exams survive tab close, crash, and browser restart. */
+function persistExamKey(key: string, value: unknown): void {
+  try {
+    sessionStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    /* storage unavailable — IndexedDB mirror still applies */
+  }
+  db.examState
+    .put({ key, value: JSON.stringify(value), updatedAt: Date.now() })
+    .catch(() => {
+      /* IndexedDB unavailable — sessionStorage copy still applies */
+    });
+}
+
+/** Rehydrate every examState key for a run into sessionStorage. */
+async function rehydrateRunKeys(runId: string): Promise<void> {
+  try {
+    const rows = await db.examState.toArray();
+    for (const row of rows) {
+      if (!row.key.includes(runId)) continue;
+      try {
+        if (sessionStorage.getItem(row.key) === null) {
+          sessionStorage.setItem(row.key, row.value);
+        }
+      } catch {
+        /* storage full/unavailable — in-memory return still works */
+      }
+    }
+  } catch {
+    /* IndexedDB unavailable */
+  }
+}
 
 export function saveRun(run: ExamRunState): void {
-  try {
-    sessionStorage.setItem(RUN_KEY(run.runId), JSON.stringify(run));
-  } catch {
-    /* storage unavailable — run stays in memory only */
-  }
+  persistExamKey(RUN_KEY(run.runId), run);
 }
 
 export function loadRun(runId: string): ExamRunState | null {
@@ -77,15 +113,37 @@ export function loadRun(runId: string): ExamRunState | null {
   }
 }
 
+/** Durable run load: sessionStorage first, IndexedDB mirror on a miss
+ *  (rehydrating the run, its answers, and its section deadlines). */
+export async function loadRunDurable(runId: string): Promise<ExamRunState | null> {
+  const cached = loadRun(runId);
+  if (cached) return cached;
+  await rehydrateRunKeys(runId);
+  return loadRun(runId);
+}
+
 export function saveSectionAnswers(
   runId: string,
   sectionIdx: number,
   answers: Record<string, ExamAnswerRecord>,
 ): void {
+  persistExamKey(ANSWERS_KEY(runId, sectionIdx), answers);
+}
+
+/** Section wall-clock deadline (strict timer, 2026-09-12): persisted so a
+ *  reload cannot reset the 35:00 clock — time genuinely elapses. */
+export function saveSectionDeadline(runId: string, sectionIdx: number, deadlineMs: number): void {
+  persistExamKey(DEADLINE_KEY(runId, sectionIdx), deadlineMs);
+}
+
+export function loadSectionDeadline(runId: string, sectionIdx: number): number | null {
   try {
-    sessionStorage.setItem(ANSWERS_KEY(runId, sectionIdx), JSON.stringify(answers));
+    const raw = sessionStorage.getItem(DEADLINE_KEY(runId, sectionIdx));
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as number;
+    return typeof parsed === 'number' && Number.isFinite(parsed) ? parsed : null;
   } catch {
-    /* storage unavailable */
+    return null;
   }
 }
 

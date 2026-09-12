@@ -112,7 +112,7 @@ export default function TodayScreen() {
 
   const now = new Date();
   const greeting = greetingFor(now.getHours());
-  const dateLine = now.toLocaleDateString(undefined, {
+  const dateLine = now.toLocaleDateString('en-US', {
     weekday: 'long',
     month: 'long',
     day: 'numeric',

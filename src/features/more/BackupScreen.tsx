@@ -340,13 +340,13 @@ export default function BackupScreen() {
           <div className="more-card" role="status">
             <h3>Backup looks valid ✓</h3>
             <p className="more-note">
-              Exported {new Date(pending.exportDate).toLocaleString()} · app v{pending.appVersion} · checksum OK
+              Exported {new Date(pending.exportDate).toLocaleString('en-US')} · app v{pending.appVersion} · checksum OK
             </p>
             <div className="more-entries">
               {tableCounts(pending).map(({ table, count }) => (
                 <div key={table} className="more-entry-head">
                   <span className="more-entry-sub">{table}</span>
-                  <span className="more-entry-title">{count.toLocaleString()}</span>
+                  <span className="more-entry-title">{count.toLocaleString('en-US')}</span>
                 </div>
               ))}
             </div>

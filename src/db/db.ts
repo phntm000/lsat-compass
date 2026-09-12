@@ -8,7 +8,7 @@ import type {
   UserProfile, SkillStateRecord, QuestionAttemptRecord,
   LessonProgressRecord, PracticeSessionRecord, OfficialPracticeLog,
   AchievementRecord, NoteRecord, BookmarkRecord, EssayRecord,
-  DailyActivityRecord, BackupMetaRecord, SettingsRecord,
+  DailyActivityRecord, BackupMetaRecord, SettingsRecord, ExamStateRecord,
 } from '../engine/db-schema';
 
 export const APP_VERSION = '1.0.0';
@@ -27,12 +27,13 @@ export class CompassDB extends Dexie {
   dailyActivity!: Table<DailyActivityRecord, string>;
   backupMeta!: Table<BackupMetaRecord, string>;
   settings!: Table<SettingsRecord, string>;
+  examState!: Table<ExamStateRecord, string>;
 
   constructor() {
     super('lsat-compass');
     this.version(1).stores({ ...TABLES });
-    // Future migrations go here, e.g.:
-    // this.version(2).stores({ ... }).upgrade(tx => { ... });
+    // v2 (2026-09-12): durable exam-run state (runs, answers, deadlines).
+    this.version(2).stores({ ...TABLES });
   }
 }
 

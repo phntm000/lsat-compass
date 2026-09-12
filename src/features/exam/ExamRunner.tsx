@@ -17,10 +17,12 @@ import type { RunnerResult } from '../practice/QuestionRunner';
 import {
   SECTION_SECONDS,
   createRun,
-  loadRun,
+  loadRunDurable,
   loadSectionAnswersFromStorage,
+  loadSectionDeadline,
   saveRun,
   saveSectionAnswers,
+  saveSectionDeadline,
   sectionSessionId,
 } from './examStore';
 import type { ExamAnswerRecord, ExamRunState, ExamSectionDef } from './examStore';
@@ -62,12 +64,23 @@ function SectionView({
     for (const [qid, rec] of Object.entries(stored)) if (rec.flagged) f[qid] = true;
     return f;
   });
-  const [secondsLeft, setSecondsLeft] = useState(SECTION_SECONDS);
-  const [paused, setPaused] = useState(false);
+  // Strict wall-clock timer (2026-09-12): the 35:00 clock is anchored to a
+  // persisted deadline timestamp, not a decrementing counter. It never
+  // pauses — not on tab backgrounding, not on reload (the deadline is
+  // restored from durable storage) — matching real test-day conditions.
+  const [deadline] = useState(() => {
+    const stored = loadSectionDeadline(run.runId, section.index);
+    if (stored !== null) return stored;
+    const d = Date.now() + SECTION_SECONDS * 1000;
+    saveSectionDeadline(run.runId, section.index, d);
+    return d;
+  });
+  const [secondsLeft, setSecondsLeft] = useState(() =>
+    Math.max(0, Math.ceil((deadline - Date.now()) / 1000)),
+  );
   const [confirmOpen, setConfirmOpen] = useState(false);
 
   const answersRef = useRef(answers);
-  const pausedRef = useRef(false);
   const doneRef = useRef(false);
   const finishRef = useRef<(auto: boolean) => void>(() => {});
 
@@ -98,32 +111,22 @@ function SectionView({
   );
   finishRef.current = finishSection;
 
-  // Countdown; frozen while paused or after finish.
+  // Countdown from the wall-clock deadline; 4 Hz tick so the display never
+  // drifts a full second behind real elapsed time. Never pauses: the old
+  // pause-on-hidden behavior let a user stop the clock by backgrounding
+  // the tab, which no proctored administration permits.
   useEffect(() => {
     const id = window.setInterval(() => {
-      if (pausedRef.current || doneRef.current) return;
-      setSecondsLeft((prev) => {
-        if (prev <= 1) {
-          window.clearInterval(id);
-          finishRef.current(true);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+      if (doneRef.current) return;
+      const left = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+      setSecondsLeft(left);
+      if (left <= 0) {
+        window.clearInterval(id);
+        finishRef.current(true);
+      }
+    }, 250);
     return () => window.clearInterval(id);
-  }, []);
-
-  // Freeze the timer while the tab is hidden.
-  useEffect(() => {
-    const onVis = () => {
-      const hidden = document.hidden;
-      pausedRef.current = hidden;
-      setPaused(hidden);
-    };
-    document.addEventListener('visibilitychange', onVis);
-    return () => document.removeEventListener('visibilitychange', onVis);
-  }, []);
+  }, [deadline]);
 
   const handleAnswer = useCallback(
     (r: RunnerResult) => {
@@ -284,15 +287,6 @@ function SectionView({
         </div>
       </Sheet>
 
-      {paused && (
-        <div className="ex-paused" role="alert">
-          <div className="ex-paused-card">
-            <h2>Paused</h2>
-            <p>Timer stopped while the tab was hidden.</p>
-            <p className="ex-muted">Return to this tab to resume.</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
@@ -320,17 +314,23 @@ export default function ExamRunner() {
 
     const runId = searchParams.get('runId');
     if (runId) {
-      const existing = loadRun(runId);
-      if (!existing) {
-        setBuildError('This exam run could not be found. It may have expired — session data only lives in this tab.');
-        return;
-      }
-      if (existing.currentSection >= existing.sections.length) {
-        navigate(`/exam/results/${runId}`, { replace: true });
-        return;
-      }
-      setRun(existing);
-      return;
+      let cancelled = false;
+      (async () => {
+        const existing = await loadRunDurable(runId);
+        if (cancelled) return;
+        if (!existing) {
+          setBuildError('This exam run could not be found. It may have been cleared with site data.');
+          return;
+        }
+        if (existing.currentSection >= existing.sections.length) {
+          navigate(`/exam/results/${runId}`, { replace: true });
+          return;
+        }
+        setRun(existing);
+      })();
+      return () => {
+        cancelled = true;
+      };
     }
 
     const mode = searchParams.get('mode') === 'section' ? 'section' : 'sim';

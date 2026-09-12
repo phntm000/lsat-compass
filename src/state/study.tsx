@@ -266,7 +266,8 @@ export function StudyProvider({ children }: { children: ReactNode }) {
       list.length ? list.filter((a) => a.correct).length / list.length : null;
     const timedModes: AttemptMode[] = ['timed', 'test'];
     const recentTimedAccuracy = accOf(last20.filter((a) => timedModes.includes(a.mode)));
-    const untimedAccuracy = accOf(last20.filter((a) => !timedModes.includes(a.mode)));
+    const untimedList = last20.filter((a) => !timedModes.includes(a.mode));
+    const untimedAccuracy = accOf(untimedList);
 
     const domainAcc = (timed: boolean | null, domain: 'LR' | 'RC'): number | null => {
       const list = attempts.filter((a) => {
@@ -363,6 +364,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
       testDateMs: prof.targetTestDate ? Date.parse(prof.targetTestDate + 'T12:00:00') : null,
       recentTimedAccuracy,
       untimedAccuracy,
+      untimedAttempts: untimedList.length,
     }));
 
     setReady(true);

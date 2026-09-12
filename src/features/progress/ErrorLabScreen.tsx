@@ -234,7 +234,7 @@ export default function ErrorLabScreen() {
                     <div className="pg-err-title">{questionLabel(a)}</div>
                     <div className="pg-err-meta">
                       {skillTitle(a.skillIds[0] ?? '')} ·{' '}
-                      {new Date(a.timestamp).toLocaleDateString(undefined, {
+                      {new Date(a.timestamp).toLocaleDateString('en-US', {
                         month: 'short',
                         day: 'numeric',
                       })}

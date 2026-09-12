@@ -113,7 +113,7 @@ export default function NotebookScreen() {
     }
   };
 
-  const fmtDate = (ts: number) => new Date(ts).toLocaleDateString(undefined, {
+  const fmtDate = (ts: number) => new Date(ts).toLocaleDateString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric',
   });
 
