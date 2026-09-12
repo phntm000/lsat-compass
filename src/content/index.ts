@@ -97,7 +97,7 @@ export type ValidationStatus =
 export interface ReviewEntry {
   date: string;
   reviewer: string;
-  verdict: 'keep' | 'revise' | 'replace' | 'retire' | 'validate';
+  verdict: 'keep' | 'revise' | 'replace' | 'retire' | 'validate' | 'demote';
   notes?: string;
 }
 
