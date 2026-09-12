@@ -2,7 +2,10 @@ import { useNavigate } from 'react-router-dom';
 import { useStudy } from '../../state/study';
 import { Button, LoadingSkeleton, Screen, SegmentedControl } from '../../components';
 import { useState } from 'react';
+import { TEST_STRUCTURE } from '../../config/lsatFacts';
 import './exam.css';
+
+const TS = TEST_STRUCTURE.value;
 
 export default function ExamSetupScreen() {
   const { ready } = useStudy();
@@ -27,8 +30,10 @@ export default function ExamSetupScreen() {
       <section className="ex-card" aria-labelledby="ex-sim-title">
         <h2 id="ex-sim-title">Full simulation</h2>
         <ul className="ex-list">
-          <li>4 timed sections × 35 minutes (2 scored LR, 1 scored RC, plus 1 hidden unscored variable section)</li>
-          <li>10-minute intermission after section 2</li>
+          <li>
+            {TS.sections} timed sections × {TS.minutesPerSection} minutes ({TS.scoredLR} scored LR, {TS.scoredRC} scored RC, plus 1 hidden unscored variable section)
+          </li>
+          <li>{TS.intermissionMinutes}-minute intermission after {TS.intermissionAfter}</li>
           <li>
             One section is an unscored experimental (variable) section. It is
             <strong> not identified during the test</strong> — treat every

@@ -1,4 +1,5 @@
 import { Screen } from '../../components';
+import { WRITING } from '../../config/lsatFacts';
 import { MoreBack } from './common';
 
 const LINKS = [
@@ -72,10 +73,11 @@ export default function ResourcesScreen() {
         <h2 className="more-section-title">Argumentative Writing</h2>
         <div className="more-card more-prose">
           <p>
-            LSAT Argumentative Writing is a separate, unscored part of the
-            test. You get 15 minutes to analyze a prompt and 35 minutes to
-            write an essay taking a position and defending it. Law schools
-            receive your writing sample alongside your score.
+            {WRITING.value.name} is a separate, unscored part of the test.
+            You get {WRITING.value.prewritingMinutes} minutes to analyze a
+            prompt and {WRITING.value.writingMinutes} minutes to write an
+            essay taking a position and defending it. Law schools receive
+            your writing sample alongside your score.
           </p>
           <p>
             Because it is unscored, the goal is simple: write a clear,

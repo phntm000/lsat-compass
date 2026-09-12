@@ -316,13 +316,13 @@ export const LESSONS_0: Lesson[] = [
       },
       {
         kind: 'prose',
-        md: 'Logic Games were removed starting with the June 2024 LSAT. The change followed a settlement with blind test takers, for whom the heavily diagram-based section posed an accessibility barrier that could not be fixed with accommodations alone. Rather than keep a section that could not be administered fairly to everyone, the test makers replaced it with a second scored Logical Reasoning section. The four-section structure stayed; the content changed.',
+        md: 'Logic Games were removed starting with the August 2024 LSAT. The change followed a settlement with blind test takers, for whom the heavily diagram-based section posed an accessibility barrier that could not be fixed with accommodations alone. Rather than keep a section that could not be administered fairly to everyone, the test makers replaced it with a second scored Logical Reasoning section. The four-section structure stayed; the content changed.',
       },
       {
         kind: 'keyterm',
         term: 'Logic Games (retired)',
         definition:
-          'The former Analytical Reasoning section: four logic puzzles per section (scheduling, grouping, ordering) solved with diagrams. Removed from the LSAT in June 2024 and replaced by a second Logical Reasoning section. Any Logic Games material you encounter in older books is obsolete for the current test.',
+          'The former Analytical Reasoning section: four logic puzzles per section (scheduling, grouping, ordering) solved with diagrams. Removed from the LSAT in August 2024 and replaced by a second Logical Reasoning section. Any Logic Games material you encounter in older books is obsolete for the current test.',
       },
       {
         kind: 'example',
@@ -359,7 +359,7 @@ export const LESSONS_0: Lesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          'When Analytical Reasoning (Logic Games) was removed in June 2024 following an accessibility settlement, it was replaced by a second scored Logical Reasoning section, keeping the four-section structure. Reading Comprehension was not shortened, LR was not made easier, and the change was about fair administration, not law school preferences — so argument-analysis skills now decide two of the three scored sections.',
+          'When Analytical Reasoning (Logic Games) was removed in August 2024 following an accessibility settlement, it was replaced by a second scored Logical Reasoning section, keeping the four-section structure. Reading Comprehension was not shortened, LR was not made easier, and the change was about fair administration, not law school preferences — so argument-analysis skills now decide two of the three scored sections.',
       },
       {
         kind: 'prose',
@@ -368,7 +368,7 @@ export const LESSONS_0: Lesson[] = [
       {
         kind: 'summary',
         points: [
-          'The Logic Games (Analytical Reasoning) section was removed starting June 2024 after an accessibility settlement.',
+          'The Logic Games (Analytical Reasoning) section was removed starting August 2024 after an accessibility settlement.',
           'It was replaced by a second scored Logical Reasoning section; the test is now two LR sections plus one RC section.',
           'Logic Games material in older books is obsolete — skip those chapters entirely.',
           'Older LR and RC material is still valid practice; the reasoning patterns have not changed.',
@@ -378,7 +378,7 @@ export const LESSONS_0: Lesson[] = [
         kind: 'retrieval',
         prompt: 'What happened to Logic Games, when, and what replaced the section?',
         answer:
-          'Logic Games (Analytical Reasoning) were removed from the LSAT starting June 2024 following a settlement over accessibility for blind test takers, and the section was replaced by a second scored Logical Reasoning section.',
+          'Logic Games (Analytical Reasoning) were removed from the LSAT starting August 2024 following a settlement over accessibility for blind test takers, and the section was replaced by a second scored Logical Reasoning section.',
       },
       {
         kind: 'next',

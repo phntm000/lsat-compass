@@ -8,6 +8,7 @@ import {
   LoadingSkeleton,
 } from '../../components/index';
 import { useStudy } from '../../state/study';
+import { TEST_STRUCTURE, WRITING } from '../../config/lsatFacts';
 import './onboarding.css';
 
 type Experience = 'brand-new' | 'some-study' | 'retaking';
@@ -130,16 +131,18 @@ export default function OnboardingScreen() {
           <h2 className="onboarding-title">The test at a glance</h2>
           <ul className="onboarding-list">
             <li>
-              <strong>4 sections, 35 minutes each:</strong> 2 scored Logical
-              Reasoning, 1 scored Reading Comprehension, and 1 hidden unscored
-              section — you won't know which one it is.
+              <strong>{TEST_STRUCTURE.value.sections} sections, {TEST_STRUCTURE.value.minutesPerSection} minutes each:</strong>{' '}
+              {TEST_STRUCTURE.value.scoredLR} scored Logical Reasoning, {TEST_STRUCTURE.value.scoredRC} scored
+              Reading Comprehension, and 1 hidden unscored section — you won't
+              know which one it is.
             </li>
             <li>
-              <strong>10-minute intermission</strong> after the second section.
+              <strong>{TEST_STRUCTURE.value.intermissionMinutes}-minute intermission</strong> after the second section.
             </li>
             <li>
-              <strong>Argumentative Writing</strong> is separate and unscored:
-              15 minutes to analyze, then 35 minutes to write your essay.
+              <strong>{WRITING.value.name}</strong> is separate and unscored:{' '}
+              {WRITING.value.prewritingMinutes} minutes to analyze, then {WRITING.value.writingMinutes} minutes
+              to write your essay.
             </li>
           </ul>
           <p className="onboarding-note">
