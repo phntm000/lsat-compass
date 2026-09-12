@@ -851,6 +851,8 @@ export const QUESTIONS_LR_A: Question[] = [
     validationStatus: 'validated',
     difficultyProfile: { structuralComplexity: 4, linguisticComplexity: 3, inferentialDistance: 4, distractorProximity: 4 },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (rebuttal of the industry objection). Attractions: B (overstates the premise as direct proof the law succeeds), C (concession-direction misread).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: credited E captures indirect rebuttal support; B is the dangerous too-strong near miss since the parallel undercuts collapse rather than proving success, A wrong-conclusion, C opposite, D ignores rebuttal chain. VALIDATE.' },
     ],
@@ -1635,6 +1637,8 @@ export const QUESTIONS_LR_A: Question[] = [
     validationStatus: 'validated',
     difficultyProfile: { structuralComplexity: 3, linguisticComplexity: 3, inferentialDistance: 4, distractorProximity: 4 },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (tax versus cap superiority). Attractions: B (guarantee language Hana never claims), A (Ivan concedes predictability matters - concession trap).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: credited D is the reversed comparative ranking; A is an explicit agreement trap since Ivan grants predictability matters, B one-sided, C and E unsupported. VALIDATE.' },
     ],
@@ -1679,11 +1683,13 @@ export const QUESTIONS_LR_A: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-point-at-issue',
     secondarySkills: ['f-premise-conclusion', 'f-structure'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     difficultyProfile: { structuralComplexity: 3, linguisticComplexity: 2, inferentialDistance: 4, distractorProximity: 4 },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). Both speakers state the credited disagreement verbatim (would/would-not strengthen democracy). Explicit-opposition point-at-issue is easy-authentic, not hard.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: credited E is the shared verdict proposition; A is a subtle agreement trap since both assume turnout rises, B and C one-sided, D unsupported. VALIDATE.' },
     ],

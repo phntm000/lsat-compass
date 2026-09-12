@@ -439,6 +439,8 @@ export const RC_QUESTIONS_A: Question[] = [
         'A applies minimalism as the absolute rule paragraph 5 explicitly rejects; B invents a decline-to-decide remedy the passage never discusses; D flips the legitimacy rationale (it favors minimalism, not maximalism); E invents split-opinion machinery the passage never discusses.',
     },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (minimalism is a rebuttable default and this scenario rebuts it). Attractions: A (ignores rebuttability), D (maximalist-legitimacy overclaim), B (passive-virtue misread).' },
       {
         date: '2026-09-11',
         reviewer: 'rc-validation-2026-09-11',
@@ -1752,6 +1754,8 @@ export const RC_QUESTIONS_A: Question[] = [
       whyDistractorsFail: 'A opposite: disagreement is treated as informative data, not proof of misreading. B unsupported: blaming the author is no one’s move in the passage. D unsupported and contrary: the passage trades on the sincerity/reliability gap (the governess “might not know they are lying”). E opposite: the final paragraph celebrates argued disagreement as teaching “the weighing of evidence.”',
     },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (reader-weighted inference view). Attractions: A (objectivist misread), B (intentionalist trap), D (erases the passage distinction).' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'Application is a genuine two-step map (new facts → cue signals in paragraph 2 → cue-weighting mechanism in paragraph 4). Attempted to defend A and D; A contradicts the passage’s treatment of disagreement, D contradicts the governess example’s premise. d4 honest for the abstraction load, not inflation. VALIDATE.' },
     ],
@@ -2059,6 +2063,8 @@ export const RC_QUESTIONS_A: Question[] = [
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 3, abstraction: 3 },
     evidenceMap: { supportingParagraphs: [4], supportingSentences: ['use it as a lens onto the larger structures'], requiredInference: 'Classify by method: small-scale reconstruction lensing structural pressures is microhistory’s signature move.', whyDistractorsFail: 'A classifies by topic; B is half-right; D inverts the method; E invents an era restriction.' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (microhistory as small-scale lens). Attractions: B (chronological story misclassification), A (Annales thematic confusion), E (pre-modern-only scope trap).' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'RC hostile validation 2026-09-11: KEEP; 0 two-defensible findings; passage claims verified against text; leakage pass applied.' },
     ],
@@ -2418,6 +2424,8 @@ export const RC_QUESTIONS_A: Question[] = [
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 4 },
     evidenceMap: { supportingParagraphs: [1, 3, 5], supportingSentences: ['Default enrollment works reliably', 'that nudges be publicly disclosed', 'tested rigorously before deployment at scale'], requiredInference: 'Checklist the proposal: default mechanism + opt-out + disclosure + published results = model legitimate nudge.', whyDistractorsFail: 'B voices the critics; C opposite; D inverts disclosure; E scope-shift.' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited A (defensible nudge with opt-out and guardrails). Attractions: B (autonomy-objection absolutized), E (domain-only scope trap).' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'RC hostile validation 2026-09-11: KEEP; 0 two-defensible findings; passage claims verified against text; leakage pass applied.' },
     ],
@@ -2719,12 +2727,14 @@ export const RC_QUESTIONS_A: Question[] = [
     sectionType: 'RC',
     questionType: 'rc-application',
     secondarySkills: ['rc-passage-structure'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 3 },
     evidenceMap: { supportingParagraphs: [5], supportingSentences: ['transparent revenue management, independent oversight bodies, and rules that smooth spending across commodity cycles', 'ideally constructed before the first barrel is pumped'], requiredInference: 'Port the prescriptive conclusion: fragile institutions + new windfall = preparation first.', whyDistractorsFail: 'A retired counsel; B opposite; D too-strong; E the core corrosive mechanism.' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). Credited C restates the passage prescription directly; A/B/D are strawmen and only E (windfall substituting for tax capacity, which the passage criticizes) has modest pull.' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'RC hostile validation 2026-09-11: KEEP; 0 two-defensible findings; passage claims verified against text; leakage pass applied.' },
     ],
@@ -3032,6 +3042,8 @@ export const RC_QUESTIONS_A: Question[] = [
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 4, abstraction: 3 },
     evidenceMap: { supportingParagraphs: [2, 3], supportingSentences: ['Diamond called agriculture “the worst mistake in the history of the human race.”', 'the bones documented a transitional penalty, not a permanent verdict', 'like judging industrialization by the slums of the 1840s'], requiredInference: 'Map: catastrophe-indictment + later-recovery reply = Diamond + transitional-penalty stage.', whyDistractorsFail: 'A mismatches figures; B is the spread mechanism; C is the DNA complication; D is the current synthesis, not the indictment-reply pair.' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (skeletal indictment plus transitional-penalty qualification). Attractions: B (Boserup demographic rival), C (ancient-DNA reframing), A (Sahlins thesis mismatch).' },
       { date: '2026-09-11', reviewer: 'rc-archetype-rewrite-2026-09-11', verdict: 'validate',
         notes: 'Full passage+question rewrite 2026-09-11: converted rc-p09 to historical-development archetype; hostile-reviewed (no second defensible answer); leakage pass applied.' },
     ],
@@ -3339,6 +3351,8 @@ export const RC_QUESTIONS_A: Question[] = [
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 4, abstraction: 3 },
     evidenceMap: { supportingParagraphs: [3], supportingSentences: ['might reflect not linguistic causation but shared environment'], requiredInference: 'Vanishing-under-controls fulfills the causal-direction objection’s prediction.', whyDistractorsFail: 'A opposite; C inverts; D reversed; E confuses confounding with publication bias.' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited B (causal-direction problem). Attractions: D (direct-causation reversal), A (strong-determinism vindication overread).' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'RC hostile validation 2026-09-11: KEEP; 0 two-defensible findings; passage claims verified against text; leakage pass applied.' },
     ],
@@ -3646,6 +3660,8 @@ export const RC_QUESTIONS_A: Question[] = [
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 4, abstraction: 4 },
     evidenceMap: { supportingParagraphs: [3, 5], supportingSentences: ['donors keep score', 'individuals that accept blood without ever donating are eventually refused', 'only memory, repeated interaction, and the capacity to withhold future help'], requiredInference: 'Non-kin + repeated exchange + punishment of skippers = reciprocal altruism’s fingerprint.', whyDistractorsFail: 'A wrong (non-kin); B near-miss (no audience/reputation payoff); C no between-group evidence; D false.' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (reciprocal altruism with turn-taking and exclusion). Attractions: C (group-selection framing), A (kin selection despite stated unrelatedness), B (costly signaling surface match).' },
       { date: '2026-09-11', reviewer: 'rc-archetype-rewrite-2026-09-11', verdict: 'validate',
         notes: 'Full passage+question rewrite 2026-09-11: converted rc-p11 to survey archetype; hostile-reviewed (no second defensible answer); leakage pass applied.' },
     ],
@@ -3967,7 +3983,7 @@ export const RC_QUESTIONS_A: Question[] = [
     sectionType: 'RC',
     questionType: 'rc-application',
     secondarySkills: ['rc-passage-structure'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     difficultyProfile: { structuralComplexity: 3, inferentialDistance: 4, distractorProximity: 2, abstraction: 4 },
@@ -3978,6 +3994,8 @@ export const RC_QUESTIONS_A: Question[] = [
       whyDistractorsFail: 'A and C invent criteria never at issue; D invents a historical dispute; E is too-strong (higher standards, not a ban).',
     },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). Only A (terrain/prey detail) competes with the epistemic-framing key; C/D/E are obviously irrelevant.' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'Hostile audit: one defensible answer; explanation claims verified against passage text; leakage discipline confirmed (credited <=1.25x, gap <=20).' },
     ],    stimulus: '',
@@ -4309,6 +4327,8 @@ export const RC_QUESTIONS_A: Question[] = [
       whyDistractorsFail: 'B describes a formalism-equivalence debate; C, D, E invent elements (archives, experiments, ridicule) absent from the text.',
     },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited A (paradox, solution, geochemical objection arc). Attractions: C (generic narrative arc), E (ridiculed-dissenters mischaracterization).' },
       { date: '2026-09-11', reviewer: 'rc-validation-2026-09-11', verdict: 'validate',
         notes: 'Hostile audit: one defensible answer; explanation claims verified against passage text; leakage discipline confirmed (credited <=1.25x, gap <=20).' },
     ],    stimulus: '',

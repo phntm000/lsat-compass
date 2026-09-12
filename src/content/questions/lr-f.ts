@@ -308,6 +308,8 @@ export const QUESTIONS_LR_F: Question[] = [
     ],
     labels: { topic: 'lease renewal statistics' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E matches the statistical syllogism. Attractions: C (certainty upgrades probably), B (half-undermines probably), A (reversed structure).' },
       { date: '2026-09-11', reviewer: 'hostile-sample-2026-09-11', verdict: 'validate',
         notes: 'Independent 40-item hostile audit: KEEP; 0 two-defensible findings; leakage pass 2 applied.' },
     ],
@@ -921,10 +923,12 @@ export const QUESTIONS_LR_F: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-parallel-flaw',
     secondarySkills: ['f-flaws', 'f-structure'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). One genuine discrimination (circular A versus expert-consensus B); C/D/E obviously fail to match the circularity pattern. Fails the two-attraction bar.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Difficulty corrected d5->d4: circularity is openly announced in the stimulus, so flaw isolation is easy; only the parallel-matching (circle vs weak reason) carries load. No other changes; single defensible answer confirmed.' },
     ],

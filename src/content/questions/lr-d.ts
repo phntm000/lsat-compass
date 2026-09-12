@@ -614,11 +614,13 @@ export const QUESTIONS_LR_D: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-necessary-assumption',
     secondarySkills: ['f-causation'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     difficultyProfile: { structuralComplexity: 2, inferentialDistance: 3, distractorProximity: 3, causalComplexity: 4 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). Credited E (reverse-causation exclusion) is the classic single-move necessary assumption; only D (over-strong every) attracts.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: sound. The "not fully explained by" reverse-causation calibration is a genuine d4 move - the argument can survive some reverse causation but not total. 0 two-defensible findings. Validated d4.' },
     ],
@@ -770,6 +772,8 @@ export const QUESTIONS_LR_D: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5. Credited C survives the negation test (if math gains lift English/history scores, the curriculum exclusion collapses). Attractions: A (over-strong no-effect-in-any-subject), B (phone-use shifting feels necessary), D (superlative bait).' },
       { date: '2026-09-11', reviewer: 'hostile-sample-2026-09-11', verdict: 'validate',
         notes: 'Independent 40-item hostile audit: REVISE-fixed - rewritten v2 (causal/elimination Necessary Assumption); 0 two-defensible findings; leakage pass 2 applied.' },
     ],
@@ -1328,6 +1332,8 @@ export const QUESTIONS_LR_D: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited B supplies the converse that repairs the argument. Attractions: C (restates the premise), D (most-quantifier trap).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: sound. Affirming-the-consequent repaired by the "only" converse, with a restates-premise trap. 0 two-defensible findings. Validated d4.' },
     ],
@@ -1378,6 +1384,8 @@ export const QUESTIONS_LR_D: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (always switches to cheapest) bridges price to action. Attractions: B (wanting savings is not switching), E (most-cities scope trap), A (future prices).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: sound. Universal decision rule closes the fact-to-action gap; "wants to" and "most" calibrated as too-weak. 0 two-defensible findings. Validated d4.' },
     ],
@@ -1428,6 +1436,8 @@ export const QUESTIONS_LR_D: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited A (liability requires negligence evidence) bridges verdict to evidence. Attractions: C (fact of negligence does not bridge the epistemic claim), D (general reliability).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Hostile review: sound. Epistemic bridge (verdict -> what the evidence proved) with a sophisticated wrong-target trap (choice C). 0 two-defensible findings. Validated d4.' },
     ],
@@ -1478,6 +1488,8 @@ export const QUESTIONS_LR_D: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (no poorly managed team finishes on time) is the contrapositive bridge. Attractions: B (converse trap), A (budget irrelevance).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'REVISE-fixed: difficulty inflated at d5; a single formal move (negative-universal contrapositive bridge) with an excellent reversal trap is d4 material - one move, not the layered two-move structure of the d5 ceiling (lr-d-136). Downgraded editorialDifficulty 5 to 4. 0 two-defensible findings after fix.' },
     ],

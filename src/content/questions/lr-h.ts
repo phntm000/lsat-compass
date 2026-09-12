@@ -210,6 +210,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'hospital triage protocol evaluation' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (premise ruling out alternatives). Attractions: E (the statement IS asserted, so not an unstated assumption), B (role mislabel), C (wrong evidence mapping).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The no-other-changes claim is stated outright as defensive support for the causal conclusion, so the unstated-assumption distractor fails on statedness. Difficulty d4 honest.' },
     ],
@@ -260,6 +262,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'downtown parking meters dispute' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (premise backing the intermediate conclusion). Attractions: D (support direction reversed), B (background downgrade), C (offered-to-refute misread).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The rate-hike history is evidence for the intermediate verdict that the merchants blame the wrong cause; the mall claim feeds the final verdict instead. Two-layer structure mapped. Difficulty d4 honest.' },
     ],
@@ -424,7 +428,7 @@ export const QUESTIONS_LR_H: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-method',
     secondarySkills: ['f-conditional', 'f-structure'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     difficultyProfile: { structuralComplexity: 3, conditionalComplexity: 3, distractorProximity: 3, abstraction: 3 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
@@ -464,6 +468,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'fingerprint evidence dilemma' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). The either/or dilemma is explicit in the stimulus; only C (equal-likelihood misread) attracts.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Exhaustive either/or with both branches refuting the same alibi - constructive dilemma; likelihood and authenticity distractors miss the structure. Difficulty d4 honest.' },
     ],
@@ -718,6 +724,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'congestion pricing policy debate' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (whether to adopt pricing here). Attractions: A (Brooks concedes tried-city efficacy - concession trap), C (harm claim is one-sided).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Brooks concedes the traffic outcome while disputing its cause, so the only genuine yes/no split is the adoption recommendation. Difficulty d4 honest.' },
     ],
@@ -768,6 +776,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'remote work productivity dispute' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (whether remote work caused the rise). Attractions: A (union concedes the number - concession trap), B (layoffs asserted by one side only).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Both speakers grant the per-employee numbers and dispute the cause - layoff-driven workload vs remote work - making causation the point at issue. Difficulty d4 honest.' },
     ],
@@ -972,6 +982,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'lecture recordings and exam scores' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (course comparability). Attractions: B (study scope/semesters), C (Hawthorne-style awareness).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Only choice probing comparability across subject difficulty and student strength; sample-size distractor is a genuine half-right. Difficulty d4 honest.' },
     ],
@@ -1137,7 +1149,7 @@ export const QUESTIONS_LR_H: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-principle-support',
     secondarySkills: ['f-structure', 'f-premise-conclusion'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     difficultyProfile: { structuralComplexity: 3, abstraction: 3, distractorProximity: 4, scopeSubtlety: 3 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
@@ -1177,6 +1189,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'publishing leaked memos' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). Credited C restates the stimulus conditions nearly verbatim; only E (never publish anything) attracts as a scope trap.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Credited principle tracks the conditional grounds of theft plus personal data plus no public interest; the blanket-ban distractor agrees with the verdict for the wrong reason. Difficulty d4 honest.' },
     ],
@@ -1227,6 +1241,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'school flu vaccine mandate' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (substantial benefit plus minimal burden). Attractions: A (drops the burden condition), C (literally-no-burden extreme inversion).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Credited principle preserves the two-factor benefit/burden balance; single-factor and absolute-burden distractors break it. Difficulty d4 honest.' },
     ],
@@ -1381,6 +1397,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'protest restriction principle' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (clear, specific structural threat). Attractions: E (blanket precautionary ban violates specificity), B (vague rumors fail the clear-and-specific clause).' },
       { date: '2026-09-11', reviewer: 'hostile-sample-2026-09-11', verdict: 'validate',
         notes: 'Independent 40-item hostile audit: KEEP; 0 two-defensible findings; leakage pass 2 applied.' },
     ],
@@ -1431,6 +1449,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'medical risk disclosure rule' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4, violates-stem. Credited D (no disclosure, no opt-out). Attractions: E (treatment refused outright - no risks left to disclose), B (explicit request conforms - direction trap under a violates stem).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The unless exception requires an explicit refusal - silence and refusal of treatment do not trigger it. Difficulty d4 honest.' },
     ],
@@ -1585,6 +1605,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'equivocation on promises' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (equivocation on room to breathe parallels a voice). Attractions: B (promise literally kept), E (tax/fee deception is not equivocation).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Promise-to-fulfillment meaning shift replicated exactly; the consistent-meaning airline distractor is a genuine near-miss. Difficulty d4 honest.' },
     ],
@@ -1635,6 +1657,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'composition fallacy business' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited D (composition: players to team). Attractions: B (division - reverse direction), C (hedged most/probably), A (flat HQ costs add information).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Parts-to-whole composition ignoring whole-level factors; repaired-argument, reversed-direction, and weakened-quantifier distractors all break the parallel. Difficulty d4 honest.' },
     ],
@@ -1789,6 +1813,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'wheat acreage versus harvest' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (frost destroyed the early crop on the new acreage). Attractions: D (record prior harvest partially de-paradoxes), A (price incentive deepens the paradox - direction trap).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Acres-times-yield decomposition; the record-prior-year distractor softens surprise without supplying a mechanism. Difficulty d4 honest.' },
     ],
@@ -1843,6 +1869,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'bail reform main thesis' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5 after scrutiny. Credited E is the final normative synthesis; B is explicitly flagged by the text as the real lesson, a strong sub-conclusion trap; A/C/D are in-text premise restates. Competitive density is genuine and the lesson-versus-recommendation distinction is fair.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The final synthesis is the only claim supported by all strands with nothing inferred from it; the real-lesson sentence is an intermediate decoy. Difficulty d5 honest.' },
     ],
@@ -1853,7 +1881,7 @@ export const QUESTIONS_LR_H: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-must-be-true',
     secondarySkills: ['f-conditional', 'f-translate', 'f-deduction'],
-    editorialDifficulty: 5,
+    editorialDifficulty: 4,
     difficultyProfile: { structuralComplexity: 4, conditionalComplexity: 4, distractorProximity: 4, inferentialDistance: 3 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
@@ -1893,6 +1921,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'grant departments audit logic' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 5->4 (S21/S22). Two-premise transitive chain with contrapositive key and a noise premise; B/E are textbook converse-error traps (two credible attractions), but the architecture is a direct chain - not D5 density. Retained at D4 as the hardest lr-must-be-true item (type hard-coverage preserved).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Grant-to-analyst-to-passed chain contrapositive; reversal and unsupported travel-budget distractors fail. Difficulty d5 honest.' },
     ],
@@ -1903,7 +1933,7 @@ export const QUESTIONS_LR_H: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-flaw',
     secondarySkills: ['f-flaws', 'f-conditional'],
-    editorialDifficulty: 5,
+    editorialDifficulty: 3,
     difficultyProfile: { structuralComplexity: 4, conditionalComplexity: 4, distractorProximity: 5, linguisticComplexity: 3 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
@@ -1943,6 +1973,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'transit plan fare cut logic' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 5->3 (S22). Credited B (necessary treated as sufficient) is the only choice engaging the reasoning; A is generic flaw-speak and C/D/E describe maneuvers absent from the stimulus. Fails the two-attraction bar.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The argument treats fulfillment of a stated necessary condition as guaranteeing success; the causal-alternative distractor describes a flaw never committed. Difficulty d5 honest.' },
     ],
@@ -1993,6 +2025,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'migraine headband trial' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited C (sleep-schedule confound). Attractions: D (manufacturer sued on other products - source trap), E (different-company headband irrelevance).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'REVISE-fixed: difficulty overstated at d5; the confounder is the standard trial-weaken move with single-layer reasoning and non-competing distractors. Downgraded editorialDifficulty 5 to 4; version 2; revisedAt 2026-09-11. Single defensible answer confirmed.' },
     ],
@@ -2004,7 +2038,7 @@ export const QUESTIONS_LR_H: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-necessary-assumption',
     secondarySkills: ['f-assumption', 'f-conditional'],
-    editorialDifficulty: 4,
+    editorialDifficulty: 3,
     difficultyProfile: { structuralComplexity: 3, causalComplexity: 3, distractorProximity: 3, inferentialDistance: 3 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
@@ -2044,6 +2078,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'beaver reintroduction wetlands' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 4->3 (S22). The beavers-must-build-dams gap is the exposed single move; only B (outcome guarantee, too strong) has real pull.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'REVISE-fixed: difficulty overstated at d5; the beavers-build-dams gap sits on the argument surface and the negation test is mechanical once spotted. Downgraded editorialDifficulty 5 to 4; version 2; revisedAt 2026-09-11. Single defensible answer confirmed.' },
     ],
@@ -2098,6 +2134,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'overnight ferry funding debate' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5. Credited B (intermediate conclusion inferred from freight/hospital facts, supporting the funding claim). Attractions: A (main-conclusion mislabel), C (unsupported-premise mislabel), E (concession mislabel of the Admittedly clause).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The thus-marked cargo claim is supported from below and supports the funding verdict above - intermediate conclusion; concession/pivot distractors fail. Difficulty d5 honest.' },
     ],
@@ -2148,6 +2186,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'restaurant no-show fee debate' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5. Credited D captures the principle-transfer-then-application arc. Attractions: C (near-miss overstatement - every relevant respect - that also drops the ban conclusion), A (direction-reversed), E (half-right oversight account).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Principle-mediated analogy via the same-reasoning-applies move; the every-relevant-respect distractor is too strong. Difficulty d5 honest.' },
     ],
@@ -2158,7 +2198,7 @@ export const QUESTIONS_LR_H: Question[] = [
     sectionType: 'LR',
     questionType: 'lr-most-strongly-supported',
     secondarySkills: ['f-quantifiers', 'f-conditional'],
-    editorialDifficulty: 5,
+    editorialDifficulty: 4,
     difficultyProfile: { structuralComplexity: 4, conditionalComplexity: 3, distractorProximity: 5, inferentialDistance: 3 },
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
@@ -2198,6 +2238,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'specialty clinic referral chain' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'demote',
+        notes: 'Demote 5->4 (S22). Single-chain most/all quantifier reasoning; A/B/C are quantifier-shift traps. Credible traps, but the architecture is a direct transitive chain.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. Most chained through all-statements stays most; quantifier-upgrade and reversed-direction distractors fail. Difficulty d5 honest.' },
     ],
@@ -2248,6 +2290,8 @@ export const QUESTIONS_LR_H: Question[] = [
     ],
     labels: { topic: 'pedestrian mall foot-traffic dispute' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5. Credited A is the explicit clash (traffic helps versus will not rescue). Attractions: D (surface policy disagreement - the classic too-broad trap), B (Marcus concedes the traffic rise), C/E (one-side-only positions).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; single defensible answer confirmed. The even-if concession removes the foot-traffic rise from dispute; the genuine clash is downstream on whether it would help. Difficulty d5 honest.' },
     ],

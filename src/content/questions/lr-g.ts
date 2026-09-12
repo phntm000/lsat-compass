@@ -306,6 +306,8 @@ export const QUESTIONS_LR_G: Question[] = [
 'The correct choice: thick reusable bags discarded after a few uses, each containing more plastic than the banned bags.',
     ],    labels: { topic: 'plastic bag ban' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited A (discarded thick reusables add more plastic per bag). Attractions: C (paper litter is not plastic litter - material-attention trap), D (regional trend contextualizes but explains no mechanism).' },
       { date: '2026-09-11', reviewer: 'hostile-sample-2026-09-11', verdict: 'validate',
         notes: 'Independent 40-item hostile audit: KEEP; 0 two-defensible findings; leakage pass 2 applied.' },
     ],
@@ -471,6 +473,8 @@ export const QUESTIONS_LR_G: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (new officers surface long-unreported crime; reporting artifact, victimization flat). Attractions: C (regional-trend alternative resolution - runner-up), D (unspent funding). Choice E text repaired 2026-09-12: prior wording (residents stopped reporting, so reporting soared) was self-contradictory.' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Full-LR classification: KEEP. Reported-vs-actual crime distinction with full mechanism; (C) regional trend is a designed near-miss that never engages the funding fact; d4 honest.' },
     ],
@@ -482,7 +486,7 @@ export const QUESTIONS_LR_G: Question[] = [
       { text: 'The country\'s unemployment rate held steady during the same period, ruling out economic distress as a driver of the increase.' },
       { text: 'Neighboring countries that did not increase police funding also saw reported crime rise, suggesting a regional trend in reporting that has nothing to do with policing levels.' },
       { text: 'Most of the new funding went unspent due to bureaucratic delays, so few additional officers were actually hired.' },
-      { text: 'New officers went to under-policed neighborhoods, where residents stopped reporting crimes, so reporting soared while actual victimization stayed flat.' },
+      { text: 'New officers went to under-policed neighborhoods, where crimes had long gone unreported, so reporting soared while actual victimization stayed flat.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -756,6 +760,8 @@ export const QUESTIONS_LR_G: Question[] = [
     ],
     labels: { topic: 'reservoir water level' },
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5. Credited D resolves through two mechanisms (rain outside the watershed; flood-control releases). Attractions: A (record consumption neutralized only by the under-five-percent clause - subtle scope trap), B (confirms rather than resolves).' },
       { date: '2026-09-11', reviewer: 'hostile-sample-2026-09-11', verdict: 'validate',
         notes: 'Independent 40-item hostile audit: KEEP (good diff-5); 0 two-defensible findings; leakage pass 2 applied.' },
     ],
@@ -871,6 +877,8 @@ export const QUESTIONS_LR_G: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E (vacancy stock filled by wage-drawn in-migration). Attractions: D (layoffs deepen the paradox - direction trap), B (over-21 scope limiter).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Full-LR classification: KEEP. Filled-vs-total positions distinction via chronic vacancies; d4 honest.' },
     ],
@@ -972,6 +980,8 @@ export const QUESTIONS_LR_G: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D5. Credited D is a composition shift (new low-scoring test takers entered the measured pool). Attractions: E (harder test neutralized by the statewide-rise clause), B (constrains the mystery without resolving it).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'Full-LR classification: REVISE-fixed v2. Hostile review found two independently defensible distractors: (A) budget-cut mechanism and (E) harder-test mechanism both coherently resolved the paradox. Neutralized: (A) now grant-funded with no cuts (qualifier catch), (E) now paired with rising statewide averages (opposite trap). (D) Simpson\u2019s-paradox composition mechanism is now uniquely correct; d5 honest.' },
     ],

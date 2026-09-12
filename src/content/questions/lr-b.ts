@@ -1608,6 +1608,8 @@ export const QUESTIONS_LR_B: Question[] = [
     itemPurpose: 'mixed-discrimination',
     validationStatus: 'validated',
     reviewHistory: [
+      { date: '2026-09-12', reviewer: 'd45-hostile-recalibration-2026-09-12', verdict: 'validate',
+        notes: 'VALIDATE D4. Credited E is hedged and data-bound. Attractions: A (causal overreach), B (timeline/attribution overreach), C (arithmetic trap - hours fell 1 percent at a higher wage).' },
       { date: '2026-09-11', reviewer: 'full-lr-classification-2026-09-11', verdict: 'validate',
         notes: 'KEEP; long-choice MSS requiring hedging discipline (\'appear to have cut... consistent with\'); definite-causation and \'always\' distractors fail; 0 two-defensible findings.' },
     ],    stimulus:
