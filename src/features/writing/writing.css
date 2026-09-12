@@ -1,0 +1,362 @@
+/* LSAT Compass — Writing feature styles. */
+
+/* Hub -------------------------------------------------------------- */
+
+.wr-disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  font-style: italic;
+  margin: 0 0 var(--space-4);
+}
+
+.wr-section-title {
+  font-size: 1.05rem;
+  margin: var(--space-5) 0 var(--space-2);
+}
+
+.wr-section-sub {
+  color: var(--text-2);
+  font-size: 0.9rem;
+  margin: 0 0 var(--space-3);
+}
+
+.wr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.wr-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: var(--tap);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: left;
+  cursor: pointer;
+}
+
+.wr-row:active {
+  background: var(--surface-2);
+}
+
+.wr-row-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wr-row-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.wr-row-meta {
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+.wr-row-chev {
+  color: var(--text-3);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.wr-done {
+  color: var(--success);
+  margin-right: var(--space-1);
+  font-weight: 700;
+}
+
+.wr-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.wr-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.wr-card-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.wr-card-bg {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.wr-card-meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+/* Inline lesson reader --------------------------------------------- */
+
+.wr-reader-wrap {
+  padding-bottom: calc(var(--space-5) + var(--sab));
+}
+
+.wr-backbar {
+  padding: var(--space-3) var(--space-4) 0;
+}
+
+/* Essay stages ----------------------------------------------------- */
+
+.wr-stage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  /* No fixed chrome: the keyboard never has to fight a pinned footer. */
+  padding-bottom: calc(var(--space-5) + var(--sab));
+}
+
+.wr-stage-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.wr-stage-tag {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.wr-prompt {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.wr-prompt-bg {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.wr-perspectives {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.wr-perspective {
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+}
+
+.wr-perspective-label {
+  margin: 0 0 var(--space-1);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.wr-perspective-body {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+.wr-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.wr-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.wr-textarea {
+  width: 100%;
+  min-height: 12rem;
+  padding: var(--space-3);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  resize: vertical;
+}
+
+.wr-textarea--essay {
+  min-height: 22rem;
+  font-family: var(--font-serif);
+}
+
+.wr-essay-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.wr-wordcount {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.wr-draft-note {
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.wr-actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.wr-actions .btn {
+  flex: 1;
+}
+
+/* Self-assessment --------------------------------------------------- */
+
+.wr-assess-intro {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.wr-rubric {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.wr-rubric-row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.wr-rubric-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wr-rubric-label {
+  font-weight: 700;
+}
+
+.wr-rubric-hint {
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+/* History detail sheet ---------------------------------------------- */
+
+.wr-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-bottom: calc(var(--space-4) + var(--sab));
+}
+
+.wr-detail-meta {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 0.9rem;
+}
+
+.wr-detail-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.wr-detail-h {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+}
+
+.wr-detail-body {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.65;
+  font-family: var(--font-serif);
+}
+
+.wr-detail-rubric {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.wr-detail-rubric-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.wr-detail-rubric-row:last-child {
+  border-bottom: none;
+}
+
+.wr-detail-rubric-row dt {
+  color: var(--text-2);
+}
+
+.wr-detail-rubric-row dd {
+  margin: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wr-row:active {
+    transition: none;
+  }
+}

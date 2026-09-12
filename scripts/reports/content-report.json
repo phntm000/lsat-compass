@@ -1,0 +1,405 @@
+{
+  "generatedAt": "2026-09-11",
+  "lr": {
+    "total": 264,
+    "byType": {
+      "lr-resolve-paradox": 23,
+      "lr-must-be-true": 19,
+      "lr-most-strongly-supported": 18,
+      "lr-necessary-assumption": 17,
+      "lr-evaluate": 16,
+      "lr-argument-part": 15,
+      "lr-method": 15,
+      "lr-point-at-issue": 14,
+      "lr-flaw": 14,
+      "lr-weaken": 14,
+      "lr-sufficient-assumption": 14,
+      "lr-principle-support": 14,
+      "lr-principle-application": 14,
+      "lr-strengthen": 13,
+      "lr-parallel-reasoning": 12,
+      "lr-parallel-flaw": 12,
+      "lr-main-conclusion": 10,
+      "lr-nec-vs-suff": 10
+    },
+    "byDifficulty": {
+      "d3": 80,
+      "d2": 76,
+      "d4": 47,
+      "d1": 37,
+      "d5": 24
+    },
+    "byPurpose": {
+      "independent-blocked": 156,
+      "mixed-discrimination": 71,
+      "skill-acquisition": 37
+    },
+    "byValidation": {
+      "author-reviewed": 264
+    },
+    "typeDifficultyMatrix": {
+      "lr-main-conclusion": {
+        "1": 2,
+        "2": 3,
+        "3": 3,
+        "4": 1,
+        "5": 1
+      },
+      "lr-argument-part": {
+        "1": 2,
+        "2": 4,
+        "3": 5,
+        "4": 3,
+        "5": 1
+      },
+      "lr-method": {
+        "1": 2,
+        "2": 4,
+        "3": 5,
+        "4": 3,
+        "5": 1
+      },
+      "lr-point-at-issue": {
+        "1": 1,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 1
+      },
+      "lr-must-be-true": {
+        "1": 4,
+        "2": 6,
+        "3": 5,
+        "4": 3,
+        "5": 1
+      },
+      "lr-most-strongly-supported": {
+        "1": 3,
+        "2": 6,
+        "3": 6,
+        "4": 2,
+        "5": 1
+      },
+      "lr-flaw": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 2,
+        "5": 2
+      },
+      "lr-weaken": {
+        "1": 2,
+        "2": 4,
+        "3": 3,
+        "4": 2,
+        "5": 3
+      },
+      "lr-strengthen": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 2,
+        "5": 1
+      },
+      "lr-evaluate": {
+        "1": 2,
+        "2": 4,
+        "3": 6,
+        "4": 3,
+        "5": 1
+      },
+      "lr-necessary-assumption": {
+        "1": 2,
+        "2": 5,
+        "3": 4,
+        "4": 3,
+        "5": 3
+      },
+      "lr-sufficient-assumption": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 3,
+        "5": 1
+      },
+      "lr-nec-vs-suff": {
+        "1": 2,
+        "2": 3,
+        "3": 4,
+        "4": 0,
+        "5": 1
+      },
+      "lr-principle-support": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 3,
+        "5": 1
+      },
+      "lr-principle-application": {
+        "1": 1,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 1
+      },
+      "lr-parallel-reasoning": {
+        "1": 1,
+        "2": 4,
+        "3": 4,
+        "4": 2,
+        "5": 1
+      },
+      "lr-parallel-flaw": {
+        "1": 2,
+        "2": 2,
+        "3": 4,
+        "4": 3,
+        "5": 1
+      },
+      "lr-resolve-paradox": {
+        "1": 3,
+        "2": 7,
+        "3": 7,
+        "4": 4,
+        "5": 2
+      }
+    },
+    "typesWithNoHardItems": [],
+    "topicCount": 262
+  },
+  "rc": {
+    "total": 150,
+    "byDifficulty": {
+      "d3": 66,
+      "d2": 60,
+      "d4": 21,
+      "d1": 3
+    },
+    "byPurpose": {
+      "independent-blocked": 126,
+      "mixed-discrimination": 21,
+      "skill-acquisition": 3
+    },
+    "byType": {
+      "rc-detail": 25,
+      "rc-comparative": 24,
+      "rc-inference": 23,
+      "rc-function": 19,
+      "rc-main-point": 18,
+      "rc-application": 13,
+      "rc-other-viewpoints": 11,
+      "rc-attitude": 6,
+      "rc-primary-purpose": 4,
+      "rc-organization": 4,
+      "rc-author-viewpoint": 3
+    },
+    "passages": 25,
+    "comparative": 6,
+    "setSizeDistribution": {
+      "6q": 25
+    },
+    "sets": [
+      {
+        "id": "rc-p01",
+        "title": "The Case for Judicial Minimalism",
+        "domain": "law",
+        "comparative": false,
+        "words": 551,
+        "questions": 6
+      },
+      {
+        "id": "rc-p02",
+        "title": "Plea Bargaining on Trial",
+        "domain": "law",
+        "comparative": false,
+        "words": 647,
+        "questions": 6
+      },
+      {
+        "id": "rc-p03",
+        "title": "Adverse Possession: An Ancient Doctrine Defended",
+        "domain": "law",
+        "comparative": false,
+        "words": 576,
+        "questions": 6
+      },
+      {
+        "id": "rc-p04",
+        "title": "",
+        "domain": "humanities",
+        "comparative": false,
+        "words": 597,
+        "questions": 6
+      },
+      {
+        "id": "rc-p05",
+        "title": "The Unreliable Narrator, Reconsidered",
+        "domain": "humanities",
+        "comparative": false,
+        "words": 589,
+        "questions": 6
+      },
+      {
+        "id": "rc-p06",
+        "title": "How Should Historians Explain Change?",
+        "domain": "humanities",
+        "comparative": false,
+        "words": 584,
+        "questions": 6
+      },
+      {
+        "id": "rc-p07",
+        "title": "Nudges and the Limits of Libertarian Paternalism",
+        "domain": "social-science",
+        "comparative": false,
+        "words": 604,
+        "questions": 6
+      },
+      {
+        "id": "rc-p08",
+        "title": "The Resource Curse Reconsidered",
+        "domain": "social-science",
+        "comparative": false,
+        "words": 616,
+        "questions": 6
+      },
+      {
+        "id": "rc-p09",
+        "title": "Was Agriculture a Mistake?",
+        "domain": "social-science",
+        "comparative": false,
+        "words": 628,
+        "questions": 6
+      },
+      {
+        "id": "rc-p10",
+        "title": "Does Language Shape Thought?",
+        "domain": "social-science",
+        "comparative": false,
+        "words": 576,
+        "questions": 6
+      },
+      {
+        "id": "rc-p11",
+        "title": "Altruism and the Levels of Selection",
+        "domain": "natural-science",
+        "comparative": false,
+        "words": 630,
+        "questions": 6
+      },
+      {
+        "id": "rc-p12",
+        "title": "Rewilding and the Trophic Cascade Debate",
+        "domain": "natural-science",
+        "comparative": false,
+        "words": 599,
+        "questions": 6
+      },
+      {
+        "id": "rc-p13",
+        "title": "The Faint Young Sun Paradox",
+        "domain": "natural-science",
+        "comparative": false,
+        "words": 621,
+        "questions": 6
+      },
+      {
+        "id": "rc-p14",
+        "title": "Reading Statutes: Plain Meaning or Purpose?",
+        "domain": "law",
+        "comparative": false,
+        "words": 541,
+        "questions": 6
+      },
+      {
+        "id": "rc-p15",
+        "title": "",
+        "domain": "humanities",
+        "comparative": false,
+        "words": 501,
+        "questions": 6
+      },
+      {
+        "id": "rc-p16",
+        "title": "Basic Income Pilots: Reading the Evidence",
+        "domain": "social-science",
+        "comparative": false,
+        "words": 514,
+        "questions": 6
+      },
+      {
+        "id": "rc-p17",
+        "title": "Engineering Resilience: Assisted Evolution for Coral Reefs",
+        "domain": "natural-science",
+        "comparative": false,
+        "words": 496,
+        "questions": 6
+      },
+      {
+        "id": "rc-p18",
+        "title": "The Vanishing Trial",
+        "domain": "law",
+        "comparative": false,
+        "words": 528,
+        "questions": 6
+      },
+      {
+        "id": "rc-p19",
+        "title": "Whose Heritage? The Repatriation Debate",
+        "domain": "humanities",
+        "comparative": false,
+        "words": 492,
+        "questions": 6
+      },
+      {
+        "id": "rc-c01",
+        "title": "Algorithms on the Hiring Committee",
+        "domain": "social-science",
+        "comparative": true,
+        "words": 522,
+        "questions": 6
+      },
+      {
+        "id": "rc-c02",
+        "title": "Bringing Back the Wolf",
+        "domain": "natural-science",
+        "comparative": true,
+        "words": 514,
+        "questions": 6
+      },
+      {
+        "id": "rc-c03",
+        "title": "Saving Old Streets",
+        "domain": "humanities",
+        "comparative": true,
+        "words": 509,
+        "questions": 6
+      },
+      {
+        "id": "rc-c04",
+        "title": "Cleaning the Sky: Direct Air Capture and Its Critics",
+        "domain": "natural-science",
+        "comparative": true,
+        "words": 527,
+        "questions": 6
+      },
+      {
+        "id": "rc-c05",
+        "title": "How Children Learn a Second Language at School",
+        "domain": "social-science",
+        "comparative": true,
+        "words": 506,
+        "questions": 6
+      },
+      {
+        "id": "rc-c06",
+        "title": "Who Owns What the Machine Learned?",
+        "domain": "law",
+        "comparative": true,
+        "words": 507,
+        "questions": 6
+      }
+    ]
+  }
+}

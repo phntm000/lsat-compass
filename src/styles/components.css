@@ -1,0 +1,656 @@
+/* Shared component kit styles for LSAT Compass. Uses design tokens from tokens.css. */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Button ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 120ms var(--ease-out), border-color 120ms var(--ease-out),
+    transform 80ms var(--ease-out);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.btn-danger {
+  background: var(--danger-soft);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* ---------- ChoiceButton ---------- */
+.choice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: var(--tap);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 120ms var(--ease-out), background-color 120ms var(--ease-out);
+}
+
+.choice:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.choice-letter {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.choice-text {
+  flex: 1 1 auto;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.choice-icon {
+  flex: 0 0 auto;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.choice--selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.choice--selected .choice-letter {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.choice--correct {
+  border-color: var(--success);
+  background: var(--success-soft);
+}
+
+.choice--correct .choice-letter {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+}
+
+.choice--correct .choice-icon {
+  color: var(--success);
+}
+
+.choice--incorrect {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.choice--incorrect .choice-letter {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}
+
+.choice--incorrect .choice-icon {
+  color: var(--danger);
+}
+
+.choice--eliminated {
+  opacity: 0.55;
+}
+
+.choice--eliminated .choice-text {
+  text-decoration: line-through;
+}
+
+.choice--eliminated .choice-letter {
+  text-decoration: line-through;
+}
+
+/* ---------- Timer ---------- */
+.timer {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.timer--urgent {
+  color: var(--danger);
+}
+
+.timer-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-3);
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.timer-chip--urgent {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: var(--danger-soft);
+}
+
+/* ---------- ProgressBar ---------- */
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.progress-label {
+  font-size: 0.875rem;
+  color: var(--text-2);
+  font-weight: 600;
+}
+
+.progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 300ms var(--ease-out);
+}
+
+/* ---------- MasteryBadge ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+.badge-icon {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.badge--new {
+  background: var(--surface-2);
+  color: var(--text-2);
+  border-style: dashed;
+}
+
+.badge--learning {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+[data-theme='dark'] .badge--learning {
+  color: var(--text);
+}
+
+.badge--developing {
+  background: var(--warn-soft);
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
+.badge--stable {
+  background: var(--success-soft);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.badge--mastered {
+  background: var(--gold-soft);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.badge--lapsed {
+  background: var(--danger-soft);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* ---------- SkillDot ---------- */
+.skill-dot {
+  display: inline-block;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.skill-dot--new { background: var(--text-3); }
+.skill-dot--learning { background: var(--accent); }
+.skill-dot--developing { background: var(--warn); }
+.skill-dot--stable { background: var(--success); }
+.skill-dot--mastered { background: var(--gold); }
+.skill-dot--lapsed { background: var(--danger); }
+
+/* ---------- EmptyState ---------- */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding: var(--space-6) var(--space-4);
+}
+
+.empty-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.empty-body {
+  margin: 0 0 var(--space-2);
+  color: var(--text-2);
+  max-width: 40ch;
+  line-height: 1.5;
+}
+
+/* ---------- Sheet ---------- */
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(10, 10, 20, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: sheet-fade 200ms var(--ease-out);
+}
+
+.sheet {
+  width: 100%;
+  max-width: var(--maxw);
+  max-height: 88dvh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: var(--space-2) var(--space-4) calc(var(--space-4) + var(--sab));
+  box-shadow: var(--shadow);
+  animation: sheet-up 260ms var(--ease-out);
+}
+
+.sheet-handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--border-strong);
+  margin: var(--space-1) auto var(--space-3);
+}
+
+.sheet-title {
+  margin: 0 0 var(--space-3);
+  font-size: 1.25rem;
+}
+
+.sheet-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+@keyframes sheet-up {
+  from { transform: translateY(32px); opacity: 0.6; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes sheet-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ---------- Toast ---------- */
+.toast-stack {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(84px + var(--sab));
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-4);
+  pointer-events: none;
+}
+
+.toast {
+  max-width: var(--maxw);
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-3) var(--space-4);
+  animation: sheet-up 200ms var(--ease-out);
+}
+
+.toast-title {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.toast-msg {
+  font-size: 0.875rem;
+  color: var(--text-2);
+  line-height: 1.4;
+}
+
+/* ---------- SegmentedControl ---------- */
+.seg {
+  display: flex;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.seg-option {
+  flex: 1 1 0;
+  min-height: var(--tap);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-2);
+  cursor: pointer;
+}
+
+.seg-option--active {
+  background: var(--surface);
+  border-color: var(--border-strong);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- StatCard ---------- */
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.stat-sub {
+  font-size: 0.75rem;
+  color: var(--text-3);
+}
+
+/* ---------- Toggle ---------- */
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: var(--tap);
+  padding: var(--space-2) 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.toggle-track {
+  flex: 0 0 auto;
+  width: 52px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--border-strong);
+  position: relative;
+  transition: background-color 150ms var(--ease-out);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform 150ms var(--ease-out);
+}
+
+.toggle--on .toggle-track {
+  background: var(--accent);
+}
+
+.toggle--on .toggle-thumb {
+  transform: translateX(20px);
+}
+
+.toggle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toggle-label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.toggle-desc {
+  font-size: 0.875rem;
+  color: var(--text-2);
+  line-height: 1.4;
+}
+
+/* ---------- Field ---------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field-label {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.field-input {
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.field-input::placeholder {
+  color: var(--text-3);
+}
+
+.field-hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--text-3);
+  line-height: 1.4;
+}
+
+/* ---------- ConfidencePicker ---------- */
+.conf {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.conf-option {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.conf-option:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.conf-option--active {
+  border-color: var(--accent);
+  border-width: 2px;
+  background: var(--accent-soft);
+  font-weight: 700;
+}
+
+.conf-num {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.conf-label {
+  font-size: 0.75rem;
+  color: var(--text-2);
+  text-align: center;
+}
+
+.conf-option--active .conf-label {
+  color: var(--text);
+}
+
+/* ---------- ErrorBoundary ---------- */
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding: var(--space-6) var(--space-4);
+}
+
+.error-boundary-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.error-boundary-msg {
+  margin: 0 0 var(--space-2);
+  color: var(--text-2);
+  font-size: 0.9375rem;
+  max-width: 48ch;
+  line-height: 1.5;
+}
+
+/* ---------- LoadingSkeleton ---------- */
+.skel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+}
+
+.skel-line {
+  height: 20px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 25%,
+    var(--border) 50%,
+    var(--surface-2) 75%
+  );
+  background-size: 200% 100%;
+  animation: skel-shimmer 1.4s linear infinite;
+}
+
+.skel-line:last-child {
+  width: 60%;
+}
+
+@keyframes skel-shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}

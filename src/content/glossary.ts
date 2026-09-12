@@ -1,0 +1,509 @@
+/**
+ * LSAT Compass — Glossary
+ *
+ * Beginner-first reference for the terminology used across lessons, drills,
+ * and questions. Every term is defined in plain English first, then precisely,
+ * with an original mini-example and the confusion learners most often bring
+ * to it. `lessonIds` link each term to the lesson(s) where it is taught.
+ *
+ * All content here is original. sourceType: 'original', version: 1.
+ */
+
+export interface GlossaryTerm {
+  /** The LSAT term, lowercase display form (e.g. "necessary condition"). */
+  term: string;
+  /** 1–3 sentences: plain English first, then the precise meaning. */
+  definition: string;
+  /** A concrete, original mini-example, 1–3 sentences. */
+  example: string;
+  /** What learners mix this up with, and the correction, 1–3 sentences. */
+  commonConfusion: string;
+  /** Lesson ids where this term is taught. */
+  lessonIds: string[];
+}
+
+export const GLOSSARY: GlossaryTerm[] = [
+  // ------------------------------------------------------------------ //
+  // Argument structure                                                  //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'premise',
+    definition:
+      'A premise is one of the building blocks of an argument: a statement the speaker offers as evidence for what they want you to believe. More precisely, premises are the claims that are supposed to support the conclusion, whether or not they are actually true or persuasive.',
+    example:
+      'In the argument "The city should extend bus hours, because late-night ridership has grown 40% and many shift workers depend on the bus," the premises are the ridership growth and the shift workers\' dependence. "The city should extend bus hours" is the claim they support, not a premise.',
+    commonConfusion:
+      'Learners confuse premises with background facts. Not every sentence in a stimulus is a premise: background information that merely sets the scene, and the conclusion itself, are not premises. A premise must be doing work — it must be offered as a reason to accept the conclusion.',
+    lessonIds: ['1.1', '1.2'],
+  },
+  {
+    term: 'conclusion',
+    definition:
+      'The conclusion is the main claim of an argument — the thing the speaker is trying to convince you of. In precise terms, it is the statement that every other part of the argument is arranged to support, and it is what the argument stands or falls on.',
+    example:
+      '"The new marina will damage the estuary\'s nesting sites. Therefore, the council should reject the development permit." The first sentence gives the reason; "the council should reject the development permit" is the conclusion — the point the speaker wants accepted.',
+    commonConfusion:
+      'The conclusion is not always at the end. It can appear first, in the middle, or be signaled by words like "thus," "hence," or "it follows that." Learners who always pick the last sentence as the conclusion miss arguments where the speaker states the claim up front and then defends it.',
+    lessonIds: ['1.1', '1.2'],
+  },
+  {
+    term: 'intermediate conclusion',
+    definition:
+      'An intermediate conclusion is a claim that does double duty: it is supported by premises beneath it, and it in turn supports the main conclusion above it. Think of it as a stepping-stone claim between the raw evidence and the final point.',
+    example:
+      '"Bookstores that host author events see higher foot traffic; Northside Books has hosted three events this quarter. So its foot traffic has likely risen — which shows that community programming drives sales." The middle claim about foot traffic is an intermediate conclusion: it follows from the premises and then helps support the final claim about community programming.',
+    commonConfusion:
+      'Learners either treat an intermediate conclusion as a mere premise or mistake it for the main conclusion. The test: ask "what is this sentence supporting, and what supports it?" If it does both jobs, it is intermediate — and on argument-part questions, calling it the main conclusion is a wrong answer.',
+    lessonIds: ['1.3', '2.4'],
+  },
+  {
+    term: 'inference',
+    definition:
+      'An inference is a conclusion you can draw from given information — a claim that follows from the premises even though it was not stated outright. Strictly, an inference is what you are entitled to accept on the basis of the evidence, and nothing more.',
+    example:
+      'Given "Every registered guest at the lodge received a trail map, and Elena did not receive a trail map," the inference is that Elena is not a registered guest. That claim was never stated, but it follows from what was stated.',
+    commonConfusion:
+      'Learners treat inference as guessing or as "reading between the lines." On the LSAT, a valid inference is much narrower: it must be guaranteed (or nearly guaranteed) by the stated information. Adding your own plausible-but-unstated detail — "Elena must have been turned away at the door" — is not an inference, it is speculation.',
+    lessonIds: ['1.5', '2.1', '2.2'],
+  },
+  {
+    term: 'evidence',
+    definition:
+      'Evidence is the information offered in support of a claim — facts, studies, observations, or examples a speaker presents as reasons to believe something. In argument analysis it functions the same way a premise does: it is the raw material the reasoning is built from.',
+    example:
+      '"Sales of electric bikes doubled after the city added protected lanes" is evidence offered for the claim that bike lanes encourage cycling. The sales figure is the evidence; the encouragement claim is what it is meant to prove.',
+    commonConfusion:
+      'Evidence is not the same as proof. Learners see a piece of evidence and treat the conclusion as established. Evidence only does its job when it is relevant, representative, and sufficient — which is exactly what strengthen and weaken questions test.',
+    lessonIds: ['1.1', '2.8', '2.9'],
+  },
+  {
+    term: 'deduction',
+    definition:
+      'A deduction is reasoning that moves from general rules to a guaranteed specific conclusion: if the premises are true, the conclusion cannot be false. It is airtight by structure, not by the strength of the evidence.',
+    example:
+      '"All permits require a site inspection. The bakery\'s permit was issued. Therefore the bakery had a site inspection." If the first two statements are true, the conclusion has to be true — that is deduction, not a guess about likelihood.',
+    commonConfusion:
+      'Learners confuse deduction with any careful reasoning. Most LSAT arguments are not deductive at all — they deal in probabilities ("probably," "likely," "suggests"). Deduction only applies when the premises lock the conclusion in with no wiggle room.',
+    lessonIds: ['1.5', '2.1'],
+  },
+  {
+    term: 'indicator word',
+    definition:
+      'An indicator word is a word or phrase that signals what role a statement plays in an argument — whether it is being offered as a reason or as a claim. Conclusion indicators include "therefore," "thus," and "hence"; premise indicators include "because," "since," and "for."',
+    example:
+      'In "We should repair the footbridge, since the winter storms loosened several planks," the word "since" flags the storm damage as the reason and "we should repair the footbridge" as the claim being supported.',
+    commonConfusion:
+      'Indicators are clues, not guarantees. Words like "since" can mark a premise ("since the roads flooded") or a time reference ("since 2019, ridership has grown"). Learners who treat every indicator mechanically mislabel time phrases as reasoning moves. Always confirm with the logic, not just the word.',
+    lessonIds: ['1.2'],
+  },
+  // ------------------------------------------------------------------ //
+  // Assumptions                                                         //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'assumption',
+    definition:
+      'An assumption is an unstated claim the argument depends on: something the speaker must be taking for granted for the reasoning to work. Precisely, it is a gap-bridging claim — without it, the premises do not get you to the conclusion.',
+    example:
+      '"The orchestra\'s ticket revenue fell this season, so fewer people must be attending concerts." This assumes the ticket prices did not rise enough to offset attendance — if prices doubled while attendance held steady, the conclusion collapses.',
+    commonConfusion:
+      'Learners confuse assumptions with anything unstated, including irrelevant background facts. An assumption must matter: if the argument works fine without it, it is not an assumption, just an unmentioned detail. The test is always "does the argument need this?"',
+    lessonIds: ['1.4', '2.11'],
+  },
+  {
+    term: 'necessary assumption',
+    definition:
+      'A necessary assumption is a claim the argument cannot live without: if it were false, the argument would fall apart. In logical terms, the argument\'s validity requires it, so denying it destroys the reasoning.',
+    example:
+      '"The downtown bakery closed because of the new parking restrictions." A necessary assumption: the bakery did not actually close for some unrelated reason that makes parking irrelevant — more precisely, the argument needs it to be true that the restrictions played a role, because if they played no role at all, the conclusion is false.',
+    commonConfusion:
+      'This is the most-mistaken pair on the test: necessary versus sufficient assumptions. A necessary assumption only has to be required — it need not prove the conclusion. Learners pick answers that would prove the conclusion (sufficient) when the question asks what the argument needs (necessary). If denying the answer choice kills the argument, it is necessary.',
+    lessonIds: ['2.11', '2.13'],
+  },
+  {
+    term: 'sufficient assumption',
+    definition:
+      'A sufficient assumption is a claim that, if added to the premises, would make the conclusion follow logically — it bridges the gap completely. It does not have to be the only possible bridge, and the argument does not have to need it; it just has to be enough.',
+    example:
+      'Premises: "The library will stay open late during finals. Late hours raise staffing costs." Conclusion: "The library\'s budget will increase." A sufficient assumption: "Staffing costs are the library\'s only variable cost that changes with hours" — if that is true, the conclusion is guaranteed.',
+    commonConfusion:
+      'The mirror image of the necessary/sufficient mix-up: learners pick what the argument needs when the question asks what would prove it. A sufficient assumption can be far stronger than anything the argument truly requires — even something the speaker never thought of — as long as it logically guarantees the conclusion.',
+    lessonIds: ['2.12', '2.13'],
+  },
+  // ------------------------------------------------------------------ //
+  // Conditional logic                                                   //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'sufficient condition',
+    definition:
+      'A sufficient condition is the "if" part of an if-then claim: its truth is enough to guarantee the other part. If you have the sufficient condition, you get the necessary condition along with it, automatically.',
+    example:
+      'In "If the reservoir drops below 40% capacity, the town will ration water," the reservoir dropping below 40% is the sufficient condition. The drop guarantees rationing follows — you do not need anything else.',
+    commonConfusion:
+      'Learners swap sufficient and necessary constantly, partly because ordinary speech is loose. The reliable anchor: "sufficient" sounds like "enough" — it is enough by itself. "Only if" always introduces the necessary side, never the sufficient side.',
+    lessonIds: ['1.6', '1.7'],
+  },
+  {
+    term: 'necessary condition',
+    definition:
+      'A necessary condition is the "then" part of an if-then claim: the thing that must be true whenever the other part is true. It is required, but it is not enough on its own — knowing it holds tells you nothing about whether the sufficient condition holds.',
+    example:
+      'In "You can board the flight only if you have a boarding pass," the boarding pass is the necessary condition. Everyone who boards has one, but having one does not guarantee you board — you might miss the flight anyway.',
+    commonConfusion:
+      'The classic trap is treating the necessary condition as a trigger: "She has a boarding pass, so she must have boarded." Having the necessary condition proves nothing by itself. It only lets you work backward: no boarding pass means no boarding.',
+    lessonIds: ['1.7', '1.8'],
+  },
+  {
+    term: 'conditional reasoning',
+    definition:
+      'Conditional reasoning is the disciplined handling of if-then claims: tracking what triggers what, what is required for what, and what validly follows when parts are affirmed or denied. It is the machinery behind contrapositives, reversals, and negations.',
+    example:
+      'From "If a student completes the internship, the student receives credit," conditional reasoning tells you two valid moves: completing the internship guarantees credit, and not receiving credit means the internship was not completed. It also tells you the invalid moves: credit does not prove the internship was completed.',
+    commonConfusion:
+      'Learners treat conditionals as causal claims or as biconditionals ("if and only if"). A conditional says nothing about causes and nothing about the reverse direction unless it is stated. Stick to the two valid moves and you avoid most conditional errors.',
+    lessonIds: ['1.6', '2.19'],
+  },
+  {
+    term: 'contrapositive',
+    definition:
+      'The contrapositive is the logically equivalent flip of an if-then claim: reverse the two parts and negate both. Plainly, if "if A then B" is true, then "if not B then not A" is equally true — it says the same thing from the other direction.',
+    example:
+      '"If the trail is open, the ranger station is staffed" becomes "If the ranger station is not staffed, the trail is not open." Both claims rule out the same impossible combination: an open trail with an unstaffed station.',
+    commonConfusion:
+      'Learners confuse the contrapositive with the reversal. The reversal flips without negating ("if the station is staffed, the trail is open") and is invalid. The contrapositive flips AND negates, and is always valid. "Flip and negate" is the whole difference.',
+    lessonIds: ['1.8', '2.19'],
+  },
+  {
+    term: 'mistaken reversal',
+    definition:
+      'A mistaken reversal flips an if-then claim without negating it: from "if A then B" it wrongly concludes "if B then A." It treats the necessary condition as if it were the trigger — a move that is never valid.',
+    example:
+      'From "If the gallery receives the grant, it will extend its hours," someone concludes "The gallery extended its hours, so it must have received the grant." Wrong: the hours could have been extended for another reason. The reversal mistakes a requirement downstream for proof upstream.',
+    commonConfusion:
+      'Learners mix up the mistaken reversal with the contrapositive because both involve flipping the statement. The contrapositive also negates ("no grant means no extended hours"), which is what keeps it valid. If nothing got negated, the flip is a fallacy.',
+    lessonIds: ['1.8', '2.19'],
+  },
+  {
+    term: 'mistaken negation',
+    definition:
+      'A mistaken negation denies the "if" part of a conditional and wrongly concludes the "then" part is false: from "if A then B" it concludes "if not A then not B." It assumes the sufficient condition was the only way to get the result.',
+    example:
+      'From "If Mara trains with a coach, she will qualify for regionals," someone concludes "Mara did not train with a coach, so she will not qualify." Wrong: she might qualify on her own. Denying the trigger does not cancel the result — other routes may exist.',
+    commonConfusion:
+      'Learners pair the mistaken negation with the contrapositive because both involve denial. The contrapositive denies the necessary side ("then" part), which is valid. The mistaken negation denies the sufficient side ("if" part), which proves nothing.',
+    lessonIds: ['1.8', '2.19'],
+  },
+  {
+    term: 'quantifier',
+    definition:
+      'A quantifier is a word that states how much of a claim applies: "all," "most," "many," "some," "few," "no." Precisely, it sets the strength and reach of a statement — and on the LSAT, conclusions cannot be stronger than the quantifiers in their premises.',
+    example:
+      'From "Most cyclists on the route wear helmets" you can infer "Some cyclists on the route wear helmets," but not "All cyclists wear helmets." "Most" supports "some"; it cannot support "all."',
+    commonConfusion:
+      'Learners inflate weak quantifiers: they read "some" as "many" or even "most," or they treat "few" as "none." In LSAT logic, "some" means only "at least one," and "most" means "more than half." Downgrading is safe; upgrading is a fallacy.',
+    lessonIds: ['1.9'],
+  },
+  {
+    term: 'scope',
+    definition:
+      'Scope is the boundary of what an argument is actually about — the people, places, times, and topics its claims cover. An argument stays valid only inside its own scope; stretching a claim beyond what was stated breaks the reasoning.',
+    example:
+      'A study of "commuters in the downtown core" supports conclusions about downtown commuters, not about suburban drivers or weekend travelers. Applying the downtown findings to all city residents stretches the scope and invalidates the move.',
+    commonConfusion:
+      'Scope errors are the engine of many wrong answers, which paraphrase the conclusion with slightly shifted terms: "cities" for "downtown cores," "always" for "usually." Learners accept these as harmless rewording. They are not — the shifted term is outside what the premises covered.',
+    lessonIds: ['1.13', '2.7'],
+  },
+  // ------------------------------------------------------------------ //
+  // Flaws and argument evaluation                                       //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'flaw',
+    definition:
+      'A flaw is a specific error in reasoning: the argument\'s premises fail to properly support its conclusion, and you can name why. It is not the same as a false premise or an unpopular conclusion — it is a defect in the move from reasons to claim.',
+    example:
+      '"Our café\'s profits rose after we repainted the dining room, so the new paint color caused the increase." The flaw: the argument treats a mere sequence of events as proof of causation, ignoring every other change that could explain the profits.',
+    commonConfusion:
+      'Learners confuse finding a flaw with disagreeing with the conclusion. The conclusion might be true for other reasons; the flaw question asks what is wrong with the reasoning offered, not whether the claim itself is believable. Attack the bridge, not the destination.',
+    lessonIds: ['1.15', '2.7', '2.17'],
+  },
+  {
+    term: 'strengthen',
+    definition:
+      'To strengthen an argument is to add support that makes its conclusion more likely to be true, given the premises. The support does not have to prove the conclusion — it just has to improve the case, for example by confirming an assumption or ruling out a competing explanation.',
+    example:
+      'Argument: "The new ferry route reduced traffic on the coastal highway, so ferries cut congestion." A strengthener: "No other road or transit changes occurred during the same period." It removes a rival explanation, making the causal claim more credible.',
+    commonConfusion:
+      'Learners pick answers that would prove the conclusion outright and skip modest strengtheners, or they pick answers that merely restate a premise. Strengthening is about improving the odds — even slightly — not about certainty, and restating evidence adds no new support.',
+    lessonIds: ['2.8'],
+  },
+  {
+    term: 'weaken',
+    definition:
+      'To weaken an argument is to give a reason to doubt its conclusion as supported by its premises — to make the conclusion less likely, not necessarily false. Typical weaken moves attack an assumption, offer an alternative cause, or show the evidence is unrepresentative.',
+    example:
+      'Argument: "Test scores rose after the school adopted the new math curriculum, so the curriculum caused the improvement." A weakener: "That year the school also began free after-school tutoring in math." The alternative explanation undercuts the causal leap without disproving the conclusion outright.',
+    commonConfusion:
+      'Learners demand that a weakener disprove the conclusion or contradict a premise. It needs to do neither: it only has to damage the link between premises and conclusion. Also watch for answers that attack a different argument than the one given — that is not weakening, it is changing the subject.',
+    lessonIds: ['2.9'],
+  },
+  {
+    term: 'causal reasoning',
+    definition:
+      'Causal reasoning is argumentation about cause and effect: one thing bringing about another. It is powerful but fragile — to establish a cause you must show the cause came before the effect, that they are genuinely connected, and that no alternative cause explains the effect.',
+    example:
+      '"Employees who took the mindfulness workshop reported less stress afterward." Treating this as causal reasoning means asking: was stress already falling? Did a comparison group improve too? Was the workshop the difference-maker, or just the calendar?',
+    commonConfusion:
+      'The single most-tested confusion on the LSAT: causation versus correlation. Two things happening together does not establish that one caused the other. Causal reasoning requires ruling out rivals; spotting that an argument skipped that step is half the battle on flaw and weaken questions.',
+    lessonIds: ['1.10', '2.20'],
+  },
+  {
+    term: 'correlation',
+    definition:
+      'A correlation is an observed pattern in which two things tend to occur together — as one goes up, so does the other (or one goes up as the other goes down). It is a statistical relationship, and by itself it says nothing about whether either one causes the other.',
+    example:
+      'Towns with more public murals also report higher foot traffic downtown. That is a correlation: the two move together. It does not establish that murals cause foot traffic — prosperity could cause both, or foot traffic could attract mural funding.',
+    commonConfusion:
+      'Learners read correlations as causal findings, and the LSAT exploits this relentlessly: arguments that observe a correlation and conclude a cause. The correction is automatic — whenever an argument leaps from "together" to "because of," flag the causal flaw and look for the alternative cause.',
+    lessonIds: ['1.11', '2.20'],
+  },
+  {
+    term: 'alternative cause',
+    definition:
+      'An alternative cause is a different explanation for the observed effect — some factor other than the one the argument blames. Offering one is the standard way to weaken a causal argument, because it shows the effect could have happened without the alleged cause.',
+    example:
+      '"The harbor\'s fish population rebounded after the factory closed, so the factory\'s runoff must have been suppressing it." An alternative cause: a fishing ban took effect the same year. If the ban explains the rebound, the runoff conclusion loses its force.',
+    commonConfusion:
+      'Learners think any other factor counts as an alternative cause. It has to be capable of producing the same effect on its own. A factor that merely sounds related but could not plausibly cause the outcome is not a real alternative — it is a distractor wearing a causal costume.',
+    lessonIds: ['2.9', '2.20'],
+  },
+  {
+    term: 'sample',
+    definition:
+      'A sample is the subset of a group that was actually studied or observed, used as the basis for claims about the whole group. Arguments that generalize from a sample stand or fall on whether the sample was big enough and fair enough to speak for the whole.',
+    example:
+      '"We surveyed 40 shoppers outside one downtown boutique and found 80% prefer cash, so most city shoppers prefer cash." The 40 shoppers are the sample; the claim about "most city shoppers" generalizes from it.',
+    commonConfusion:
+      'Learners focus only on sample size and ignore sample selection. Forty randomly chosen shoppers from across the city might be informative; forty shoppers outside one boutique are not, because they share a location and shopping habit the city as a whole does not. Bias kills before size matters.',
+    lessonIds: ['1.12', '2.21'],
+  },
+  {
+    term: 'representativeness',
+    definition:
+      'Representativeness is the quality that makes a sample trustworthy: the sample must resemble the larger group in the ways that matter for the claim. A representative sample is a fair miniature of the population; an unrepresentative one distorts whatever is generalized from it.',
+    example:
+      'To estimate support for a bus fare increase citywide, a representative sample must include riders and non-riders, all neighborhoods, and varied incomes — not just commuters intercepted at one downtown stop at rush hour.',
+    commonConfusion:
+      'Learners confuse representativeness with randomness or with large numbers. Random selection is one way to get representativeness, and big samples help, but neither guarantees it — a huge survey can still be unrepresentative if an entire segment of the population was excluded from the start.',
+    lessonIds: ['1.12', '2.21'],
+  },
+  {
+    term: 'support',
+    definition:
+      'Support is the relationship a premise bears to a conclusion: the premise gives you reason to accept the conclusion. On strengthen questions, "support" is also the verb for the task — find the answer that increases the conclusion\'s credibility.',
+    example:
+      '"The bridge\'s cables were replaced last year" supports "the bridge is safe to cross," because newer cables are less likely to fail. The premise does not prove safety, but it counts in its favor — that is support.',
+    commonConfusion:
+      'Learners use "support" to mean "agree with" and pick answers that merely echo the conclusion favorably. Real support adds a reason; restating the conclusion or praising it adds nothing. If an answer gives no new reason to believe the claim, it is not support.',
+    lessonIds: ['1.1', '2.8'],
+  },
+  // ------------------------------------------------------------------ //
+  // LR question types                                                   //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'must be true',
+    definition:
+      'A "must be true" question asks for the answer that is logically guaranteed by the stimulus: given that the stated information is true, this answer cannot be false. It is the strictest standard on the test — a pure deduction check.',
+    example:
+      'Stimulus: "No volunteer worked both Saturday and Sunday. Priya volunteered Saturday." The answer "Priya did not volunteer Sunday" must be true — the premises leave no alternative. An answer like "Priya volunteered only Saturday" goes too far; she might have volunteered Friday too.',
+    commonConfusion:
+      'Learners answer these as "could be true" or "is probably true" questions and pick answers that merely fit the story. The discipline is to reject anything that could conceivably be false given the premises, even if it sounds likely. Only the inescapable answer survives.',
+    lessonIds: ['2.1'],
+  },
+  {
+    term: 'most strongly supported',
+    definition:
+      'A "most strongly supported" question asks for the answer the stimulus best backs up — the most reasonable conclusion you can draw from it. Unlike "must be true," the answer need not be airtight; it just has to be the best-supported of the five.',
+    example:
+      'Stimulus: "The neighborhood bakery extended its hours and hired two more bakers this spring, and its owner says demand has never been higher." The answer "The bakery\'s business is growing" is most strongly supported — not proven, since hiring could be for other reasons, but clearly the best-supported reading.',
+    commonConfusion:
+      'Learners treat these exactly like "must be true" questions and reject the right answer for not being certain. The standard here is comparative: pick the answer with the most support, even if a skeptic could imagine a way it fails. Demanding proof here costs easy points.',
+    lessonIds: ['2.2'],
+  },
+  {
+    term: 'main point',
+    definition:
+      'The main point is the single claim a passage or argument is principally driving at — what the author most wants you to take away. It is the conclusion at the highest level, the one everything else serves.',
+    example:
+      'A paragraph arguing that community gardens reduce grocery costs, build neighborly ties, and revive vacant lots ends: "In short, they are among the cheapest ways a city can improve itself." That final sentence is the main point; the cost, ties, and lots are the supporting reasons.',
+    commonConfusion:
+      'Learners pick a true detail or a supporting reason instead of the overarching claim. The main point must capture the whole argument\'s thrust, not one piece of it. If an answer is true but too narrow — it covers one paragraph of a four-paragraph case — it is a supporting point, not the main point.',
+    lessonIds: ['2.3', '4.4'],
+  },
+  {
+    term: 'primary purpose',
+    definition:
+      'The primary purpose is the author\'s main job in writing the passage: what they set out to do. It is about the author\'s aim — to argue, explain, criticize, compare, or qualify — rather than about any single claim in the text.',
+    example:
+      'A passage that surveys three theories of why songbirds migrate and then endorses the third is primarily "to evaluate competing explanations and defend one of them" — not "to prove that songbirds migrate," which no one disputed.',
+    commonConfusion:
+      'Learners confuse primary purpose with main point. The main point is what the author says; the primary purpose is what the author is doing. An answer can state the passage\'s thesis correctly and still be wrong for a purpose question if it misdescribes the author\'s activity (e.g., "to refute" when the author only qualifies).',
+    lessonIds: ['4.5'],
+  },
+  {
+    term: 'argument part',
+    definition:
+      'An argument-part question (often called a "role" question) asks what function a specified sentence plays in the argument\'s structure: is it the main conclusion, an intermediate conclusion, a premise, a counterexample, or something offered only to be rejected? It tests structure, not truth.',
+    example:
+      'In "Some claim the new tax will hurt small business. But studies from two states show no such effect. The tax is therefore unlikely to harm them," the first sentence\'s part is "a claim the argument considers and then argues against" — not a premise, since the argument does not rely on it.',
+    commonConfusion:
+      'Learners describe what the sentence says instead of what it does. The right answer is a job description ("it is evidence for the conclusion"), not a summary ("it is about the tax"). Focus on the sentence\'s structural relationship to the conclusion.',
+    lessonIds: ['2.4'],
+  },
+  {
+    term: 'method of reasoning',
+    definition:
+      'The method of reasoning is the technique an argument uses to make its case — how it argues, not what it argues about. Common methods include drawing an analogy, ruling out alternatives, appealing to a general principle, or using a counterexample to refute a claim.',
+    example:
+      'An argument that shows a proposed policy failed in two similar cities and concludes it will fail here uses the method of "arguing by analogy from comparable cases." The method is the analogy move itself, regardless of whether the cities were well chosen.',
+    commonConfusion:
+      'Learners answer with the argument\'s conclusion or its topic instead of its technique, or they pick an answer describing a method the argument merely resembles. The discipline: name the move the arguer actually made — what tool did they pick up?',
+    lessonIds: ['2.5'],
+  },
+  {
+    term: 'point at issue',
+    definition:
+      'The point at issue is the exact claim two speakers disagree about: one must be committed to its truth and the other to its falsity. It is the precise locus of disagreement, found by comparing what each speaker actually endorses.',
+    example:
+      'Rosa: "The arena will boost nearby restaurant revenue." Tom: "The arena will clog the streets on game nights." They disagree about neither claim as stated — Rosa says nothing about traffic, Tom nothing about restaurants. There is no point at issue between these two statements until their claims genuinely collide.',
+    commonConfusion:
+      'Learners pick a topic both speakers discuss rather than a claim they oppose. Talking about the same subject is not disagreeing. For a genuine point at issue, you need a "yes" from one speaker and a "no" from the other on the same proposition.',
+    lessonIds: ['2.6'],
+  },
+  {
+    term: 'principle',
+    definition:
+      'A principle is a general rule or standard that can be applied to specific cases — a "for situations like X, do Y" claim. On the LSAT, principles appear as the bridge in principle questions: you either find the principle that justifies an argument or apply a given principle to a new case.',
+    example:
+      'The claim "Public officials should not accept gifts from anyone they regulate" is a principle. Applied to a case, it yields "the commissioner should return the concert tickets from the utility company" — the specific judgment follows from the general rule.',
+    commonConfusion:
+      'Learners treat principles as factual claims to be evaluated as true or false. Principles are standards, not facts — the question is never whether the principle is correct, but whether it fits: does this case fall under that rule, and does the rule support this judgment?',
+    lessonIds: ['2.14', '2.15'],
+  },
+  {
+    term: 'parallel reasoning',
+    definition:
+      'Parallel reasoning asks you to find the argument whose logical structure matches the original: same pattern of premises-to-conclusion, same type of flaw or valid move, even though the topic is completely different. You are matching the skeleton, not the subject matter.',
+    example:
+      'Original: "All of the chef\'s signature dishes contain saffron. This dish contains saffron, so it must be one of her signature dishes" (mistaken reversal). The parallel answer will commit the same reversal on a new topic — say, about passports and citizenship — not merely mention chefs or saffron.',
+    commonConfusion:
+      'Learners match surface features — the same topic, the same conclusion wording — instead of the reasoning pattern. The test deliberately offers answers about the same subject with different logic. Abstract each argument to its form (A→B, B, therefore A) and compare forms.',
+    lessonIds: ['2.16', '2.17'],
+  },
+  {
+    term: 'analogy',
+    definition:
+      'An analogy is reasoning from similarity: because two things are alike in relevant ways, what is true of one is probably true of the other. Its strength depends entirely on whether the shared features are relevant to the claim being transferred.',
+    example:
+      '"Designing a transit system is like designing a circulatory system: both must move volume efficiently through limited channels." The analogy is only as good as the relevant similarity — if transit politics, not fluid dynamics, is the real issue, the analogy is weak.',
+    commonConfusion:
+      'Learners evaluate analogies by how vivid or clever they are rather than by relevant similarity. A beautiful comparison that shares only surface features proves nothing. The question is always: are the two cases alike in the respect that matters for this conclusion?',
+    lessonIds: ['1.14', '2.22', '4.13'],
+  },
+  {
+    term: 'resolve the paradox',
+    definition:
+      'A "resolve the paradox" question presents two findings that seem to conflict and asks for the answer that explains how both can be true. You are not picking a side or denying either finding — you are supplying the missing fact that reconciles them.',
+    example:
+      'Paradox: the city built twice as many bike lanes, yet cycling rates fell. Resolution: the same year, a dockless scooter fleet launched and absorbed most of the new cycling trips. Both facts stand; the scooter launch explains the apparent contradiction.',
+    commonConfusion:
+      'Learners pick answers that deepen the mystery or explain only one side. A resolution must accommodate both findings. If an answer makes the conflict sharper, or explains the bike lanes while ignoring the ridership drop, it is not a resolution.',
+    lessonIds: ['2.18'],
+  },
+  // ------------------------------------------------------------------ //
+  // Reading Comprehension                                               //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'passage viewpoint',
+    definition:
+      'A passage viewpoint is the position held by someone discussed in the passage — a critic, a researcher, a school of thought — as distinct from the author\'s own position. Passages often stage a conversation among viewpoints, and questions test whether you kept them straight.',
+    example:
+      'A passage may present historians who credit railroads with westward expansion, then economists who credit land policy, before the author sides with the economists. The historians\' and economists\' positions are passage viewpoints; the author\'s siding is a separate matter.',
+    commonConfusion:
+      'The constant trap is attributing a passage viewpoint to the author. Just because a view is described at length does not mean the author endorses it — authors often present a view in order to qualify or reject it. Always ask: whose claim is this, and what does the author think of it?',
+    lessonIds: ['4.6', '4.7'],
+  },
+  {
+    term: "author's viewpoint",
+    definition:
+      'The author\'s viewpoint is the position the writer of the passage actually holds — what they believe about the topic, as revealed by their thesis, their evaluations of others\' views, and their tone. It is the one viewpoint the passage exists to advance.',
+    example:
+      'After surveying three theories of coral bleaching, an author writes, "The temperature hypothesis, though popular, cannot account for the deep-water data." The author\'s viewpoint is skepticism toward that hypothesis — stated outright, not merely implied.',
+    commonConfusion:
+      'Learners assume the author agrees with whoever is quoted most or with the majority view presented. Authors frequently give the most space to the view they are about to dismantle. Endorsement is shown by evaluative language — "convincing," "fails to," "overlooks" — not by word count.',
+    lessonIds: ['4.6', '4.8'],
+  },
+  {
+    term: 'attitude/tone',
+    definition:
+      'Attitude and tone describe the author\'s emotional and evaluative stance toward the subject: admiring, skeptical, neutral, concerned, dismissive. It is the feeling behind the argument, conveyed through word choice rather than stated outright.',
+    example:
+      'An author who calls a proposal "a bold but untested gamble" shows cautious skepticism — interest mixed with doubt. Calling it "reckless" would be outright hostility; calling it "promising" would be endorsement. The attitude lives in the adjectives.',
+    commonConfusion:
+      'Learners overstate tone, picking extreme answers like "contemptuous" or "ecstatic" when the passage is merely "critical" or "favorable." LSAT authors are academics; their attitudes are measured. Prefer the moderate answer unless the language is genuinely heated.',
+    lessonIds: ['4.8'],
+  },
+  {
+    term: 'function question',
+    definition:
+      'A function question asks what job a specific part of the passage performs in the author\'s overall design: why is this paragraph, sentence, or example here? It tests your grasp of passage structure — how each piece serves the whole.',
+    example:
+      'Asked about the function of a paragraph recounting a failed 1970s housing experiment, the answer is something like "to provide a counterexample that qualifies the author\'s main proposal" — the paragraph\'s purpose in the argument, not its topic.',
+    commonConfusion:
+      'Learners answer with what the paragraph says rather than what it does — summarizing content instead of naming its structural role. The right answer is always about purpose: to illustrate, to concede, to anticipate an objection, to provide evidence.',
+    lessonIds: ['4.11', '4.2'],
+  },
+  {
+    term: 'comparative reading',
+    definition:
+      'Comparative reading is the Reading Comprehension format that gives you two shorter passages on the same topic and asks about their relationship: where they agree, where they differ, and how each would respond to the other. It tests viewpoint-tracking across texts.',
+    example:
+      'Passage A argues that urban beekeeping helps pollinator populations; Passage B argues the evidence is inconclusive. A comparative question might ask which claim both authors would accept — perhaps that more research is needed — even though their conclusions differ.',
+    commonConfusion:
+      'Learners answer from one passage alone, forgetting that comparative questions are about the relationship. An answer true of Passage A but contradicted by Passage B fails a "both authors would agree" question. Keep two columns in your notes: A says, B says.',
+    lessonIds: ['4.15'],
+  },
+  // ------------------------------------------------------------------ //
+  // Study method                                                        //
+  // ------------------------------------------------------------------ //
+  {
+    term: 'second-pass review',
+    definition:
+      'Second-pass review is the habit of re-attempting questions on your own before checking the answers: you work through a set, mark your choices, then revisit the uncertain ones with fresh reasoning — only afterward comparing against the key and explanations. (Many prep traditions call this "blind review.")',
+    example:
+      'After a timed LR section, you hide the answer key and redo every question you flagged as shaky, writing a sentence for why you now choose each answer. Only then do you score it — so the score measures your reasoning, and the review measures what timing cost you.',
+    commonConfusion:
+      'Learners skip the second pass and go straight to reading explanations, which feels productive but builds recognition instead of skill. The value is in the struggle: re-reasoning before feedback is what transfers the skill to the next unseen question.',
+    lessonIds: ['0.3', '8.1'],
+  },
+  {
+    term: 'calibration',
+    definition:
+      'Calibration is the match between your confidence and your actual accuracy: well-calibrated, you score about as well as you expect. It is built by predicting your performance before scoring and then comparing prediction to reality, so overconfidence and underconfidence both become visible.',
+    example:
+      'Before scoring a practice section you write "I think I got 20 right." You actually got 17 — and the three misses were all questions you felt sure about. That gap is a calibration signal: your certainty is running ahead of your skill on those question types.',
+    commonConfusion:
+      'Learners treat calibration as just "tracking your score." Scores tell you what happened; calibration tells you whether your self-assessment is trustworthy. A student scoring 165 who thinks they are at 175 has a calibration problem that will distort every study decision they make.',
+    lessonIds: ['0.4', '8.2'],
+  },
+  {
+    term: 'mastery',
+    definition:
+      'Mastery is durable, transferable skill: you can execute a technique accurately on unseen material, under timed conditions, without prompting. It is a higher bar than understanding — you can explain a contrapositive long before you reliably apply one at question 23 with four minutes left.',
+    example:
+      'You have mastered necessary-assumption questions when you consistently spot the needed claim in new arguments, inside the time budget, without being told which type you are facing — not when you can define the term or solve one slowly with the lesson open.',
+    commonConfusion:
+      'Learners confuse familiarity with mastery: having seen a technique, or getting it right untimed with hints, feels like mastery but collapses under test conditions. The honest test is always new material, timed, unprompted. Everything short of that is progress, not mastery.',
+    lessonIds: ['0.5', '9.1'],
+  },
+];
+
+export default GLOSSARY;

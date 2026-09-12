@@ -1,0 +1,338 @@
+/* Progress feature styles — LSAT Compass. */
+
+.pg-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.pg-section {
+  margin-bottom: var(--space-5);
+}
+
+.pg-section > h2,
+.pg-section-title {
+  font-size: 1.05rem;
+  margin: 0 0 var(--space-3);
+  color: var(--text);
+}
+
+/* Mastery by stage */
+.pg-stage-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+.pg-stage-row:last-child {
+  border-bottom: none;
+}
+.pg-stage-name {
+  flex: 0 0 42%;
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+.pg-stage-bar {
+  flex: 1;
+}
+.pg-stage-empty {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+
+/* Insights */
+.pg-insight {
+  border-left: 4px solid var(--border-strong);
+}
+.pg-insight-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+.pg-sev {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.pg-sev--info {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.pg-sev--watch {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+.pg-sev--act {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.pg-insight h3 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+.pg-insight p {
+  margin: var(--space-1) 0 0;
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+/* Readiness */
+.pg-readiness-overall {
+  margin-bottom: var(--space-4);
+}
+.pg-readiness-overall .pg-overall-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.pg-component {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+.pg-component:last-of-type {
+  border-bottom: none;
+}
+.pg-component-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+.pg-component-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.pg-component-note {
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+.pg-component-empty {
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+.pg-disclaimer {
+  margin-top: var(--space-4);
+  font-size: 0.8rem;
+  color: var(--text-3);
+  font-style: italic;
+}
+
+/* Weekly review */
+.pg-week-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  text-align: center;
+}
+.pg-week-num {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.pg-week-label {
+  font-size: 0.75rem;
+  color: var(--text-2);
+}
+.pg-week-delta {
+  margin-top: var(--space-3);
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+/* Trends chart */
+.pg-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.pg-bar {
+  fill: var(--accent);
+}
+.pg-bar--zero {
+  fill: var(--border);
+}
+.pg-chart-baseline {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+.pg-chart-day {
+  fill: var(--text-3);
+  font-size: 9px;
+}
+
+/* Calibration */
+.pg-cal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.pg-cal-table th,
+.pg-cal-table td {
+  text-align: left;
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+.pg-cal-table th {
+  color: var(--text-2);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pg-cal-diff {
+  font-weight: 700;
+}
+.pg-cal-diff--over {
+  color: var(--warn);
+}
+.pg-cal-diff--under {
+  color: var(--success);
+}
+.pg-cal-note {
+  color: var(--text-2);
+  font-size: 0.9rem;
+}
+
+/* Link card */
+.pg-link-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: inherit;
+  min-height: var(--tap);
+}
+.pg-link-card:hover {
+  border-color: var(--accent-border);
+}
+.pg-link-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.pg-link-card p {
+  margin: var(--space-1) 0 0;
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+.pg-link-arrow {
+  font-size: 1.25rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Error Lab */
+.pg-back {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  min-height: var(--tap);
+  line-height: var(--tap);
+}
+.pg-err-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border);
+}
+.pg-err-row:last-child {
+  border-bottom: none;
+}
+.pg-err-info {
+  min-width: 0;
+}
+.pg-err-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.pg-err-meta {
+  font-size: 0.8rem;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+.pg-reviewed {
+  color: var(--success);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.pg-err-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+/* Explanation sheet */
+.pg-sheet h3 {
+  font-size: 0.95rem;
+  margin: var(--space-4) 0 var(--space-2);
+}
+.pg-sheet p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-2);
+  margin: 0 0 var(--space-2);
+}
+.pg-sheet-label {
+  font-size: 0.85rem;
+  color: var(--text-3);
+  margin-bottom: var(--space-2);
+}
+.pg-choice {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-2);
+  font-size: 0.9rem;
+}
+.pg-choice--mine {
+  border-color: var(--danger);
+}
+.pg-choice--correct {
+  border-color: var(--success);
+}
+.pg-choice-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.pg-letter {
+  font-weight: 800;
+  width: 1.25em;
+}
+.pg-mark {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.pg-mark--mine {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.pg-mark--correct {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.pg-choice-exp {
+  margin: var(--space-1) 0 0 !important;
+  font-size: 0.82rem !important;
+}
+.pg-sheet-cta {
+  margin-top: var(--space-4);
+}
