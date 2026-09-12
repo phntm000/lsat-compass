@@ -764,6 +764,74 @@ const RC_RC_P15: Question[] = [
     ],
     labels: { topic: 'art restoration ethics' },
   },
+  {
+    id: 'rc-p15-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-analogy',
+    secondarySkills: ['rc-function'],
+    editorialDifficulty: 3,
+    itemPurpose: 'mixed-discrimination',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-p15',
+    stem: 'The production of a "virtual reconstruction" of a faded fresco, as described in the passage, is most analogous to which one of the following?',
+    choices: [
+      { text: 'a museum that exhibits a damaged original exactly as it survives, with no reconstruction offered at all' },
+      { text: 'a conservator who strips overpainting from a canvas to recover the artist\u2019s original colors' },
+      { text: 'a scholar who makes an exact photocopy of a fragile manuscript to spare it further handling' },
+      { text: 'a historian who refuses to speculate about events for which the surviving evidence is thin' },
+      { text: 'a translator who renders a damaged poem into modern verse, leaving the original untouched but choosing how to fill gaps' },
+    ],
+    correctIndex: 4,
+    explanationQuick:
+      'A virtual reconstruction shows a hypothesized past without touching the object, yet still embeds interpretive choices. The translator who leaves the manuscript untouched but chooses how to fill its gaps matches both halves.',
+    explanationWalkthrough:
+      'Paragraph 5 defines the practice with two essential features: the physical object is left untouched, and the reconstruction nonetheless "involves interpretation," since "someone must decide which pigments to simulate and which losses to fill." The credited choice preserves both features: the manuscript is untouched (no physical intervention), while the translator\u2019s gap-filling is interpretive. Choice A drops the second feature — no reconstruction happens at all. Choice B drops the first — stripping overpainting is exactly the physical intervention the digital path avoids, and it recalls the contested Sistine cleaning of paragraphs 2–3. Choice C\u2019s photocopy preserves the object but involves no interpretation; an exact copy fills no gaps, so it misses the passage\u2019s point that even virtual work embeds judgment. Choice D is abstention, the opposite of producing a reconstruction. Only E keeps the passage\u2019s full structure: preservation plus acknowledged interpretation.',
+    choiceExplanations: [
+      'Missing half. Exhibiting the original with no reconstruction preserves the object but abandons the hypothesized-past function entirely. The passage\u2019s digital path does both — protect and reconstruct.',
+      'Wrong kind. Stripping overpainting is physical intervention on the object — precisely what virtual reconstruction is designed to avoid. This recalls the Sistine controversy, not the digital alternative to it.',
+      'Missing half. An exact photocopy involves no interpretation: it fills no gaps and simulates nothing. The passage\u2019s point is that even digital restoration embeds choices about pigments and losses, which copying lacks.',
+      'Opposite. Refusing to speculate is abstention, not reconstruction. The digital path commits to a hypothesized past while sparing the object; refusal does the first neither.',
+      'Correct. The manuscript stays untouched while the translator chooses how to render damaged passages — preservation of the original plus unavoidably interpretive reconstruction, the passage\u2019s exact two-part structure.',
+    ],
+    generalLesson:
+      'Lock the passage\u2019s defining features into a checklist (here: object untouched + interpretation unavoidable) and require the credited analogy to satisfy every feature; each wrong choice typically drops exactly one.',
+    misconceptionTags: ['half-right', 'opposite'],
+    trapTypes: ['half-right', 'opposite', 'unsupported'],
+    prerequisites: ['rc-analogy', 'rc-function'],
+    estimatedSeconds: 95,
+    sourceType: 'original',
+    hints: [
+      'Paragraph 5: what two things are true of virtual reconstruction — about the object and about interpretation?',
+      'Which choices preserve the object but involve no interpretation (or vice versa)?',
+      'The correct analogy must keep both halves at once.',
+    ],
+    labels: { topic: 'art restoration ethics' },
+    evidenceMap: {
+      supportingParagraphs: [2, 5],
+      supportingSentences: [
+        'Virtual reconstructions show "how a faded fresco might once have looked — without touching the physical object" (paragraph 5).',
+        '"Someone must decide which pigments to simulate and which losses to fill" (paragraph 5).',
+      ],
+      requiredInference:
+        'The practice is defined by preservation plus interpretation; the translation analogy is the only choice containing both, while each distractor omits one defining feature.',
+      whyDistractorsFail:
+        'A drops reconstruction; B is physical intervention, the thing avoided; C copies without interpreting; D abstains from reconstructing altogether.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
 ];
 
 /* rc-p16 */
@@ -1127,6 +1195,142 @@ const RC_RC_P16: Question[] = [
     ],
     labels: { topic: 'universal basic income pilots' },
   },
+  {
+    id: 'rc-p16-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-application',
+    secondarySkills: ['rc-other-viewpoints'],
+    editorialDifficulty: 3,
+    itemPurpose: 'mixed-discrimination',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-p16',
+    stem: 'The findings of a new basic-income pilot would be most vulnerable to the critics\u2019 objection described in paragraph 3 if the pilot showed that',
+    choices: [
+      { text: 'children in recipient households attended school more regularly than before' },
+      { text: 'the program\u2019s administrative costs were lower than those of comparable welfare programs' },
+      { text: 'recipients reported significantly lower stress and better mental health' },
+      { text: 'recipients substantially reduced their working hours over the pilot\u2019s two-year run' },
+      { text: 'the pilot\u2019s outside funders were willing to renew the experiment for two more years' },
+    ],
+    correctIndex: 3,
+    explanationQuick:
+      'The critics\u2019 objection is that pilots are temporary and externally funded, so behavior under them — like cutting work hours knowing payments will end — tells us little about a permanent program. D is that behavior.',
+    explanationWalkthrough:
+      'Paragraph 3 gives the objection two prongs: participants know payments will end, which changes behavior ("a student may sensibly cut back on shifts during a two-year experiment in a way she would not under a permanent program"), and outside funding hides the tax effects a real program would create. A finding that recipients substantially cut working hours during a two-year trial sits squarely on the first prong — it is precisely the behavior the critics say is distorted by known temporariness, so D is correct. The school-attendance finding (A) is a child-outcome measure the critics\u2019 argument does not engage. Administrative simplicity (B) belongs to paragraph 5\u2019s design lessons, which even skeptics accept, so it is not vulnerable to their objection. Stress and health reports (C) are less plausibly strategic responses to temporariness, and the critics do not dispute measurements, only the leap to policy — C is a measurement. Renewal by funders (E) is about the pilot\u2019s logistics, not about whether its findings transfer to policy.',
+    choiceExplanations: [
+      'Not implicated. The critics\u2019 objection targets behavior that changes because participants know payments are temporary, and externally funded costs. Children\u2019s school attendance is not strategic behavior of that kind and goes unchallenged.',
+      'Not implicated. Administrative simplicity is listed in paragraph 5 among the design lessons even skeptics accept. An objection about temporariness and funding does not touch a cost comparison between programs.',
+      'Partially tempting, but the critics "do not dispute the measurements" — they dispute the leap from pilot to policy. Self-reported stress is a measurement, and it is not plausibly distorted by knowing payments end.',
+      'Correct. Cutting work hours during a time-limited trial is the critics\u2019 own paradigm case: "a student may sensibly cut back on shifts during a two-year experiment in a way she would not under a permanent program."',
+      'Irrelevant. Whether funders will renew the experiment concerns the pilot\u2019s continuation, not whether its findings generalize to a permanent, tax-funded program — the critics\u2019 actual target.',
+    ],
+    generalLesson:
+      'To find the finding "most vulnerable to an objection," restate the objection\u2019s mechanism (known temporariness distorts work behavior; outside funding hides taxes) and pick the finding that runs directly through it.',
+    misconceptionTags: ['half-right', 'irrelevant-true'],
+    trapTypes: ['half-right', 'irrelevant-true', 'answers-different-question'],
+    prerequisites: ['rc-application', 'rc-other-viewpoints'],
+    estimatedSeconds: 100,
+    sourceType: 'original',
+    hints: [
+      'Paragraph 3: what two features of pilots do the critics say distort the findings?',
+      'Which finding is the critics\u2019 own example of behavior distorted by known temporariness?',
+      'Which choices describe measurements the critics explicitly do not dispute?',
+    ],
+    labels: { topic: 'basic income pilots' },
+    evidenceMap: {
+      supportingParagraphs: [3, 5],
+      supportingSentences: [
+        '"A student may sensibly cut back on shifts during a two-year experiment in a way she would not under a permanent program" (paragraph 3).',
+        '"Critics do not dispute the measurements; they dispute the leap from pilot to policy" (paragraph 3).',
+      ],
+      requiredInference:
+        'A work-hours reduction in a time-limited trial is the exact behavior the temporariness prong predicts will not transfer; other findings either are undisputed measurements or belong to accepted design lessons.',
+      whyDistractorsFail:
+        'A and C are measurements the critics do not dispute and not strategically distorted; B belongs to accepted design lessons; E concerns logistics rather than generalizability.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
+  {
+    id: 'rc-p16-q8',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-organization',
+    secondarySkills: ['rc-passage-structure', 'rc-passage-map'],
+    editorialDifficulty: 3,
+    itemPurpose: 'mixed-discrimination',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-p16',
+    stem: 'Which one of the following most accurately describes the organization of the passage?',
+    choices: [
+      { text: 'A chronological history of basic-income experiments is traced, from the earliest municipal pilots to the present.' },
+      { text: 'A thesis is stated at the outset, and a series of supporting arguments is then marshaled in its defense.' },
+      { text: 'Two competing studies are described in detail, and the methodological flaws of each are exposed in turn.' },
+      { text: 'A definition of basic income is offered, followed by a systematic point-by-point refutation of the idea.' },
+      { text: 'A dispute is introduced; evidence on each side is presented; objections and rejoinders weighed; and a limited agreement identified.' },
+    ],
+    correctIndex: 4,
+    explanationQuick:
+      'Paragraph 1 frames a dispute; 2 gives supporters\u2019 findings; 3–4 give critics\u2019 objections and supporters\u2019 rejoinders; 5 identifies common ground (pilots as design tools); 6 draws the upshot. That is E.',
+    explanationWalkthrough:
+      'Organization items are answered by mapping the passage paragraph by paragraph. Paragraph 1 introduces a dispute ("Advocates hail the results as vindication; skeptics see the same data and shrug"). Paragraph 2 presents the headline findings the supporters cite. Paragraphs 3 and 4 present the critics\u2019 objections (temporariness, funding, scale) and the supporters\u2019 rejoinder (run larger experiments; perfection is the wrong standard). Paragraph 5 identifies the limited area of agreement — pilots as design tools — and paragraph 6 states the upshot about what evidence can and cannot settle. That sequence matches E exactly. Choice A fails because the passage is thematic, not chronological. Choice B fails because the author marshals no single thesis; both sides are aired. Choice C fails: no individual studies are described in detail. Choice D fails doubly — there is no extended definition, and the idea is examined, not refuted.',
+    choiceExplanations: [
+      'Wrong shape. The passage never orders events chronologically; Finland, North America, and Africa are mentioned together in paragraph 1 as examples. The structure is thematic — dispute, evidence, objections, agreement.',
+      'Wrong shape. No single thesis is defended. The author presents findings for supporters and objections for critics without ruling between them; paragraph 6 explicitly says the deepest disagreements are ones "no randomized trial can answer."',
+      'Wrong shape. No competing studies are described in detail anywhere in the passage; the discussion proceeds at the level of findings and objections, not named experiments and their methods.',
+      'Wrong shape. A brief definition opens paragraph 1, but what follows is not a refutation — supporters\u2019 evidence and critics\u2019 objections are both given credence, and paragraph 5 identifies genuine common ground.',
+      'Correct. Dispute introduced (paragraph 1), supporters\u2019 evidence (2), critics\u2019 objections and rejoinders (3–4), limited agreement on design lessons (5), and an upshot about the limits of evidence (6).',
+    ],
+    generalLesson:
+      'For organization items, assign each paragraph a function word (dispute, evidence, objection, rejoinder, agreement) and eliminate any choice whose sequence breaks that map — chronological and single-thesis frames are the usual decoys.',
+    misconceptionTags: ['wrong-shape', 'half-right'],
+    trapTypes: ['half-right', 'answers-different-question', 'unsupported'],
+    prerequisites: ['rc-organization', 'rc-passage-map'],
+    estimatedSeconds: 90,
+    sourceType: 'original',
+    hints: [
+      'Does the passage move by date, or by sides of a dispute?',
+      'Which paragraphs give the critics\u2019 objections, and where do supporters answer them?',
+      'Where does the author identify something both sides accept?',
+    ],
+    labels: { topic: 'basic income pilots' },
+    evidenceMap: {
+      supportingParagraphs: [1, 2, 3, 5, 6],
+      supportingSentences: [
+        '"Advocates hail the results as vindication; skeptics see the same data and shrug" (paragraph 1).',
+        '"Where both sides find common ground is on the value of pilots as design tools" (paragraph 5).',
+      ],
+      requiredInference:
+        'The paragraph-by-paragraph function map (dispute → evidence → objections/rejoinders → agreement) matches E and contradicts each alternative framing.',
+      whyDistractorsFail:
+        'A imposes chronology; B imposes a single defended thesis; C invents dueling studies; D mischaracterizes an even-handed examination as a refutation.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
 ];
 
 /* rc-p17 */
@@ -1438,6 +1642,74 @@ const RC_RC_P17: Question[] = [
       'Tightening reserve limits belongs to which era’s toolkit?',
     ],
     labels: { topic: 'coral conservation policy' },
+  },
+  {
+    id: 'rc-p17-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-attitude',
+    secondarySkills: ['rc-author-viewpoint'],
+    editorialDifficulty: 3,
+    itemPurpose: 'mixed-discrimination',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-p17',
+    stem: 'The author\u2019s attitude toward the shift from protection to active intervention in coral conservation is best described as',
+    choices: [
+      { text: 'accepting it as a necessary evolution whose risks and unresolved governance questions remain serious' },
+      { text: 'celebrating it as the long-overdue triumph of science over bureaucratic timidity' },
+      { text: 'condemning it as a reckless gamble that diverts money from proven protection work' },
+      { text: 'regarding it with complete neutrality, recording the institutional change without evaluating it' },
+      { text: 'dismissing it as a passing fashion that the next bleaching event will expose as futile' },
+    ],
+    correctIndex: 0,
+    explanationQuick:
+      'The author presents intervention as a rational response to bleaching-driven failure of protection, while flagging siphoned funding, liability gaps, and unresolved politics — acceptance with serious caveats.',
+    explanationWalkthrough:
+      'The passage\u2019s arc explains the shift as compelled by events: the 1998 bleaching "broke" the protection assumption, and the 2016–17 bleaching "convinced policymakers that protection alone could not hold the line." That is acceptance of necessity, not celebration. At the same time, the author reports, without dismissing, the traditionalists\u2019 warning that intervention spending "could siphon support" from unglamorous fundamentals, devotes a full paragraph to the governance gap ("no statute had anticipated"), and ends by stressing that the outcome turns on "political decisions about risk, money, and authority that have barely begun." Choice A captures both halves. Choice B\u2019s triumphalism is absent — the author treats intervention as an emergency supplement, not a victory. Choice C is the traditionalists\u2019 position, reported but never endorsed as the author\u2019s own. Choice D fails because the author clearly evaluates: the shift "would have been unthinkable" and its fate "will depend" on politics. Choice E contradicts the final paragraph, which treats the overlay as potentially durable, not futile.',
+    choiceExplanations: [
+      'Correct. The author narrates the shift as driven by the demonstrated failure of protection (1998, 2016–17) while devoting paragraphs to funding trade-offs and unresolved liability and coordination questions — acceptance with serious caveats.',
+      'Too strong. Nothing in the author\u2019s voice celebrates a triumph; the intervention program is described as creating "new controversies," and its durability is left dependent on politics. Triumphal framing overstates the passage.',
+      'Wrong viewpoint. The siphon warning is attributed to "traditional conservationists within the agencies," reported as a controversy to be weighed, not adopted as the author\u2019s own condemnation.',
+      'Unsupported. The author evaluates throughout: protection boundaries "proved irrelevant," the shift "broke" old assumptions, and the outcome "will depend" on politics. Pure neutrality cannot account for those judgments.',
+      'Opposite. The final paragraph treats the intervention overlay as a candidate "dominant paradigm," not a passing fashion; nothing suggests the author expects it to be exposed as futile.',
+    ],
+    generalLesson:
+      'When a passage narrates a policy shift, mark whether the author treats the old model as refuted by events (acceptance) and whether reported criticisms are endorsed or merely aired (caveats, not condemnation).',
+    misconceptionTags: ['wrong-viewpoint', 'too-strong'],
+    trapTypes: ['wrong-viewpoint', 'too-strong', 'unsupported'],
+    prerequisites: ['rc-attitude', 'rc-author-viewpoint'],
+    estimatedSeconds: 95,
+    sourceType: 'original',
+    hints: [
+      'What does the author say broke the protection-era assumption, and when?',
+      'Whose warning about siphoned funding is reported — and does the author adopt it as their own?',
+      'Does the final paragraph treat intervention as durable, futile, or dependent on politics?',
+    ],
+    labels: { topic: 'coral conservation policy' },
+    evidenceMap: {
+      supportingParagraphs: [2, 4, 5, 6],
+      supportingSentences: [
+        'Successive bleaching events "convinced policymakers that protection alone could not hold the line" (paragraph 3).',
+        'Active restoration "raised questions no statute had anticipated" and the mismatch "remains unresolved" (paragraph 5).',
+      ],
+      requiredInference:
+        'Explaining the shift as compelled by events while emphasizing serious unresolved risks yields acceptance with caveats — neither celebration, condemnation, neutrality, nor dismissal.',
+      whyDistractorsFail:
+        'B overstates into triumph; C attributes the traditionalists\u2019 reported warning to the author; D ignores the author\u2019s evaluative narration; E contradicts the final paragraph\u2019s open, durable framing.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
   },
 ];
 
@@ -2159,6 +2431,141 @@ const RC_RC_P19: Question[] = [
     ],
     labels: { topic: 'cultural repatriation' },
   },
+  {
+    id: 'rc-p19-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-attitude',
+    secondarySkills: ['rc-author-viewpoint', 'rc-other-viewpoints'],
+    editorialDifficulty: 3,
+    itemPurpose: 'mixed-discrimination',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-p19',
+    stem: 'The author\u2019s attitude toward the "universal museum" defense of retaining contested objects is best described as',
+    choices: [
+      { text: 'sympathetic to its ideal of shared access yet alert to how it can shield holdings acquired through coercion' },
+      { text: 'wholly persuaded that the great museums are the only institutions able to preserve these objects' },
+      { text: 'openly contemptuous of a rationale the author treats as a cover for theft' },
+      { text: 'agnostic, since the author regards the question of custody as beyond rational adjudication' },
+      { text: 'dismissive, on the ground that digital archives have made physical location irrelevant' },
+    ],
+    correctIndex: 0,
+    explanationQuick:
+      'The author presents the universalists\u2019 case fairly, then notes that acquisitions through "conquest, coercion" are normalized by continued display — and paragraph 5\u2019s middle path concedes something to each side.',
+    explanationWalkthrough:
+      'The author\u2019s stance is balanced but not neutral. Paragraph 3 states the universalist case in its strongest form — custodianship, unmatched resources, cross-cultural encounters — and paragraph 4 concedes that universalist cautions gained "weight" from neglectful source governments. That is genuine sympathy for the access ideal. Yet paragraph 2 gives equal force to the critique: many objects entered collections "through conquest, coercion, or transactions that would not pass scrutiny today," and continued display "silently normalizes that history." Paragraph 5\u2019s middle path "concedes something to each side," which is the author\u2019s own editorial fingerprint. Choice A captures both halves. Choice B ignores the undercutting in paragraph 4 (receiving institutions have built "impressive new museums"). Choice C overstates: the author never treats the rationale as a mere cover. Choice D fails because paragraph 6 describes an active case-by-case settlement, not a question beyond reason. Choice E inverts paragraph 5: digital archives supplement access; they do not make location irrelevant — otherwise no middle path would be needed.',
+    choiceExplanations: [
+      'Correct. The author gives the universalist ideal a fair hearing (paragraphs 3–4) while endorsing the critique that continued display normalizes coercive takings (paragraph 2) and backing a middle path that concedes something to each side (paragraph 5).',
+      'Too strong. Paragraph 4 reports that receiving institutions have built impressive new museums, "undercutting the claim that they cannot care for them" — the author does not accept the only-able-custodians premise.',
+      'Too strong. Contempt is absent: the universalist case is stated sympathetically, and paragraph 4 concedes its cautions have gained weight. The author critiques the rationale\u2019s use as a shield without dismissing it as mere cover.',
+      'Unsupported. Paragraph 6 says the debate continues "through case-by-case negotiation — a practical settlement." That is adjudication in progress, not a question the author deems beyond reason.',
+      'Opposite. Paragraph 5 presents digital archives as one element of a middle path; if location were irrelevant, no loans or shared-stewardship arrangements would be needed. The author treats physical return as still meaningful.',
+    ],
+    generalLesson:
+      'Balanced-attitude answers name both the credit the author gives a view and the limit the author places on it; single-register choices (wholly persuaded, contemptuous, dismissive) usually fail on one half.',
+    misconceptionTags: ['too-strong', 'half-right'],
+    trapTypes: ['too-strong', 'opposite', 'unsupported'],
+    prerequisites: ['rc-attitude', 'rc-other-viewpoints'],
+    estimatedSeconds: 95,
+    sourceType: 'original',
+    hints: [
+      'Does the author state the universalist case fairly or contemptuously (paragraphs 3–4)?',
+      'What does paragraph 2 say about how many objects entered Western collections?',
+      'What does the middle path in paragraph 5 concede to each side?',
+    ],
+    labels: { topic: 'repatriation debate' },
+    evidenceMap: {
+      supportingParagraphs: [2, 3, 4, 5],
+      supportingSentences: [
+        'Objects entered collections "through conquest, coercion, or transactions that would not pass scrutiny today," and display "silently normalizes that history" (paragraph 2).',
+        'Middle-path arrangements "concede something to each side: that cultural context matters, and that broad access matters too" (paragraph 5).',
+      ],
+      requiredInference:
+        'Fair statement of the access ideal plus endorsement of the coercion critique plus support for compromise yields sympathy-with-alertness, excluding both full persuasion and dismissal.',
+      whyDistractorsFail:
+        'B ignores the undercutting of the custodianship claim; C and E overstate into contempt or dismissal; D contradicts the passage\u2019s case-by-case practical settlement.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
+  {
+    id: 'rc-p19-q8',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-analogy',
+    secondarySkills: ['rc-detail'],
+    editorialDifficulty: 3,
+    itemPurpose: 'mixed-discrimination',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-p19',
+    stem: 'The relationship between an artifact and its original setting, as described in paragraph 2, is most analogous to the relationship between',
+    choices: [
+      { text: 'a novel and the new language into which it has been skillfully translated' },
+      { text: 'a plant and the ecosystem in which it evolved, which sustains it only as part of that community' },
+      { text: 'a photograph and the enlargement that brings its hidden grain plainly into view' },
+      { text: 'a recipe and the substitute ingredients a cook reaches for when supplies run short' },
+      { text: 'a flag and the shifting wind that determines the direction in which it streams' },
+    ],
+    correctIndex: 1,
+    explanationQuick:
+      'Paragraph 2 says an artifact ripped from its setting is "a sentence torn from a paragraph": it survives but cannot speak as it would in context. The plant severed from its ecosystem reproduces that loss of function-in-context.',
+    explanationWalkthrough:
+      'Paragraph 2\u2019s claim is that context is constitutive: "An artifact ripped from its setting ... is a sentence torn from a paragraph: a Benin bronze in a London gallery may be beautifully displayed, but it cannot speak as it would in the palace courtyard for which it was cast." The object persists and is even well cared for, but its meaning-making function depended on its community of origin. The plant matches: it can be kept alive elsewhere, but it no longer plays its role in the living community that gave its existence point. Choice A describes transformation with the work\u2019s function intact — a good translation still speaks. Choice C describes closer inspection, not removal from context. Choice D describes substitution within an ongoing function — the dish still gets made. Choice E describes a passive object whose relevant variation comes from an external force, not a context that constituted its meaning. Only B preserves the structure: flourishing-in-place versus mere survival-in-exile.',
+    choiceExplanations: [
+      'Weak fit. A skillful translation preserves the novel\u2019s function — it still speaks to readers, arguably to more of them. The passage\u2019s claim is that removal destroys the artifact\u2019s ability to speak as it should, not that change per se is loss.',
+      'Correct. The plant survives in cultivation but no longer functions within the living community that constituted its role — exactly the passage\u2019s structure of survival without the context that made the object speak.',
+      'Different relation. Enlargement reveals more of the object in place; nothing is removed from a constitutive setting. The passage\u2019s concern is severance from context, not closer inspection.',
+      'Different relation. Substituting ingredients preserves the recipe\u2019s ongoing function — the dish gets made. The passage\u2019s artifact loses, rather than keeps, its function when removed from its setting.',
+      'Wrong structure. The flag\u2019s variation is driven by an external force; its meaning was never constituted by a particular setting. The passage\u2019s claim requires a context that gave the object its significance.',
+    ],
+    generalLesson:
+      'Pin down whether the passage\u2019s relationship is constitutive (context makes the object what it is) or merely causal; analogy distractors commonly substitute transformation, inspection, or external-force relations for the constitutive one.',
+    misconceptionTags: ['half-right', 'wrong-mechanism'],
+    trapTypes: ['half-right', 'answers-different-question', 'wrong-viewpoint'],
+    prerequisites: ['rc-analogy', 'rc-detail'],
+    estimatedSeconds: 95,
+    sourceType: 'original',
+    hints: [
+      'Paragraph 2: what does the "sentence torn from a paragraph" simile claim is lost?',
+      'The correct analogy needs survival without original function — not transformation, substitution, or inspection.',
+      'Which choices describe changes that leave the object\u2019s function intact?',
+    ],
+    labels: { topic: 'repatriation debate' },
+    evidenceMap: {
+      supportingParagraphs: [2],
+      supportingSentences: [
+        '"An artifact ripped from its setting ... is a sentence torn from a paragraph: a Benin bronze in a London gallery may be beautifully displayed, but it cannot speak as it would in the palace courtyard" (paragraph 2).',
+      ],
+      requiredInference:
+        'The relation is constitutive: removal preserves the object while destroying its meaning-giving function. Only the plant-ecosystem pair reproduces survival-in-exile with loss of communal role.',
+      whyDistractorsFail:
+        'A, C, and D describe changes that leave function intact (translation, enlargement, substitution); E substitutes an external-force relation for a constitutive-context one.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
 ];
 
 /* rc-c01 */
@@ -2525,6 +2932,74 @@ const RC_RC_C01: Question[] = [
     ],
     labels: { topic: 'algorithmic hiring' },
   },
+  {
+    id: 'rc-c01-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-comparative',
+    secondarySkills: ['rc-other-viewpoints', 'rc-inference'],
+    editorialDifficulty: 3,
+    itemPurpose: 'transfer',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-c01',
+    stem: 'Which one of the following claims would the authors of both passages most likely accept?',
+    choices: [
+      { text: 'Human hiring decisions are, on the whole, fairer than the algorithmic decisions now replacing them.' },
+      { text: 'Most commercial hiring tools on the market today are open to independent outside testing.' },
+      { text: 'Algorithmic hiring should be suspended until provably neutral systems become available.' },
+      { text: 'The fairness of an automated screening tool depends on the data it is trained on and the criteria it applies.' },
+      { text: 'The diversity gains employers report after adopting algorithmic screening are largely fabricated.' },
+    ],
+    correctIndex: 3,
+    explanationQuick:
+      'Passage A\u2019s case rests on "properly designed systems," and passage B\u2019s critique is that tools trained on historical data learn old biases — both presuppose that fairness turns on training data and criteria.',
+    explanationWalkthrough:
+      'Common-ground items require a claim each author is committed to. Passage A argues algorithms can be fair because they "evaluate every applicant against the same criteria" and can be retrained — which presupposes that the data and criteria determine the outcome\u2019s fairness. Passage B argues deployed systems are "efficient laundries for old biases" because "an algorithm trained on a company\u2019s historical hiring data learns exactly what that company has always done," and complains that audits miss "whether the criteria themselves are fair." Both, then, agree that fairness depends on training data and criteria — they disagree about whether current systems get them right. Choice A is passage B\u2019s leaning but contradicts passage A\u2019s entire brief. Choice B is contradicted by passage B ("proprietary black boxes"). Choice C is a moratorium passage A would reject, since A argues the question is whether automation beats the flawed status quo. Choice E is unsupported by either: passage A cites the gains as genuine; passage B questions audit depth, not the reported numbers.',
+    choiceExplanations: [
+      'One-sided. Passage B leans this way, but passage A\u2019s whole argument is that human judgment is a biased "lottery" that algorithms can improve upon. The author of A would not accept the claim.',
+      'Contradicted. Passage B states that most commercial tools are "proprietary black boxes" whose vendors "routinely resist independent testing." Whatever passage A hopes for, B denies the empirical premise.',
+      'One-sided. A suspension-until-perfect rule rejects passage A\u2019s comparative standard: "The question is not whether automated hiring is perfect — it is whether it is better than the flawed ... system it replaces."',
+      'Correct. Passage A\u2019s promise ("properly designed systems," retraining models) and passage B\u2019s critique ("trained on ... historical hiring data," criteria "part of the problem") both rest on this claim.',
+      'Unsupported. Passage A cites the diversity gains as real evidence; passage B challenges the depth of audits, not the honesty of reported numbers. Neither author calls the gains fabricated.',
+    ],
+    generalLesson:
+      'For comparative common-ground items, find the shared presupposition beneath the disagreement; choices stating one side\u2019s contested conclusion are decoys even when true of one passage.',
+    misconceptionTags: ['one-sided', 'unsupported'],
+    trapTypes: ['wrong-viewpoint', 'unsupported', 'too-strong'],
+    prerequisites: ['rc-comparative', 'rc-inference'],
+    estimatedSeconds: 110,
+    sourceType: 'original',
+    hints: [
+      'What does passage A say "properly designed systems" can do — and what does passage B say deployed systems actually learned from?',
+      'Which choices state something passage B explicitly denies about today\u2019s tools?',
+      'The common ground is a presupposition about what fairness depends on, not either side\u2019s verdict.',
+    ],
+    labels: { topic: 'algorithmic hiring' },
+    evidenceMap: {
+      supportingParagraphs: [2, 4, 5],
+      supportingSentences: [
+        '"An algorithm trained on a company\u2019s historical hiring data learns exactly what that company has always done" (passage B, paragraph 4).',
+        'Audits "typically measure only narrow statistical parity while missing the deeper question of whether the criteria themselves are fair" (passage B, paragraph 5).',
+      ],
+      requiredInference:
+        'A\u2019s improve-the-model optimism and B\u2019s garbage-in critique presuppose the same dependency: fairness is fixed by training data and criteria. Hence agreement on D amid disagreement on current systems.',
+      whyDistractorsFail:
+        'A contradicts A\u2019s brief; B is empirically denied by passage B; C violates A\u2019s comparative standard; E is endorsed by neither passage.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
 ];
 
 /* rc-c02 */
@@ -2823,6 +3298,74 @@ const RC_RC_C02: Question[] = [
       'Eliminate choices that contradict B\'s explicit concessions (the wolf\'s role is real; predators have a place).'
     ],
     labels: { topic: 'wolf reintroduction' },
+  },
+  {
+    id: 'rc-c02-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-comparative',
+    secondarySkills: ['rc-other-viewpoints', 'rc-inference'],
+    editorialDifficulty: 3,
+    itemPurpose: 'transfer',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-c02',
+    stem: 'The authors of the two passages would most likely disagree over whether',
+    choices: [
+      { text: 'lead poisoning from spent ammunition was a major cause of the California condor\u2019s decline' },
+      { text: 'captive breeding played an important role in the California condor\u2019s recovery' },
+      { text: 'ranchers living near wolf territories face genuine economic losses from predation' },
+      { text: 'the recovery of an endangered species is a goal worth pursuing at public expense' },
+      { text: 'the high cost of a reintroduction is, by itself, a strong reason against it' },
+    ],
+    correctIndex: 4,
+    explanationQuick:
+      'Passage A insists conservation be judged "by what it preserves," not its price tag; passage B insists costs are "neither trivial nor equitably shared" and must weigh in the decision. That is a live disagreement.',
+    explanationWalkthrough:
+      'Disagreement items need a question on which the passages commit to opposing answers. Passage A closes paragraph 3 by asking "whether conservation should be judged by its price tag or by what it preserves," answering firmly for preservation: a species pulled back from 22 individuals is "proof that determined intervention works." Cost alone, on A\u2019s view, is not a strong reason against. Passage B devotes paragraph 5 to costs that are "neither trivial nor equitably shared" and concludes in paragraph 6 that reintroduction must be "weighed against local conditions" and negotiated with cost-bearers — so high cost is a serious, potentially decisive factor. E names that disagreement. The factual premises in A, B, and C are accepted by the side that discusses them and never denied by the other. Choice D fails: passage B explicitly says "predators have ... place in modern landscapes" and never disputes that recovery is worth funding; B\u2019s quarrel is with crusading, not with conservation as such.',
+    choiceExplanations: [
+      'No disagreement. Passage A asserts the lead-poisoning mechanism and passage B, which discusses wolves rather than condors, nowhere questions it. There is no opposed commitment on this factual premise.',
+      'No disagreement. Passage A credits captive breeding as the bridge back to the wild, and passage B never addresses the condor program\u2019s methods. One side\u2019s assertion is not the other side\u2019s denial.',
+      'No disagreement. Passage B asserts ranchers\u2019 losses at length, and passage A\u2019s silence about ranchers is not a denial. A disagreement requires opposing answers from both passages, not one answer and one silence.',
+      'No disagreement. Passage B explicitly disclaims the anti-conservation reading: "None of this means predators have no place in modern landscapes." B contests crusading and cost-shifting, not the worth of recovery itself.',
+      'Correct. A: judge by what is preserved, not the price tag. B: costs are serious, inequitably shared, and must weigh in site-specific decisions. The passages give opposed answers to whether cost alone counts strongly against.',
+    ],
+    generalLesson:
+      'For disagreement items, eliminate choices where one passage is merely silent — silence is not denial — and locate the question where both passages make opposed normative commitments.',
+    misconceptionTags: ['one-sided-silence', 'half-right'],
+    trapTypes: ['unsupported', 'half-right', 'wrong-viewpoint'],
+    prerequisites: ['rc-comparative', 'rc-inference'],
+    estimatedSeconds: 110,
+    sourceType: 'original',
+    hints: [
+      'Which choices are facts asserted by one passage without being denied by the other?',
+      'What does passage A say about judging conservation by its price tag?',
+      'What does passage B say about the costs of reintroduction and who bears them?',
+    ],
+    labels: { topic: 'species reintroduction' },
+    evidenceMap: {
+      supportingParagraphs: [3, 5, 6],
+      supportingSentences: [
+        '"The question is whether conservation should be judged by its price tag or by what it preserves" (passage A, paragraph 3).',
+        '"The costs of reintroduction are neither trivial nor equitably shared" (passage B, paragraph 5).',
+      ],
+      requiredInference:
+        'A subordinates cost to preservation while B makes cost a first-order, sometimes decisive consideration — an opposed normative commitment on exactly the question in E.',
+      whyDistractorsFail:
+        'A, B, and C rest on one passage\u2019s silence rather than denial; D is disclaimed by passage B itself, which affirms predators\u2019 place in modern landscapes.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
   },
 ];
 
@@ -3410,6 +3953,74 @@ const RC_RC_C04: Question[] = [
     ],
     labels: { topic: 'direct air capture' },
   },
+  {
+    id: 'rc-c04-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-comparative',
+    secondarySkills: ['rc-other-viewpoints', 'rc-inference'],
+    editorialDifficulty: 3,
+    itemPurpose: 'transfer',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-c04',
+    stem: 'Which one of the following would the authors of both passages most likely agree with?',
+    choices: [
+      { text: 'Direct air capture is currently cost-competitive with ordinary emissions reductions.' },
+      { text: 'Emissions cuts and carbon removal are competitors, so one of them must be chosen.' },
+      { text: 'Support for direct air capture from fossil fuel companies is strong evidence of its climate value.' },
+      { text: 'Some carbon-removal capacity will eventually be needed for genuinely unavoidable emissions.' },
+      { text: 'Direct air capture should replace renewable deployment as the centerpiece of climate strategy.' },
+    ],
+    correctIndex: 3,
+    explanationQuick:
+      'Passage A calls removal essential for emissions with "no scalable clean alternative," and passage B concedes that "for truly unavoidable emissions, some removal capacity will eventually be needed." Both agree on D.',
+    explanationWalkthrough:
+      'The two passages disagree about emphasis — A: build removal now as a complement; B: mitigation first, removal as backstop — but converge on a core concession. Passage A: some emissions "from aviation, shipping, cement, and agriculture, have no scalable clean alternative on the horizon," and net-zero models "rely on large-scale carbon removal in virtually every scenario." Passage B: "This is not an argument that carbon removal research should stop — for truly unavoidable emissions, some removal capacity will eventually be needed." Both thus accept D. Choice A is contradicted by both: A calls DAC "expensive today"; B says costs run "hundreds of dollars per ton." Choice B is explicitly rejected by passage A ("complements, not competitors") and passage B\u2019s sequencing view also builds both, in order. Choice C is passage B\u2019s suspicion, not evidence of value, and passage A never argues from fossil-fuel endorsement. Choice E is rejected by both: A insists "every ton not emitted is cheaper than a ton captured later"; B demands "mitigation first."',
+    choiceExplanations: [
+      'Contradicted by both. Passage A calls the technology "expensive today," and passage B puts capture costs at "hundreds of dollars per ton" while noting prevention is cheaper. Neither claims cost-competitiveness now.',
+      'Contradicted. Passage A explicitly rejects the framing: "mitigation and removal are complements, not competitors." Passage B\u2019s sequence-first view still develops both, so neither author accepts the either/or choice.',
+      'Misread. Passage B cites fossil-fuel enthusiasm for DAC as evidence of moral hazard — an "excuse" to keep emitting — the opposite of a value signal, and passage A never rests its case on industry support.',
+      'Correct. Passage A grounds the case in emissions with "no scalable clean alternative," and passage B concedes "some removal capacity will eventually be needed" for "truly unavoidable emissions." Shared ground.',
+      'Rejected by both. Passage A insists "every ton not emitted is cheaper than a ton captured later," and passage B demands "prevention first." Neither proposes removing renewables from the centerpiece role.',
+    ],
+    generalLesson:
+      'Comparative agreement often hides in concessions: find the sentence in the more skeptical passage that begins "This is not an argument that..." — the conceded remainder is usually the shared ground.',
+    misconceptionTags: ['contradicted', 'misread'],
+    trapTypes: ['opposite', 'unsupported', 'too-strong'],
+    prerequisites: ['rc-comparative', 'rc-inference'],
+    estimatedSeconds: 110,
+    sourceType: 'original',
+    hints: [
+      'What concession does passage B make in its final paragraph about unavoidable emissions?',
+      'Which choices do both passages explicitly reject (cost-competitiveness, replacement of renewables)?',
+      'The agreement is about eventual necessity, not current cost or priority.',
+    ],
+    labels: { topic: 'direct air capture' },
+    evidenceMap: {
+      supportingParagraphs: [1, 2, 6],
+      supportingSentences: [
+        'Some emissions "have no scalable clean alternative on the horizon" (passage A, paragraph 1).',
+        '"For truly unavoidable emissions, some removal capacity will eventually be needed" (passage B, paragraph 6).',
+      ],
+      requiredInference:
+        'A\u2019s claim of unavoidable residual emissions and B\u2019s concession that removal capacity is eventually needed converge on D; all other choices are contradicted by at least one passage.',
+      whyDistractorsFail:
+        'A is denied by both on cost; B is expressly rejected by passage A; C inverts B\u2019s moral-hazard point; E contradicts both passages\u2019 prevention-first commitments.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
 ];
 
 /* rc-c05 */
@@ -3704,6 +4315,74 @@ const RC_RC_C05: Question[] = [
       'Eliminate choices stating B\'s thesis or contradicting A\'s reported results.'
     ],
     labels: { topic: 'bilingual education' },
+  },
+  {
+    id: 'rc-c05-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-comparative',
+    secondarySkills: ['rc-other-viewpoints', 'rc-detail'],
+    editorialDifficulty: 3,
+    itemPurpose: 'transfer',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-c05',
+    stem: 'The authors of the two passages would most likely disagree over whether',
+    choices: [
+      { text: 'bilingualism is a worthwhile educational goal that schools should actively pursue' },
+      { text: 'children require meaningful exposure to a language in order to acquire it well' },
+      { text: 'immersion programs involve substantial daily instructional use of the target language' },
+      { text: 'the early first-language lag of immersion students reliably closes by late elementary school' },
+      { text: 'literacy skills acquired in one language can transfer readily to another' },
+    ],
+    correctIndex: 3,
+    explanationQuick:
+      'Passage A says follow-up studies show the early lag "fully closed" by late elementary school; passage B says for many children the lag is "not temporary at all," feeding remedial tracks. Direct collision on D.',
+    explanationWalkthrough:
+      'A genuine disagreement needs opposed commitments. Passage A, paragraph 2: "Concerns that immersion harms first-language development have not survived scrutiny: follow-up studies consistently show immersion students performing at grade level in their native language by late elementary school, with the temporary lag of the early years fully closed." Passage B, paragraph 5: "The early ‘lag\u2019 that immersion researchers celebrate as temporary is, for many children, not temporary at all: students pulled from home-language support too early disproportionately populate remedial tracks." The two passages give flatly opposed answers about the lag\u2019s reliability — D. The other choices state shared ground or one-sided silence: both passages endorse bilingualism (A calls for "schools serious about bilingualism"; B says its programs are "emphatically bilingual"); both presuppose that exposure matters (B\u2019s developmental model adds the second language through rich exposure); A\u2019s description of immersion\u2019s daily intensity is uncontested by B; and transfer (E) is B\u2019s thesis, which A neither affirms nor denies.',
+    choiceExplanations: [
+      'Shared ground. Passage A addresses "schools serious about bilingualism," and passage B insists its programs are "emphatically bilingual, not monolingual." The disagreement, B says, is "about sequencing, not about goals."',
+      'Shared ground. Passage A\u2019s mechanism is "massive, meaningful exposure," and passage B never denies exposure\u2019s value — it says developmental programs still add the second language richly. No opposition here.',
+      'Uncontested description. Passage B does not dispute what immersion programs do; it disputes what they achieve for first-language foundations. Characterizing immersion\u2019s daily intensity draws no disagreement.',
+      'Correct. A: the lag is temporary and "fully closed" by late elementary school. B: the lag is "for many children, not temporary at all," landing students in remedial tracks. Flatly opposed empirical commitments.',
+      'One-sided silence. Transfer is passage B\u2019s foundational claim, but passage A neither affirms nor denies it — it simply does not discuss transfer. Silence is not disagreement, so this cannot be the answer.',
+    ],
+    generalLesson:
+      'Verify disagreement items with two quotes, one per passage, that answer the same question oppositely; a strong claim in one passage met by silence in the other is the classic trap.',
+    misconceptionTags: ['shared-ground', 'one-sided-silence'],
+    trapTypes: ['unsupported', 'half-right', 'wrong-viewpoint'],
+    prerequisites: ['rc-comparative', 'rc-detail'],
+    estimatedSeconds: 110,
+    sourceType: 'original',
+    hints: [
+      'Find what passage A says about the early first-language lag by late elementary school.',
+      'Find passage B\u2019s claim about the same lag — temporary or not?',
+      'Which other choices state goals or mechanisms both passages share?',
+    ],
+    labels: { topic: 'second-language education' },
+    evidenceMap: {
+      supportingParagraphs: [2, 5, 6],
+      supportingSentences: [
+        '"Follow-up studies consistently show immersion students performing at grade level in their native language by late elementary school, with the temporary lag ... fully closed" (passage A, paragraph 2).',
+        '"The early ‘lag\u2019 ... is, for many children, not temporary at all" (passage B, paragraph 5).',
+      ],
+      requiredInference:
+        'The two passages answer the same empirical question — does the lag reliably close? — with opposed answers, establishing genuine disagreement on D and nowhere else among the choices.',
+      whyDistractorsFail:
+        'A and B state goals and mechanisms both passages endorse; C is an uncontested description; E is passage B\u2019s thesis met by passage A\u2019s silence, not its denial.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
   },
 ];
 
@@ -4003,6 +4682,142 @@ const RC_RC_C06: Question[] = [
       'The correct choice covers both feasibility and the aggregation point.'
     ],
     labels: { topic: 'AI training and copyright' },
+  },
+  {
+    id: 'rc-c06-q7',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-comparative',
+    secondarySkills: ['rc-other-viewpoints', 'rc-passage-structure'],
+    editorialDifficulty: 3,
+    itemPurpose: 'transfer',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-c06',
+    stem: 'Based on the passages, the authors of both passages agree that',
+    choices: [
+      { text: 'training on published works is the same in kind as a human student reading them' },
+      { text: 'licensing fees for training data would be too small to compensate creators meaningfully' },
+      { text: 'their dispute should be resolved within existing copyright law rather than by replacing it' },
+      { text: 'collective licensing of training data is not administratively feasible at present' },
+      { text: 'models that reproduce substantial portions of specific works in their outputs should escape liability' },
+    ],
+    correctIndex: 2,
+    explanationQuick:
+      'The final paragraph states the shared premise outright: both sides "accept the same starting premise: that copyright law ... is the proper framework." Their fight is over how the existing framework applies.',
+    explanationWalkthrough:
+      'This item rewards noticing the meta-level agreement that the final paragraph spells out: "Both sides of this dispute, notably, accept the same starting premise: that copyright law ... is the proper framework for deciding the question. No one here proposes scrapping copyright for AI or inventing an entirely new regime. The fight is over how the existing framework applies." Choice C restates that premise. Choice A is passage A\u2019s analogy ("the student with a library card"), which passage B explicitly attacks as "a sleight of hand." Choice B is passage A\u2019s economic claim (per-work value "approaches zero"), which passage B answers with the recorded-music counterexample. Choice D is contradicted by passage B, which calls a similar regime "administratively feasible." Choice E is rejected even by passage A, which concedes that infringing outputs "can infringe just as a human-authored copy would."',
+    choiceExplanations: [
+      'One-sided. Passage A leans on the student-with-a-library-card analogy, but passage B brands that very comparison "a sleight of hand": a student does not build a commercial product competing with the author.',
+      'One-sided. The near-zero per-work value claim belongs to passage A; passage B answers that aggregation of small payments "built the entire recorded-music economy," directly disputing the premise.',
+      'Correct. The final paragraph says both sides "accept the same starting premise: that copyright law ... is the proper framework," with the fight confined to how the existing framework applies.',
+      'Contradicted. Passage B\u2019s central constructive argument is that collective licensing is "administratively feasible," modeled on music-rights organizations. Passage A\u2019s skepticism does not create agreement.',
+      'Rejected by both. Passage A itself concedes that outputs reproducing substantial portions of a specific work "can infringe just as a human-authored copy would"; passage B would demand liability a fortiori.',
+    ],
+    generalLesson:
+      'In comparative passages, the last paragraph often names the shared framework explicitly; agreement items are usually answered from that meta-level statement rather than from either side\u2019s contested arguments.',
+    misconceptionTags: ['one-sided', 'contradicted'],
+    trapTypes: ['wrong-viewpoint', 'opposite', 'unsupported'],
+    prerequisites: ['rc-comparative', 'rc-passage-structure'],
+    estimatedSeconds: 105,
+    sourceType: 'original',
+    hints: [
+      'Which paragraph describes what "both sides of this dispute" accept?',
+      'Which choices belong to one side\u2019s argument that the other side explicitly attacks?',
+      'Even passage A concedes one limit on its own position in its final paragraph — what is it?',
+    ],
+    labels: { topic: 'AI training and copyright' },
+    evidenceMap: {
+      supportingParagraphs: [3, 4, 5, 6],
+      supportingSentences: [
+        '"Both sides of this dispute, notably, accept the same starting premise: that copyright law ... is the proper framework for deciding the question" (paragraph 6).',
+        'Passage A concedes outputs reproducing substantial portions of a specific work "can infringe just as a human-authored copy would" (paragraph 3).',
+      ],
+      requiredInference:
+        'The shared-premise statement in the final paragraph directly supports C; each other choice is either one side\u2019s contested claim or a proposition both passages reject.',
+      whyDistractorsFail:
+        'A and B are passage-A claims passage B attacks; D is contradicted by passage B\u2019s feasibility argument; E is rejected by passage A\u2019s own concession.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
+  },
+  {
+    id: 'rc-c06-q8',
+    version: 1,
+    sectionType: 'RC',
+    questionType: 'rc-comparative',
+    secondarySkills: ['rc-function', 'rc-passage-structure'],
+    editorialDifficulty: 3,
+    itemPurpose: 'transfer',
+    validationStatus: 'validated',
+    difficultyProfile: {
+      structuralComplexity: 3,
+      inferentialDistance: 3,
+      distractorProximity: 3,
+      abstraction: 3,
+    },
+    stimulus: '',
+    passageId: 'rc-c06',
+    stem: 'The collective-licensing argument in passage B functions primarily to',
+    choices: [
+      { text: 'answer passage A\u2019s claim that licensing is unworkable by citing an institution managing rights at comparable scale' },
+      { text: 'concede the force of passage A\u2019s economic argument while shifting the debate onto moral grounds' },
+      { text: 'demonstrate that the per-work value of training data is in fact large enough to matter' },
+      { text: 'challenge passage A\u2019s threshold claim that training on copyrighted works is transformative' },
+      { text: 'establish that collective licensing has eliminated infringement in the recorded-music industry' },
+    ],
+    correctIndex: 0,
+    explanationQuick:
+      'Passage A calls licensing unworkable at billion-item scale; passage B points to collective licensing organizations that already manage millions of musical works — a direct feasibility rebuttal with a revenue mechanism attached.',
+    explanationWalkthrough:
+      'Function questions ask what a move does in the debate. Passage A\u2019s paragraph 2 argues licensing "is unworkable": billions of items, near-zero per-work value, and only the largest companies could cope. Passage B\u2019s paragraph 5 answers that exact point: collective licensing organizations "already manage rights for millions of musical works," a similar regime is "administratively feasible," and aggregated small payments "built the entire recorded-music economy." That is a rebuttal of unworkability by counterexample — choice A. Choice B fails because nothing is conceded; the argument attacks, it does not retreat to moral grounds. Choice C misreads the economics: B\u2019s point is that small per-work values aggregate into real money, not that per-work values are large. Choice D mislocates the target — B attacks transformativeness in paragraph 4, a separate argument about the student analogy. Choice E inflates the example: B claims music licensing distributes royalties, not that it eliminated infringement.',
+    choiceExplanations: [
+      'Correct. Passage A\u2019s feasibility objection (billions of works, near-zero value, negotiation impossible at scale) is met by passage B\u2019s counterexample: music licensing already manages millions of works and turns small payments into real revenue.',
+      'Wrong move. Nothing is conceded: the licensing argument presses the attack on feasibility. B\u2019s moral-hazard objection appears in a different paragraph and does no work here.',
+      'Misread. B\u2019s point is the opposite: per-work values are small, but "small payments across billions of uses built the entire recorded-music economy" — aggregation, not large per-work value.',
+      'Wrong target. The transformativeness claim is attacked in passage B\u2019s paragraph 4 (the student-analogy critique), not by the licensing argument in paragraph 5, which addresses workability.',
+      'Overstated. The example shows royalties reach creators at scale; nothing claims infringement was eliminated. The argument is about feasibility and compensation, not eradication.',
+    ],
+    generalLesson:
+      'For cross-passage function items, name the passage-A claim being answered before evaluating passage B\u2019s move; distractors commonly point at the wrong target paragraph or overstate the example\u2019s payoff.',
+    misconceptionTags: ['misread', 'wrong-target'],
+    trapTypes: ['overstated', 'wrong-target', 'unsupported'],
+    prerequisites: ['rc-comparative', 'rc-function'],
+    estimatedSeconds: 105,
+    sourceType: 'original',
+    hints: [
+      'What exactly does passage A claim is "unworkable," and why?',
+      'What existing institution does passage B cite, and what two things does the example show?',
+      'Does B claim per-work values are large, or that small values aggregate?',
+    ],
+    labels: { topic: 'AI training and copyright' },
+    evidenceMap: {
+      supportingParagraphs: [2, 5],
+      supportingSentences: [
+        '"Requiring licenses for every work in a training corpus of billions of items would not compensate authors meaningfully" (passage A, paragraph 2).',
+        '"Collective licensing organizations already manage rights for millions of musical works ... a similar regime for training data is administratively feasible" (passage B, paragraph 5).',
+      ],
+      requiredInference:
+        'The licensing argument directly rebuts A\u2019s unworkability claim by counterexample (music rights at scale) and answers the small-value objection via aggregation — the function named in A.',
+      whyDistractorsFail:
+        'B mislabels an attack as a concession; C inverts the aggregation point; D targets the wrong paragraph; E inflates the example beyond what B claims.',
+    },
+    reviewHistory: [
+      { date: '2026-09-12', reviewer: 'rc-expansion-2026-09-12', verdict: 'validate',
+        notes: 'Authored in the 2026-09-12 RC expansion to give this set genuine size variety (mandate section 43). Hostile-reviewed: credited choice uniquely satisfies the stem; at least two distractors carry credible first-reading attraction; difficulty from reasoning, not wording.' },
+    ],
+    createdAt: '2026-09-12',
+    revisedAt: '2026-09-12',
   },
 ];
 
