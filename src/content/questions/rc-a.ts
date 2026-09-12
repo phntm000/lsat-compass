@@ -43,7 +43,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Which one of the following best expresses the main point of the passage?',
     choices: [
       { text: 'Judges should always decide cases as narrowly as possible, since broad rulings are invariably mistaken and democratically illegitimate in every area of law.' },
-      { text: 'Judicial minimalism — deciding narrowly on shallow grounds — is best defended as a rebuttable default: it limits error costs and respects democratic deliberation, allowing exceptions where breadth is required.' },
+      { text: 'Judicial minimalism — deciding narrowly on shallow grounds — is best defended as a rebuttable default: it limits error costs and respects democratic deliberation, allowing exceptions where needed' },
       { text: 'Maximalist opinions are superior to minimalist ones because only broad rulings give citizens and lower courts the clarity they need to plan their conduct.' },
       { text: 'The debate between minimalists and maximalists is unresolvable, so judges should ignore the theoretical debate and decide cases on purely pragmatic grounds tied to immediate outcomes.' },
       { text: 'Minimalism is valuable chiefly because it protects the judiciary\u2019s public legitimacy by making courts appear less political and more like neutral arbiters of disputes rather than policymakers.' },
@@ -116,7 +116,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'limit the damage done when judges decide cases incorrectly' },
       { text: 'return contested questions to legislatures and citizens' },
       { text: 'make courts appear less like a rival legislature' },
-      { text: 'guarantee that lower courts will apply the law consistently' },
+      { text: 'ensure lower courts apply the law uniformly' },
       { text: 'reduce the judiciary\u2019s exposure to controversial questions' },
     ],
     correctIndex: 3,
@@ -328,7 +328,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'enthusiastic endorsement' },
       { text: 'hostile opposition' },
-      { text: 'skeptical, holding that it is implausible as an absolute rule though valuable as a default' },
+      { text: 'skeptical: implausible as an absolute rule, valuable as a default' },
       { text: 'indifferent, since the author believes the debate has no practical consequences' },
       { text: 'cautiously optimistic that it will soon be adopted by all appellate courts' },
     ],
@@ -475,7 +475,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'condemn plea bargaining as an unconstitutional practice that should be abolished immediately, without considering any counterarguments' },
       { text: 'provide a neutral historical chronicle of American criminal procedure, advancing no evaluative argument about plea bargaining at all' },
-      { text: 'trace the rise of plea bargaining, present the main arguments on both sides, and argue that regulation rather than abolition is the realistic path' },
+      { text: 'trace the rise of plea bargaining, present the main arguments on both sides, and argue that regulation not abolition is the realistic path' },
       { text: 'prove that innocent defendants never plead guilty and that the trial penalty described by critics is therefore a myth' },
       { text: 'argue that the Supreme Court was wrong to legitimize plea bargaining in Brady v. United States and should overturn that precedent' },
     ],
@@ -528,7 +528,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p02',
     stem: 'According to the passage, the Supreme Court\u2019s decision in Brady v. United States (1970)',
     choices: [
-      { text: 'declared negotiated guilty pleas an essential component of the administration of justice' },
+      { text: 'declared negotiated guilty pleas essential to administering justice' },
       { text: 'held that plea bargaining violates the constitutional right to a speedy trial' },
       { text: 'required prosecutors to disclose all exculpatory evidence before accepting a plea' },
       { text: 'prohibited judges from participating in plea negotiations' },
@@ -755,7 +755,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'A state enacts a law capping the difference between a prosecutor\u2019s plea offer and the sentence the defendant would face after conviction at trial. Based on the passage, the author would most likely view this law as',
     choices: [
       { text: 'tantamount to abolishing plea bargaining, and therefore doomed to fail' },
-      { text: 'a promising instance of the passage\'s regulatory approach, curbing the trial penalty\'s coercive edge without ending bargaining' },
+      { text: 'a promising use of the approach, curbing the trial penalty\u2019s coercive edge without ending bargaining' },
       { text: 'misguided, because the passage argues that prosecutorial discretion should remain entirely unchecked' },
       { text: 'irrelevant to the passage\u2019s concerns, which are limited to the historical origins of plea bargaining' },
       { text: 'insufficient on its own, because the passage proves that only judicial participation in negotiations can prevent coercion' },
@@ -814,7 +814,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Which one of the following best expresses the main point of the passage?',
     choices: [
       { text: 'Adverse possession is a morally indefensible doctrine that rewards theft and should be abolished outright.' },
-      { text: 'Adverse possession serves real economic and evidentiary functions; though modern conditions weaken some justifications, the answer is targeted reform, not repeal.' },
+      { text: 'Adverse possession serves economic and evidentiary functions; though modern conditions weaken some justifications, the answer is targeted reform, not repeal.' },
       { text: 'The history of adverse possession from Roman usucapio to the American frontier shows that property law has always favored trespassers over true owners.' },
       { text: 'Modern recording systems have eliminated every justification for adverse possession, leaving it without any defensible purpose.' },
       { text: 'Adverse possession is justified solely because it punishes negligent owners, and its economic benefits are illusory.' },
@@ -873,7 +873,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'a speculator who deliberately occupies unused land in hopes of eventually claiming title' },
       { text: 'a government agency seeking to quiet title to public lands' },
       { text: 'a corporation that purchases tax-delinquent parcels at auction' },
-      { text: 'a neighbor who fenced, farmed, or built on the land in the honest belief that it was theirs' },
+      { text: 'a neighbor who fenced, farmed, or built on land believing it was theirs' },
       { text: 'a tenant whose written lease has expired but who continues to pay rent' },
     ],
     correctIndex: 3,
@@ -933,7 +933,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'situations in which the original owner promptly asserted their rights' },
       { text: 'cases in which the claimant acted in good faith under color of title' },
       { text: 'government-owned parcels that states have exempted from the doctrine' },
-      { text: 'deliberate occupation of a neighbor\'s unused strip in hopes of claiming it' },
+      { text: 'deliberate occupation of a neighbor\'s strip to claim it' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -989,7 +989,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'The author\u2019s reference to Roman usucapio in the first paragraph functions primarily to',
     choices: [
       { text: 'prove that Roman property law was morally superior to its modern counterparts' },
-      { text: 'establish that adverse possession is an ancient, historically rooted doctrine rather than a recent anomaly' },
+      { text: 'establish that adverse possession is an ancient, rooted doctrine rather than a recent anomaly' },
       { text: 'argue that the doctrine should be interpreted exactly as the Roman jurists interpreted it' },
       { text: 'suggest that the economic justifications for the doctrine originated in ancient Rome' },
       { text: 'concede that the doctrine\u2019s critics have history on their side' },
@@ -1107,7 +1107,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p03',
     stem: 'Which one of the following best describes the organization of the passage?',
     choices: [
-      { text: 'A doctrine is defined and its history traced; traditional justifications are presented; a moral critique is aired and answered; a reformist conclusion is drawn.' },
+      { text: 'A doctrine is defined and its history traced; traditional justifications are presented; a moral critique is aired and answered; a reformist conclusion follows.' },
       { text: 'Two rival theories are compared; empirical evidence is shown to favor one; the losing theory is refuted; policy implications are derived.' },
       { text: 'A legal controversy is described; the Supreme Court\u2019s resolution is analyzed; dissenting opinions are evaluated; a prediction about future cases is offered.' },
       { text: 'A paradox is posed; three competing solutions are tested against the evidence; the least implausible solution is endorsed with reservations.' },
@@ -1228,11 +1228,11 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p04',
     stem: 'The skeptics\u2019 methodological objection to the moralizing interpretation implies that',
     choices: [
-      { text: 'seventeenth-century viewers were generally incapable of understanding visual symbolism in paintings of the period' },
+      { text: 'seventeenth-century viewers were generally incapable of understanding the visual symbolism in paintings of the period' },
       { text: 'Vermeer deliberately avoided all moral content in his paintings as a consistent matter of artistic principle' },
       { text: 'archival research into household inventories is largely irrelevant to how art history is currently practiced' },
       { text: 'emblem books were considerably less popular in the Dutch Republic than scholars have traditionally assumed' },
-      { text: 'an interpretive method able to assign any meaning an object needs for the thesis cannot be proven wrong and is therefore suspect' },
+      { text: 'a method able to assign any meaning an object needs for the thesis is unfalsifiable and therefore suspect' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1286,7 +1286,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p04',
     stem: 'The author mentions that many of the objects in Vermeer\u2019s paintings also appear in the work of his less renowned Delft contemporaries primarily in order to',
     choices: [
-      { text: 'support the skeptics\u2019 suggestion that the objects may reflect shared studio props rather than a coded moral program' },
+      { text: 'back the skeptics\u2019 view that the objects may be mere studio props, not a coded moral program' },
       { text: 'prove that Vermeer\u2019s contemporaries were the true originators of the moralizing emblem tradition' },
       { text: 'argue that Vermeer\u2019s technical skill was inferior to that of his Delft contemporaries' },
       { text: 'concede that the moralizing interpretation has no evidence whatsoever in its favor' },
@@ -1346,7 +1346,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Proponents of the moralizing interpretation would most likely respond to the skeptics\u2019 "shared studio props" objection by pointing to',
     choices: [
       { text: 'the fact that Vermeer\u2019s contemporaries are now considered inferior painters' },
-      { text: 'evidence that Vermeer adjusted compositions with extraordinary care, taken as proof of deliberation about meaning' },
+      { text: 'evidence that Vermeer adjusted compositions with care, taken as proof of deliberation' },
       { text: 'household inventories showing that the painted objects were rare luxuries unfamiliar to ordinary viewers' },
       { text: 'the claim that emblem books were unknown in seventeenth-century Delft' },
       { text: 'Vermeer\u2019s written statements explaining the moral program of each painting' },
@@ -1406,7 +1406,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'An art historian discovers that Vermeer repositioned a wall map several times between compositional stages and argues that this proves the map carries a precise moral meaning. A skeptic reasoning as the passage\u2019s skeptics do would most likely reply that',
     choices: [
       { text: 'the repositioning proves the historian\u2019s case, since no painter adjusts meaningless details' },
-      { text: 'the repositioning shows deliberation about pictorial harmony, which does not by itself show the map carries symbolic meaning' },
+      { text: 'the repositioning shows deliberation over pictorial harmony, which by itself does not show the map is symbolic' },
       { text: 'wall maps never appear in the work of Vermeer\u2019s Delft contemporaries, so the studio-props objection fails' },
       { text: 'moral meanings can only be established by archival documents, never by technical study of paintings' },
       { text: 'the historian has confused Vermeer with a different Delft painter who did paint moral allegories' },
@@ -1581,7 +1581,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p05',
     stem: 'The observation that readers disagree sharply about which narrators are unreliable is offered in the passage primarily to support the conclusion that',
     choices: [
-      { text: 'unreliability is not a stable property of narrators but a judgment arising from the interaction of text and reader' },
+      { text: 'unreliability is no stable property of narrators but a judgment born of text-reader interplay' },
       { text: 'most readers are incompetent and should defer to professional critics on all questions of interpretation' },
       { text: 'Henry James deliberately wrote an incoherent novella in order to frustrate his audience' },
       { text: 'Booth\u2019s concept was never useful to teachers of literature and should be abandoned entirely' },
@@ -1642,7 +1642,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'introduce new empirical research on how students actually learn narrative technique in literature classrooms' },
       { text: 'prove that the traditionalist defense of Booth\u2019s concept is logically incoherent and unworthy of serious scholarly attention' },
-      { text: 'draw out the debate\'s pedagogical stakes: teaching unreliability as argued inference builds better reasoning than teaching it as a label' },
+      { text: 'frame the debate\u2019s stakes: teaching unreliability as inference builds better judgment than teaching it as a label' },
       { text: 'concede that the entire debate has no implications beyond academic journals and need not concern teachers of literature' },
       { text: 'summarize the plot of The Turn of the Screw for readers who are unfamiliar with James\u2019s novella' },
     ],
@@ -1703,7 +1703,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'contemptuous dismissal of a defense the author considers dishonest' },
       { text: 'indifference, since the author regards both sides as equally confused' },
       { text: 'complete agreement that settles the theoretical debate in the traditionalists\u2019 favor' },
-      { text: 'respectful presentation followed by a practical verdict favoring the inference-based approach' },
+      { text: 'respectful presentation, then a verdict for the inference-based approach' },
       { text: 'hostility toward any role for authorial intention in literary interpretation' },
     ],
     correctIndex: 3,
@@ -1761,7 +1761,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'one of the students has misread the novel, since textual evidence determines unreliability objectively' },
       { text: 'the author of the novel failed to signal the narrator\u2019s status clearly enough' },
-      { text: 'judgments of unreliability depend on which textual cues and background assumptions a reader weights most heavily' },
+      { text: 'judgments of unreliability depend on which cues and assumptions a reader weights heavily' },
       { text: 'sincerity and reliability are identical, so the second student\u2019s distinction is meaningless' },
       { text: 'classroom debate about literature is a waste of time that the passage condemns' },
     ],
@@ -1812,7 +1812,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Which one of the following best expresses the main point of the passage?',
     choices: [
       { text: 'Narrative history has been decisively refuted by the Annales school and should no longer be practiced by serious historians.' },
-      { text: 'Narrative, structural, and microhistorical approaches each answer a different explanation question; the historian\u2019s task is matching the scale of explanation to the question asked.' },
+      { text: 'Narrative, structural, and microhistorical approaches each answer a different explanatory question; the historian\u2019s task is matching the scale of explanation to the question' },
       { text: 'The fall of Rome was caused exclusively by weak emperors and invading armies, as narrative historians have always maintained without serious challenge.' },
       { text: 'Microhistory has resolved the debate between narrative and structural history by proving that structures never constrain human action under any circumstances whatsoever.' },
       { text: 'Fernand Braudel\u2019s study of the Mediterranean is the only historical work that has ever successfully explained change.' },
@@ -1964,7 +1964,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p06',
     stem: 'The discussion of the sixteenth-century miller in the fourth paragraph functions primarily to',
     choices: [
-      { text: 'illustrate how microhistory uses intensive small-scale study to show structures as experienced and negotiated: constraining without determining' },
+      { text: 'illustrate how microhistory uses local study to show structures as lived, negotiated: constraining, not determining' },
       { text: 'prove that peasant culture was entirely independent of elite ideas, with no meaningful contact or exchange between the two spheres at all' },
       { text: 'demonstrate that the Inquisition\u2019s records are too unreliable for any serious historical use by modern scholars' },
       { text: 'argue that microhistory has fully replaced both narrative and structural history as the dominant historical method' },
@@ -2019,7 +2019,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'the Annales school was wrong to found its journal in 1929 rather than earlier, betraying its own principles' },
       { text: 'microhistory has already rendered the entire debate obsolete and settled every remaining question' },
       { text: 'Braudel\u2019s prose style is less artful than that of the traditional narrative historians' },
-      { text: 'structures explain continuity better than change, and history without human decisions becomes a machine without operators' },
+      { text: 'structures explain continuity over change, and decisionless history is a machine without operators' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -2275,7 +2275,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'citizens are incapable of rational deliberation and must be managed by experts' },
       { text: 'any influence on choice is morally equivalent to coercion' },
       { text: 'private actors design choice environments more ethically than governments do' },
-      { text: 'the autonomy objection proves too much, because some choice architecture is unavoidable' },
+      { text: 'the autonomy objection proves too much: some choice design is unavoidable' },
       { text: 'because influence is inevitable, any form of steering is automatically legitimate' },
     ],
     correctIndex: 3,
@@ -2327,7 +2327,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'argue that behavioral economics should be replaced by a newer research program with fundamentally different methods' },
       { text: 'concede that the empirical objection to nudging is unanswerable and that the entire program should be abandoned' },
       { text: 'prove that all early scientific findings are eventually shown to be false, without exception, in every field' },
-      { text: 'characterize the shrinking of some nudge effects on replication as an expected maturation rather than a refutation of nudging' },
+      { text: 'characterize shrinking nudge effects on replication as expected maturation rather than a refutation' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -2376,7 +2376,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'uncritically enthusiastic, endorsing every nudge intervention ever proposed without any qualification or concern' },
       { text: 'wholly hostile, regarding all nudging as illegitimate manipulation that governments must never employ' },
-      { text: 'measured: accepting the underlying psychology and some interventions, but insisting effects are limited and guardrails are needed' },
+      { text: 'measured: accepting the psychology and some interventions, but insisting effects are modest and guardrails are needed' },
       { text: 'indifferent, presenting the debate without any evaluative judgment of its own' },
       { text: 'nostalgic for an era before behavioral economics existed as a field' },
     ],
@@ -2425,7 +2425,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p07',
     stem: 'A city proposes to increase organ-donor registration by changing the driver\u2019s license form from opt-in to opt-out, publicly announcing the change and its rationale, and committing to publish registration results annually. According to the passage\u2019s framework, the author would most likely regard this proposal as',
     choices: [
-      { text: 'an especially defensible nudge: it uses a reliably effective mechanism (a default), preserves opt-out, and satisfies the guardrails of disclosure and testing' },
+      { text: 'a defensible nudge: reliably effective mechanism (a default), preserved opt-out, guardrails of disclosure and testing' },
       { text: 'illegitimate manipulation, because it bypasses rational deliberation about a matter as serious as organ donation' },
       { text: 'ineffective, because the passage proves that defaults never influence behavior in any domain' },
       { text: 'unacceptable, because the passage argues nudges should never be publicly disclosed to those they affect' },
@@ -2479,7 +2479,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'Natural resources invariably doom developing countries to slow growth, corruption, and civil war, regardless of their political institutions, policy choices, or historical circumstances.' },
       { text: 'The resource curse has been completely debunked: natural resources never harm economic development, and the entire literature rests on statistical artifacts.' },
-      { text: 'The resource curse captures real patterns, but institutional quality mediates resource effects, so the prescription shifts from fatalism to building transparent revenue institutions before windfalls arrive.' },
+      { text: 'The resource curse captures real patterns, but institutions mediate resource effects, so the prescription shifts from fatalism to building transparent revenue institutions before windfalls.' },
       { text: 'Norway and Botswana prove that the resource curse never existed, that economists fabricated the supporting data, and that resource wealth always accelerates development in every case.' },
       { text: 'The only solution to the resource curse is for poor countries to leave all natural resources permanently in the ground, forgoing any extraction revenue whatsoever.' },
     ],
@@ -2528,7 +2528,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p08',
     stem: 'According to the passage, "Dutch disease" refers to the phenomenon in which',
     choices: [
-      { text: 'resource windfalls inflate the currency and draw investment away from manufacturing, hollowing out the tradable sector' },
+      { text: 'resource windfalls inflate the currency and pull money from manufacturing, hollowing the traded sector' },
       { text: 'civil wars erupt over control of diamond mines, diverting resource revenues from public investment' },
       { text: 'governments become dependent on foreign aid rather than taxation' },
       { text: 'sovereign wealth funds lose value during commodity price collapses' },
@@ -2582,7 +2582,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'oil and diamonds are not actually valuable commodities in the modern global economy' },
       { text: 'statistical studies of economic growth are inherently unreliable and should be disregarded entirely by policymakers' },
       { text: 'no country has ever suffered from the alleged resource curse at any point in history' },
-      { text: 'the quality of pre-existing institutions, not resource wealth itself, determines whether resources become a blessing or a curse' },
+      { text: 'pre-existing institutional quality, not resource wealth, determines whether resources bless or curse' },
       { text: 'the resource curse applies only to oil, not to diamonds or copper or other extractive commodities studied' },
     ],
     correctIndex: 3,
@@ -2631,7 +2631,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'The second paragraph functions primarily to',
     choices: [
       { text: 'refute the resource curse thesis by presenting its most famous counterexamples in full detail' },
-      { text: 'establish the thesis\u2019s empirical plausibility with stark examples and statistical studies before the revisionist critique arrives' },
+      { text: 'establish the thesis\u2019s empirical plausibility with stark examples and statistical studies before the critique arrives' },
       { text: 'argue that Sierra Leone\u2019s civil war had nothing to do with diamonds or the illicit trade that funded the fighting' },
       { text: 'prove that cross-country statistical studies are methodologically flawless and immune to any criticism whatsoever' },
       { text: 'introduce the institutionalist revision that the rest of the passage develops at length' },
@@ -2685,7 +2685,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'the counterexamples are fabricated and the underlying data should be disregarded' },
       { text: 'institutions are irrelevant to economic development' },
       { text: 'Norway and Botswana actually confirm the thesis, because both countries suffered the institutional decay the thesis predicts and their resource wealth merely concealed it from outside observers' },
-      { text: 'the probabilistic claim survives, and the exceptions required deliberate institutional engineering that is difficult for most developing countries to replicate under boom pressures' },
+      { text: 'the probabilistic claim survives; its exceptions required institutional engineering few developing countries can replicate amid booms' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -2734,7 +2734,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'leave the oil permanently in the ground, since extraction can only end in institutional decay' },
       { text: 'extract as quickly as possible before institutions have a chance to interfere with development' },
-      { text: 'establish transparent revenue management, stabilization funds, and independent oversight before extraction begins' },
+      { text: 'set up transparent revenue handling, stabilization funds, and independent oversight pre-extraction' },
       { text: 'do nothing, since the passage proves that the resource curse is a myth' },
       { text: 'rely on the oil windfall to substitute for building tax-collection capacity' },
     ],
@@ -2785,7 +2785,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Which one of the following best expresses the main point of the passage?',
     choices: [
       { text: 'Agriculture was an unambiguous triumph for human welfare, and the skeletal evidence cited by its critics has been thoroughly discredited by later bioarchaeological research.' },
-      { text: 'The agriculture-was-a-mistake thesis developed in stages — Sahlins, Diamond’s skeletal indictment, later refinements — and now centers on specifying trade-offs rather than a verdict.' },
+      { text: 'The agriculture-was-a-mistake thesis developed in stages — Sahlins, Diamond\u2019s skeletal indictment, refinements — and now centers on specifying trade-offs rather than a verdict.' },
       { text: 'Jared Diamond’s 1987 essay settled the question of agriculture’s costs, and subsequent decades of research have added nothing of substance to his original indictment.' },
       { text: 'Ancient-DNA studies have proven that farming spread exclusively through migration, fully vindicating the demographic-trap explanation of agriculture’s triumph.' },
       { text: 'Sahlins and Diamond agreed that foraging life should be romanticized and that modern societies ought to abandon farming and return to hunting and gathering.' },
@@ -2837,7 +2837,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'foraging peoples were morally superior to farmers, and modern societies should abandon agriculture and return to hunting and gathering.' },
       { text: 'agriculture was the worst mistake in the history of the human race, as proven by the skeletal evidence of early farmers.' },
-      { text: 'hunter-gatherers met their material wants with relatively little labor, so affluence can mean modest wants easily satisfied rather than endless production.' },
+      { text: 'hunter-gatherers met material wants with little labor, so affluence can mean modest wants easily satisfied rather than endless production.' },
       { text: 'skeletal remains demonstrate that early farming populations were taller and healthier than the foragers who preceded them.' },
       { text: 'population growth drove agricultural intensification, trapping societies in a demographic cycle they could not escape.' },
     ],
@@ -2890,7 +2890,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'Did farming spread mainly through the migration of farming peoples or the conversion of foragers?' },
       { text: 'Were Sahlins’s observations of contemporary foraging societies methodologically sound?' },
       { text: 'What motivated Diamond to call agriculture the worst mistake in human history?' },
-      { text: 'If farming made its early adopters worse off, why did it spread to encompass nearly the entire globe?' },
+      { text: 'If farming made early adopters worse off, why did it spread across most of the globe?' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -2941,7 +2941,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'introduce the demographic mechanism that explains why farming spread globally despite its heavy costs to individuals.' },
       { text: 'argue that bioarchaeological evidence is too unreliable to support any conclusions about early farmer health.' },
       { text: 'demonstrate that Sahlins’s observations of contemporary foraging peoples were fundamentally mistaken.' },
-      { text: 'show how Diamond’s provocation matured into a research program whose success generated the first major qualification of his case.' },
+      { text: 'show how Diamond\u2019s provocation became a research program whose success yielded the first qualification of his case' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3043,7 +3043,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'The Boserup-inspired demographic explanation for why farming spread despite its costs to individuals.' },
       { text: 'The ancient-DNA finding that farming spread partly through migration, reframing the demographic trap.' },
       { text: 'The current convergence on specifying trade-offs between individual welfare and collective capability.' },
-      { text: 'Diamond’s skeletal indictment of agriculture and the “transitional penalty” qualification raised against it.' },
+      { text: 'Diamond\u2019s skeletal indictment and the “transitional penalty” qualification raised against it' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3093,7 +3093,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'Language determines the boundaries of thought, so that speakers of different languages inhabit entirely different cognitive worlds with no shared perceptual foundation beneath linguistic differences.' },
       { text: 'Linguistic research has proven that language has no effect whatsoever on cognition, and every reported Whorfian finding is a methodological artifact.' },
-      { text: 'The strong determinist thesis is abandoned, but color, space, and time research supports a modest neo-Whorfian claim: language shapes perception below conscious deliberation, atop a shared cognitive foundation.' },
+      { text: 'The strong determinist thesis is abandoned, but color, space, and time research supports a modest neo-Whorfian claim: language shapes perception below conscious deliberation, atop a shared cognitive base' },
       { text: 'Russian speakers are cognitively superior to English speakers because their language has more color terms, giving them measurably better reasoning abilities across every tested domain.' },
       { text: 'The only scientifically respectable position is that grammar is merely a vehicle for expressing pre-existing thought, with no influence on cognition at all.' },
     ],
@@ -3145,7 +3145,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'the researchers stopped offering financial incentives for fast responses' },
       { text: 'the shades being discriminated did not straddle the Russian light-blue/dark-blue boundary' },
       { text: 'the experiment was conducted in English rather than in Russian' },
-      { text: 'subjects were prevented from silently naming the colors to themselves through verbal interference' },
+      { text: 'subjects could not silently name the colors under verbal interference' },
       { text: 'the researchers used a larger sample of English speakers' },
     ],
     correctIndex: 3,
@@ -3197,7 +3197,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'evidence that the original experiments were fraudulently conducted and their data fabricated' },
       { text: 'irrelevant to the debate, because their claims concern only spatial reasoning rather than color perception' },
       { text: 'proof that English speakers are cognitively superior to others under cognitive load' },
-      { text: 'confirmation of the language-mediated mechanism: a labeling-dependent effect should disappear when labeling is blocked' },
+      { text: 'confirmation of the mechanism: the labeling-dependent effect vanishes when labeling is blocked' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3244,7 +3244,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p10',
     stem: 'The third paragraph functions primarily to',
     choices: [
-      { text: 'present the skeptics\u2019 methodological objections: fragile effects, uncertain causal direction, and the gap between lab findings and grand claims' },
+      { text: 'present the skeptics\u2019 doubts: fragile effects, unclear causal direction, and the gap between lab findings and grand claims' },
       { text: 'concede that the neo-Whorfian research program has been definitively refuted by the replication failures described in the paragraph' },
       { text: 'introduce the Russian color experiments for the first time, before the passage has established the neo-Whorfian thesis' },
       { text: 'argue that publication bias is the sole cause of all scientific error, dismissing every other methodological concern raised' },
@@ -3296,7 +3296,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Skeptics, as presented in the passage, would most likely respond to the finding that speakers of absolute-direction languages show superior dead-reckoning abilities by arguing that',
     choices: [
       { text: 'the finding conclusively proves linguistic determinism and refutes all alternative explanations' },
-      { text: 'the superior dead-reckoning more likely reflects habitual attention or shared environmental demands than language causing a cognitive difference' },
+      { text: 'the superior dead-reckoning more likely reflects habit or shared environment than language causing cognitive difference' },
       { text: 'dead-reckoning ability is entirely genetic and unaffected by any environmental factor, including training, practice, or cultural habit' },
       { text: 'the researchers must have fabricated their data, since no genuine effect could produce such a result' },
       { text: 'absolute-direction languages are inherently superior to relative-direction languages in every cognitive respect' },
@@ -3347,7 +3347,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'A new study finds that speakers of a language with obligatory future-tense marking save less for retirement than speakers of a language without it — but the savings gap disappears entirely once national savings institutions and economic conditions are statistically controlled. According to the passage, the skeptics would most likely cite this result as illustrating',
     choices: [
       { text: 'a decisive confirmation of strong linguistic determinism, vindicating the neo-Whorfian program against its skeptics' },
-      { text: 'the causal-direction problem: the language effect was actually driven by shared institutional factors, with language along for the ride' },
+      { text: 'the causal-direction problem: the language effect reflected shared institutional factors, with language along for the ride' },
       { text: 'proof that statistical controls are an illegitimate research method that can never support causal conclusions' },
       { text: 'evidence that future-tense marking directly causes national savings institutions to weaken over successive generations' },
       { text: 'the publication-bias problem, since the study was never published in a peer-reviewed journal' },
@@ -3399,7 +3399,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'Which one of the following best expresses the main point of the passage?',
     choices: [
       { text: 'Kin selection has been decisively refuted by documented cases of cooperation among genetically unrelated individuals in nature.' },
-      { text: 'Four accounts of altruism — kin selection, reciprocal altruism, group selection, costly signaling — are increasingly treated as complementary tools for different cases rather than rival doctrines.' },
+      { text: 'Four accounts of altruism — kin selection, reciprocal altruism, group selection, costly signaling — are now treated as complementary tools, not rival doctrines.' },
       { text: 'The four accounts of altruism are mathematically equivalent descriptions, so biologists may use their theoretical vocabularies interchangeably without any loss of explanatory meaning in practice.' },
       { text: 'Altruism remains fundamentally unexplained because each proposed account fails against the evidence from its own flagship cases.' },
       { text: 'Costly signaling theory has superseded the other three accounts as the only explanation consistent with every observed case of animal altruism in nature.' },
@@ -3453,7 +3453,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'groups containing many altruists outcompete groups composed mainly of selfish individuals.' },
       { text: 'cheaters can be reliably detected and punished across repeated encounters.' },
       { text: 'the behavior is performed before an audience of potential mates or allies.' },
-      { text: 'the benefit to relatives, discounted by their degree of relatedness, exceeds the cost to the actor.' },
+      { text: 'the benefit to relatives, discounted by relatedness, exceeds the cost to the actor.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3504,7 +3504,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'aid directed preferentially toward close genetic relatives sharing the same roost.' },
       { text: 'behavior favored because bat colonies with many sharers outcompete rival colonies of non-sharers.' },
       { text: 'an instinctive response triggered by hunger cues, unaffected by any bat’s past behavior.' },
-      { text: 'an exchange sustained by memory and withheld future help: bats that take without ever giving are eventually refused.' },
+      { text: 'an exchange sustained by memory and withheld help: bats that take without giving are eventually refused.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3606,7 +3606,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'introduce a fifth explanatory account of altruism that supersedes the previous four.' },
       { text: 'concede that none of the four accounts can adequately explain the evolution of human cooperation.' },
       { text: 'summarize the empirical evidence supporting multilevel selection over its rivals.' },
-      { text: 'reframe the four accounts as complementary tools and name the researchers’ new question: which account fits a given case.' },
+      { text: 'reframe the accounts as complementary and pose the question: which account fits a given case' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3657,7 +3657,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'Costly signaling, because standing guard is conspicuous behavior performed in full view of the other birds.' },
       { text: 'Group selection, because neighborhoods with reliable guards will outcompete neighborhoods without them.' },
       { text: 'None of the accounts, because the birds described are genetically unrelated to one another.' },
-      { text: 'Reciprocal altruism: non-relatives engage in repeated turn-taking, and non-contributors are punished by exclusion.' },
+      { text: 'Reciprocal altruism: non-relatives engage in turn-taking; non-contributors are punished by exclusion' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3713,7 +3713,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'provide a field guide to identifying trophic cascades in terrestrial ecosystems for use by field researchers' },
       { text: 'argue that rewilding projects should be halted until laboratory-grade evidence is available, given the risks of acting on incomplete data' },
       { text: 'celebrate the return of wolves to Yellowstone as an unqualified scientific triumph and a model for future interventions' },
-      { text: 'recount the Yellowstone wolf narrative and the scientific skepticism about cascade claims, framing their dispute as one about sufficient evidence for action' },
+      { text: 'recount the Yellowstone wolf narrative and the skepticism about cascade claims, framing their dispute as one about enough evidence for action' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -3764,7 +3764,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'According to the passage, the strongest scientific evidence for trophic cascades comes from',
     choices: [
       { text: 'computer models simulating Pleistocene ecosystems and predator-prey dynamics' },
-      { text: 'relatively simple systems such as those involving sea otters, urchins, and kelp forests' },
+      { text: 'simple systems like those of sea otters, urchins, kelp forests' },
       { text: 'the reintroduction of wolves to Yellowstone National Park in the 1990s' },
       { text: 'laboratory experiments on captive wolf packs in controlled settings' },
       { text: 'historical accounts of predator extinctions across early modern Europe' },
@@ -3818,7 +3818,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p12',
     stem: 'The passage implies that, on the critics\u2019 view, rewilding efforts',
     choices: [
-      { text: 'produce novel ecosystems rather than restored historical ones, since the background conditions of the historical baseline no longer exist' },
+      { text: 'produce novel ecosystems rather than restored historical ones, since the conditions of the historical baseline no longer exist' },
       { text: 'are always ecologically beneficial regardless of local conditions or historical context' },
       { text: 'should be evaluated solely on their cultural and ethical value rather than their ecological outcomes' },
       { text: 'have been proven to recreate the exact ecosystems of 1900 in every documented case' },
@@ -3876,7 +3876,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'prove that elk behavior is entirely unaffected by the presence of wolves in the Yellowstone ecosystem' },
       { text: 'provide an uncontested example of a trophic cascade operating cleanly in the Yellowstone wolf system' },
       { text: 'concede that all behavioral ecology research is methodologically worthless and should be disregarded by policymakers' },
-      { text: 'illustrate the claim that elk avoided risky areas because of wolves, a claim later and more careful studies called into question' },
+      { text: 'illustrate the claim that elk avoided risky areas because of wolves, a claim later studies called into question' },
       { text: 'argue that wolves should never have been reintroduced to Yellowstone, regardless of the ecological evidence presented' },
     ],
     correctIndex: 3,
@@ -3931,7 +3931,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'fully credulous, repeating the account as established scientific fact' },
       { text: 'outraged, condemning the account as a deliberate fraud' },
-      { text: 'skeptical, noting both sides in the debate agree the early story oversold what was known' },
+      { text: 'skeptical: both sides agree early claims oversold what was known' },
       { text: 'indifferent, since the author considers popular accounts irrelevant to science' },
       { text: 'hostile to wolf reintroduction as a conservation policy' },
     ],
@@ -3985,7 +3985,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'A critic and an advocate debate a proposed lynx reintroduction for which the only evidence is correlational before-and-after data from a similar project elsewhere. According to the passage\u2019s analysis, their disagreement is fundamentally about',
     choices: [
       { text: 'whether lynx are capable of hunting the region\u2019s prey species, given the differences in terrain and available prey density' },
-      { text: 'what counts as sufficient evidence for action under uncertainty: laboratory-grade replication versus imperfect evidence weighed against the costs of inaction' },
+      { text: 'what counts as sufficient evidence for action under uncertainty: lab-grade replication versus imperfect evidence weighed against costs of inaction' },
       { text: 'whether the public finds lynx charismatic enough to support the project, since public enthusiasm is often said to drive conservation funding' },
       { text: 'the exact historical date on which lynx disappeared from the region, a background detail the passage never presents as contested' },
       { text: 'whether correlational data should be permanently banned from ecology rather than merely subjected to higher standards of proof' },
@@ -4040,7 +4040,7 @@ export const RC_QUESTIONS_A: Question[] = [
     passageId: 'rc-p13',
     stem: 'Which one of the following best expresses the main point of the passage?',
     choices: [
-      { text: 'The faint young Sun paradox — a dimmer early Sun versus geological evidence of liquid water — has no fully satisfactory solution yet, but its persistence has been scientifically productive.' },
+      { text: 'The faint young Sun paradox — a dimmer early Sun versus evidence of liquid water — lacks a satisfactory solution, but its persistence has been productive.' },
       { text: 'The faint young Sun paradox has been definitively solved by the discovery of high carbon dioxide levels in ancient atmospheres, ending all scientific debate about early Earth temperatures.' },
       { text: 'Stellar physics is fundamentally mistaken, and the young Sun was actually brighter than the present Sun, invalidating all standard solar models and their predictions.' },
       { text: 'Geologists have fabricated the evidence for liquid water on the early Earth in order to sustain an otherwise untenable research program.' },
@@ -4097,7 +4097,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'proves that the early Earth was continuously and uniformly temperate throughout its history' },
       { text: 'demonstrates that volcanic outgassing did not occur anywhere on the early Earth' },
       { text: 'shows that methanogenic microbes could not possibly have existed four billion years ago' },
-      { text: 'appears to record carbon dioxide far below strong-greenhouse requirements, challenging the greenhouse solution' },
+      { text: 'seems to record carbon dioxide below strong-greenhouse needs, challenging the greenhouse solution' },
       { text: 'confirms that the young Sun was thirty percent dimmer than today' },
     ],
     correctIndex: 3,
@@ -4150,7 +4150,7 @@ export const RC_QUESTIONS_A: Question[] = [
     stem: 'The passage implies that the "slushball Earth" proposal',
     choices: [
       { text: 'has been proven correct by isotopic signatures in ancient minerals that rule out every competing proposal' },
-      { text: 'trades one difficulty for another, since it must explain repeated escape from glaciation despite ice\u2019s high reflectivity' },
+      { text: 'trades one difficulty for another, since it must explain repeated escapes despite ice\u2019s high reflectivity' },
       { text: 'was originally proposed by the author of the passage in an earlier, now discredited paper' },
       { text: 'requires abandoning all of stellar physics, including the well-confirmed theory of stellar evolution' },
       { text: 'is incompatible with the existence of liquid water at any point in Earth\u2019s history, contradicting the geological record' },
@@ -4208,7 +4208,7 @@ export const RC_QUESTIONS_A: Question[] = [
       { text: 'concede that the paradox is scientifically uninteresting and should be entirely abandoned by working researchers as a dead end' },
       { text: 'prove that the greenhouse solution is correct after all' },
       { text: 'summarize the history of stellar physics from the nineteenth century to the present in broad strokes' },
-      { text: 'argue that the paradox\u2019s persistence has been scientifically productive, sharpening methods and models while keeping the field honest' },
+      { text: 'argue the paradox\u2019s persistence has been productive, sharpening methods and models, keeping the field honest' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -4262,7 +4262,7 @@ export const RC_QUESTIONS_A: Question[] = [
     choices: [
       { text: 'denying outright that the Sun was ever dimmer than it is today' },
       { text: 'abandoning the greenhouse approach entirely in favor of the slushball hypothesis of a globally frozen early Earth' },
-      { text: 'supplementing the greenhouse account with other warming mechanisms, while conceding each must fit the geological evidence' },
+      { text: 'supplementing the greenhouse account with other mechanisms, conceding each must fit the evidence' },
       { text: 'arguing that geological evidence is simply irrelevant to scientific questions about the ancient climate' },
       { text: 'claiming that paleosol evidence has been proven unreliable in every geological context studied' },
     ],

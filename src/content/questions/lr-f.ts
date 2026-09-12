@@ -228,7 +228,7 @@ export const QUESTIONS_LR_F: Question[] = [
     choices: [
       { text: 'If the pass is closed, the team buses through the tunnel. Practice starts late. So if the team buses through the tunnel, the pass is closed.' },
       { text: 'If it rains, the field is wet. If the field is wet, the game is canceled. So if the game is canceled, it rained.' },
-      { text: 'If the budget passes, the library extends its hours. If the library extends its hours, new staff are hired. So if the budget passes, new staff are hired.' },
+      { text: 'If the budget passes, the library extends hours. Longer hours mean new staff are hired. So budget passage means staff are hired' },
       { text: 'If the budget passes, the library extends its hours. The library extended its hours. So the budget passed.' },
       { text: 'Pass closures always delay practice, since the team must take the tunnel.' },
     ],
@@ -331,7 +331,7 @@ export const QUESTIONS_LR_F: Question[] = [
     stem: 'Which one of the following exhibits a pattern of reasoning most similar to that exhibited by the argument above?',
     choices: [
       { text: 'The harvest was poor, and there was a late frost, so the frost must have caused the poor harvest.' },
-      { text: 'The stain came from the red wine or the rusty pipe. The pipe was replaced last year and shows no rust. So the wine caused the stain.' },
+      { text: 'The stain came from the wine or the rusty pipe. The pipe was replaced last year and shows no rust. So the wine caused it' },
       { text: 'The delay was caused by traffic or by the faulty alarm. She hit heavy traffic, so the alarm did not cause the delay.' },
       { text: 'Late frosts have been arriving earlier in the season over the past decade.' },
       { text: 'The harvest was poor; therefore the new pesticide must have been defective.' },
@@ -383,7 +383,7 @@ export const QUESTIONS_LR_F: Question[] = [
       { text: 'The city\u2019s water system is aging, and aging infrastructure eventually fails, requiring costly replacement.' },
       { text: 'The human body is like a city: cities need police patrols, so the body must need police patrols too, to stay healthy.' },
       { text: 'Bodies and cities are fundamentally different, so comparing a water system to a circulatory system proves nothing about either on its own.' },
-      { text: "A beehive is like a factory whose delivery trucks are forager bees: a truckers\u2019 strike halts the factory, and a forager collapse halts honey production." },
+      { text: "A beehive is like a factory whose trucks are foragers: a truckers\u2019 strike halts the plant; a forager collapse halts production" },
       { text: 'Treatment plants need regular maintenance to keep functioning properly and avoid service interruptions.' },
     ],
     correctIndex: 3,
@@ -426,7 +426,7 @@ export const QUESTIONS_LR_F: Question[] = [
 'No reptiles are warm-blooded. All lizards are reptiles. Therefore, no lizards are warm-blooded.',
     stem: 'Which one of the following exhibits a pattern of reasoning most similar to that exhibited by the argument above?',
     choices: [
-      { text: 'No commercial flights allow smoking. All red-eye flights are commercial flights. So no red-eye flights allow smoking.' },
+      { text: 'No commercial flights allow smoking. All red-eyes are commercial. So no red-eyes allow it' },
       { text: 'No reptiles are warm-blooded. All warm-blooded animals are mammals. Therefore, no reptiles are mammals.' },
       { text: 'All lizards are reptiles. No lizards are warm-blooded. Therefore, no reptiles are warm-blooded.' },
       { text: 'Most reptiles are cold-blooded. All lizards are reptiles. Therefore, no lizards are warm-blooded.' },
@@ -482,7 +482,7 @@ export const QUESTIONS_LR_F: Question[] = [
     choices: [
       { text: 'Every certified referee passed the fitness test. Some veteran officials are certified referees. So some veteran officials passed the fitness test.' },
       { text: 'Some veteran officials never passed the fitness test, and some people who never passed are certified referees. So some veteran officials are not certified referees.' },
-      { text: 'All organic apples are grown without synthetic pesticides. Some apples at the market were grown with synthetic pesticides. Therefore, some apples at the market are not organic.' },
+      { text: 'All organic apples are grown without synthetic pesticides. Some market apples received synthetic pesticides. So some market apples are not organic' },
       { text: 'Every certified referee passed the fitness test. Some veteran officials never passed the fitness test. So no veteran official is a certified referee.' },
       { text: 'Some veteran officials are certified referees even though they never passed the fitness test.' },
     ],
@@ -681,7 +681,7 @@ export const QUESTIONS_LR_F: Question[] = [
       "The menu describes this fried-chicken sandwich as a 'light' meal, and light meals are healthy. So this sandwich is a healthy choice.",
     stem: 'Which one of the following exhibits a flaw in reasoning most similar to the flaw exhibited by the argument above?',
     choices: [
-      { text: "'Natural' foods contain no artificial ingredients. Arsenic occurs in nature. So arsenic is a natural food." },
+      { text: "'Natural' foods have nothing artificial. Arsenic is natural. So arsenic is a natural food" },
       { text: 'The sandwich is unhealthy because fried food is high in fat, regardless of what the menu calls it.' },
       { text: 'Restaurants should be required to list calorie counts on their menus.' },
       { text: "'Light' in color does not mean low in calories, so the menu's description is misleading." },
@@ -782,7 +782,7 @@ export const QUESTIONS_LR_F: Question[] = [
     stem: 'Which one of the following exhibits a flaw in reasoning most similar to the flaw exhibited by the argument above?',
     choices: [
       { text: 'The new menu is a hit because two professional food critics praised it in their reviews.' },
-      { text: 'The new traffic pattern is working — the two drivers interviewed this morning said they liked it.' },
+      { text: 'The new traffic pattern works — the two drivers interviewed this morning liked it' },
       { text: 'Three tables is too small a sample to judge whether the new menu is a hit.' },
       { text: 'Restaurants in this city usually change their menus with the seasons.' },
       { text: "Tonight's diners praised the new menu, so tomorrow night's diners will praise it too." },
@@ -933,7 +933,7 @@ export const QUESTIONS_LR_F: Question[] = [
       "This dictionary is authoritative because it was compiled by the country's leading lexicographers — and we know they are the leading lexicographers because they compiled this authoritative dictionary.",
     stem: 'Which one of the following exhibits a flaw in reasoning most similar to the flaw exhibited by the argument above?',
     choices: [
-      { text: "The committee\u2019s report is unbiased: it was written by impartial experts, as proven by the fact that only impartial experts could have produced it." },
+      { text: "The committee\u2019s report is unbiased: written by impartial experts, as shown by the fact that only impartial experts could produce it." },
       { text: 'The dictionary is authoritative because language experts throughout the country rely on it for their daily work.' },
       { text: 'No dictionary can be fully authoritative, since every dictionary contains some errors and omissions.' },
       { text: 'Lexicography requires many years of specialized training that few people are willing to undertake.' },
@@ -986,7 +986,7 @@ export const QUESTIONS_LR_F: Question[] = [
       { text: 'The town should build the dam because the municipal engineers recommend it.' },
       { text: 'Running out of water would indeed be disastrous for the town.' },
       { text: 'Dams can disrupt the migration patterns of local fish species.' },
-      { text: 'Either cut the arts budget or close the school; closing it is unacceptable, so cut the arts budget.' },
+      { text: 'Cut arts funding or close the school; closing is unacceptable, so cut it' },
       { text: 'The town could also fix its leaking pipes, which waste millions of gallons each year.' },
     ],
     correctIndex: 3,

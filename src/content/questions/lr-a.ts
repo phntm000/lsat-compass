@@ -127,7 +127,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'Today\'s fires burn hotter and spread faster than those of a century ago.' },
       { text: 'Aggressive fire suppression should be resumed to protect the pine forests.' },
       { text: 'Controlled burns should be used in every forest in the country.' },
-      { text: 'Allowing limited, deliberate burns is the most responsible way to protect these forests.' },
+      { text: 'Limited, deliberate burns are the most responsible way to protect these forests' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -173,7 +173,7 @@ export const QUESTIONS_LR_A: Question[] = [
     stem: 'Which one of the following is the main conclusion of the argument?',
     choices: [
       { text: 'Students disliked the district\'s old cafeteria menu.' },
-      { text: 'Students will choose healthier meals when those meals are made appealing and affordable.' },
+      { text: 'Students will choose healthier meals when those are made appealing and affordable' },
       { text: 'The price of school lunch should be reduced to increase participation further.' },
       { text: 'Administrators\' predictions about student behavior are generally unreliable.' },
       { text: 'The redesigned menu caused the rise in lunch participation.' },
@@ -224,7 +224,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'The garden should not change how it manages its compost bins.' },
       { text: 'The community garden\'s compost bins have been overflowing.' },
       { text: 'Unturned compost breaks down slowly and attracts pests.' },
-      { text: 'The garden should adopt a rotating volunteer schedule for its compost bins.' },
+      { text: 'The garden should use a rotating volunteer schedule for its compost bins' },
       { text: 'Every community garden must assign one volunteer to each compost bin.' },
     ],
     correctIndex: 3,
@@ -515,7 +515,7 @@ export const QUESTIONS_LR_A: Question[] = [
       'Downtown e-scooter rentals have doubled every year for three years. **Emergency-room visits for scooter injuries have risen sharply over the same period.** Some say the rise merely reflects greater ridership. But injuries per thousand rides have also climbed, which greater ridership alone cannot explain. The city should therefore cap the number of rental scooters.',
     stem: 'Which one of the following most accurately describes the role played in the argument by the statement that emergency-room visits for scooter injuries have risen sharply?',
     choices: [
-      { text: 'It is evidence offered in support of the argument\'s conclusion that scooter rentals should be capped.' },
+      { text: 'It is evidence given for the argument\u2019s conclusion that scooter rentals shall be capped' },
       { text: 'It is the argument\'s main conclusion.' },
       { text: 'It is a claim the argument introduces in order to reject it.' },
       { text: 'It is an intermediate conclusion supported by the per-thousand-rides statistic.' },
@@ -566,7 +566,7 @@ export const QUESTIONS_LR_A: Question[] = [
     choices: [
       { text: 'It states the argument\'s main conclusion.' },
       { text: 'It is background information that plays no role in the reasoning.' },
-      { text: 'It is an intermediate conclusion used to support the argument\'s main conclusion.' },
+      { text: 'It is an intermediate conclusion backing the main conclusion' },
       { text: 'It is a claim the argument presents in order to refute it.' },
       { text: 'It is the sole premise from which the main conclusion is directly inferred.' },
     ],
@@ -663,7 +663,7 @@ export const QUESTIONS_LR_A: Question[] = [
     stem: 'The statement that high schools should start the school day later plays which one of the following roles in the argument?',
     choices: [
       { text: 'It is a premise supporting the claim about teenagers\' sleep cycles.' },
-      { text: 'It is the argument\'s main conclusion, supported by the other statements.' },
+      { text: 'It is the argument\u2019s main conclusion, backed by the rest' },
       { text: 'It is a prediction about what schools will do in the future.' },
       { text: 'It is an objection raised by opponents of later start times.' },
       { text: 'It is an intermediate conclusion supporting a further recommendation.' },
@@ -713,7 +713,7 @@ export const QUESTIONS_LR_A: Question[] = [
     choices: [
       { text: 'It states the argument\'s main conclusion.' },
       { text: 'It is a factual observation about the Rialto theater.' },
-      { text: 'It is a general principle offered as support for the argument\'s main conclusion.' },
+      { text: 'It is a general principle supporting the main conclusion' },
       { text: 'It is an objection that the argument seeks to refute.' },
       { text: 'It is a prediction about what will happen if the theater is not restored.' },
     ],
@@ -763,7 +763,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'It is the argument\'s main conclusion.' },
       { text: 'It is evidence offered in support of continuing the program.' },
       { text: 'It is a claim the argument rejects as false.' },
-      { text: 'It is a consideration against the conclusion that the argument treats as outweighed.' },
+      { text: 'It is a consideration against the conclusion, one treated as outweighed' },
       { text: 'It is an intermediate conclusion inferred from the temperature data.' },
     ],
     correctIndex: 3,
@@ -862,7 +862,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'It provides direct evidence that the proposed law will succeed.' },
       { text: 'It describes a concession the argument makes to industry groups.' },
       { text: 'It is a premise with no bearing on whether the law should pass.' },
-      { text: 'It rebuts an objection to the proposed law, supporting the main conclusion.' },
+      { text: 'It rebuts an objection, supporting the main conclusion.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -959,7 +959,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'citing statistical evidence about student financial literacy.' },
       { text: 'showing that an opponent\'s claim leads to an absurd result.' },
       { text: 'appealing to the authority of swimming instructors.' },
-      { text: 'drawing an analogy between learning to swim and learning to manage money.' },
+      { text: 'drawing an analogy between swimming and finance' },
       { text: 'proving that classroom instruction is entirely worthless.' },
     ],
     correctIndex: 3,
@@ -1005,7 +1005,7 @@ export const QUESTIONS_LR_A: Question[] = [
       'A coffee chain credits its new loyalty program for a 20 percent jump in sales at its downtown stores. But a large office tower opened next door to those stores in the same month the program launched, bringing thousands of potential new customers within walking distance. The sales jump may owe more to the new neighbors than to the loyalty program, so the program\'s effectiveness remains unproven.',
     stem: 'Which one of the following most accurately describes the method of reasoning used in the argument?',
     choices: [
-      { text: 'It offers an alternative explanation for the effect, challenging a causal claim.' },
+      { text: 'offering an alternative explanation for the effect.' },
       { text: 'It demonstrates that loyalty programs never increase sales.' },
       { text: 'It appeals to the authority of the office tower\'s developers.' },
       { text: 'It argues that correlation alone proves the loyalty program worked.' },
@@ -1058,7 +1058,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'attacking the personal credibility of the board members.' },
       { text: 'offering an alternative cause of the rising test scores.' },
       { text: 'generalizing from the experience of a single school.' },
-      { text: 'arguing that evidence cited for a claim actually undermines that claim.' },
+      { text: 'arguing that evidence for a claim undermines it.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1105,7 +1105,7 @@ export const QUESTIONS_LR_A: Question[] = [
     choices: [
       { text: 'It generalizes from a single orchard to all orchards.' },
       { text: 'It appeals to the authority of temperature logs.' },
-      { text: 'It rules out competing explanations to support the remaining one.' },
+      { text: 'It rules out rival explanations one by one.' },
       { text: 'It argues by analogy between windbreaks and pesticides.' },
       { text: 'It shows that the observed decline never really happened.' },
     ],
@@ -1301,7 +1301,7 @@ export const QUESTIONS_LR_A: Question[] = [
     choices: [
       { text: 'It disputes the factual claim that employment would fall.' },
       { text: 'It attacks the motives of the policy\'s critics.' },
-      { text: 'It grants an objection for the sake of argument and shows the conclusion stands anyway.' },
+      { text: 'It grants an objection and shows the conclusion stands anyway' },
       { text: 'It demonstrates that the policy has no negative consequences whatsoever.' },
       { text: 'It concedes that the employment objection defeats the policy.' },
     ],
@@ -1398,7 +1398,7 @@ export const QUESTIONS_LR_A: Question[] = [
     stem: 'Maya and Leo disagree over whether',
     choices: [
       { text: 'the team closed more tickets after going remote.' },
-      { text: 'remote work itself increased the team\'s productivity.' },
+      { text: 'remote work improved productivity' },
       { text: 'the team adopted new automation tools.' },
       { text: 'remote work has made collaboration harder.' },
       { text: 'ticket counts are a valid measure of productivity.' },
@@ -1499,7 +1499,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'historic architecture has any value.' },
       { text: 'renovation would cost more than new construction.' },
       { text: 'the city can afford new construction.' },
-      { text: 'the old depot should be demolished rather than preserved.' },
+      { text: 'the old depot should be demolished.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1645,7 +1645,7 @@ export const QUESTIONS_LR_A: Question[] = [
       { text: 'predictability encourages long-term green investment.' },
       { text: 'a carbon tax guarantees a specific emissions cut.' },
       { text: 'firms respond to price signals.' },
-      { text: 'a carbon tax is better climate policy than cap-and-trade.' },
+      { text: 'a carbon tax beats cap-and-trade as policy.' },
       { text: 'cap-and-trade is difficult to administer.' },
     ],
     correctIndex: 3,

@@ -32,7 +32,7 @@ export const QUESTIONS_LR_G: Question[] = [
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
       { text: 'The bike lanes were painted bright red to increase their visibility to drivers.' },
-      { text: 'The new lanes attracted many first-time cyclists, and the accident rate per cyclist fell.' },
+      { text: 'The new lanes drew first-time cyclists, and the accident rate fell.' },
       { text: 'Cycling accidents also rose in neighboring cities that built no bike lanes.' },
       { text: 'Most of the reported accidents involved experienced cyclists commuting to work.' },
       { text: 'Bicycle sales in the city were flat in the year the lanes were painted.' },
@@ -83,7 +83,7 @@ export const QUESTIONS_LR_G: Question[] = [
     choices: [
       { text: 'The library hired additional evening staff to cover the extended hours, which substantially raised operating costs.' },
       { text: 'A national bookstore chain announced it will open a branch near the library sometime next year.' },
-      { text: 'New-hours visitors mostly used computers and study spaces, while e-book lending — uncounted in checkout figures — rose sharply.' },
+      { text: 'New-hours visitors used computers and study rooms, as e-book lending — uncounted in checkouts — rose' },
       { text: 'The library reduced its budget for purchasing new physical books last year.' },
       { text: 'Checkout figures count only physical books borrowed in person, not digital loans.' },
     ],
@@ -131,7 +131,7 @@ export const QUESTIONS_LR_G: Question[] = [
       "Marta's Diner raised its prices by 15 percent last month. Since then, the lunch line at the diner has grown noticeably longer.",
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
-      { text: "The diner across the street, Marta's only nearby competitor, closed permanently." },
+      { text: "The diner across the street, Marta's only competitor, closed" },
       { text: "Marta's Diner now uses more expensive organic ingredients." },
       { text: 'The diner kept its number of tables unchanged.' },
       { text: 'Customers have complained about the higher prices on social media.' },
@@ -182,7 +182,7 @@ export const QUESTIONS_LR_G: Question[] = [
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
       { text: 'The drought-resistant seeds cost considerably more than the traditional variety.' },
-      { text: 'This spring brought record flooding, and the new variety tolerates standing water poorly.' },
+      { text: 'Spring floods hurt the new variety, which tolerates standing water poorly' },
       { text: 'Neighboring valleys that planted the traditional variety had normal yields.' },
       { text: 'The new seed variety was developed over twelve years of field trials.' },
       { text: 'Some farmers in the valley chose not to plant the new variety.' },
@@ -229,7 +229,7 @@ export const QUESTIONS_LR_G: Question[] = [
     choices: [
       { text: 'Engineers reported feeling happier and less burned out with the four-day schedule.' },
       { text: 'The company\'s headcount remained exactly flat during the same six-month period.' },
-      { text: 'Fridays were mostly status meetings; eliminating them left four days of uninterrupted coding.' },
+      { text: 'Fridays were status meetings; cutting them freed four days for coding.' },
       { text: 'The company\'s competitors also reduced their workweeks at some point last year.' },
       { text: 'Feature quality is not measured anywhere in the company\'s shipping statistics.' },
     ],
@@ -276,7 +276,7 @@ export const QUESTIONS_LR_G: Question[] = [
 'Two years after the town banned single-use plastic bags, the amount of plastic litter collected in parks and waterways has increased. The ban was intended to reduce plastic pollution, and compliance among retailers has been nearly total.',
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
-      { text: 'Residents buy thick reusable bags and discard them after a few uses, putting more plastic into the waste stream per bag than the thin banned bags did.' },
+      { text: 'Thick reusable bags, quickly discarded, put more plastic per bag into waste than the banned bags did.' },
       { text: 'The town also banned plastic straws in the same ordinance.' },
       { text: 'Shoppers switched to paper bags, which tear easily and scatter in the wind, increasing visible litter even though paper is not plastic.' },
       { text: 'Plastic litter has also increased in neighboring towns without bag bans.' },
@@ -328,7 +328,7 @@ export const QUESTIONS_LR_G: Question[] = [
 'After speed cameras were installed along the highway, the number of speeding tickets issued fell by half. Yet the highway accident rate remained exactly the same.',
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
-      { text: 'Drivers brake for cameras then speed up, so average speeds and crash risk stay unchanged as tickets drop.' },
+      { text: 'Drivers brake for cameras then speed up, so speeds and crash risk stay unchanged' },
       { text: 'The cameras are clearly marked with warning signs a mile in advance.' },
       { text: 'Speeding tickets had been rising steadily for five years before the cameras were installed.' },
       { text: 'The accident rate on nearby highways without cameras also stayed the same.' },
@@ -429,7 +429,7 @@ export const QUESTIONS_LR_G: Question[] = [
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
       { text: 'Cheaper memberships attracted many new sign-ups who rarely work out.' },
-      { text: 'To afford the fee cut, the gym canceled popular classes and reduced its hours.' },
+      { text: 'To afford the fee cut, the gym cut classes and hours.' },
       { text: 'The gym advertised the lower fee heavily on social media.' },
       { text: 'Nearby gyms kept their fees unchanged during the same period.' },
       { text: 'The fee cut applied only to new members, not to existing ones.' },
@@ -482,7 +482,7 @@ export const QUESTIONS_LR_G: Question[] = [
       { text: 'The country\'s unemployment rate held steady during the same period, ruling out economic distress as a driver of the increase.' },
       { text: 'Neighboring countries that did not increase police funding also saw reported crime rise, suggesting a regional trend in reporting that has nothing to do with policing levels.' },
       { text: 'Most of the new funding went unspent due to bureaucratic delays, so few additional officers were actually hired.' },
-      { text: 'New officers went to neighborhoods with almost no prior police presence, where residents had stopped reporting crimes, so reporting soared while actual victimization stayed flat.' },
+      { text: 'New officers went to under-policed neighborhoods, where residents stopped reporting crimes, so reporting soared while actual victimization stayed flat.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -528,7 +528,7 @@ export const QUESTIONS_LR_G: Question[] = [
 'A bakery switched to a cheaper flour to cut costs. In the quarter that followed, its profits fell instead of rising.',
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
-      { text: "The cheaper flour worsened the bread's taste, and the bakery lost many regular customers." },
+      { text: "Cheaper flour hurt taste, and the bakery lost regular customers" },
       { text: 'The bakery kept the prices of its pastries unchanged during the same quarter.' },
       { text: 'Flour prices across the industry fell during the same quarter.' },
       { text: 'The bakery\'s ovens are more than twenty years old.' },
@@ -580,7 +580,7 @@ export const QUESTIONS_LR_G: Question[] = [
     choices: [
       { text: 'The aquarium extended its opening hours during the same season, adding two extra hours each weekend.' },
       { text: 'Visitors spent less per person at the gift shop and café than in previous seasons, a decline unrelated to ticket pricing or attendance levels.' },
-      { text: 'The price cut applied mainly to group tickets that were already heavily discounted, so average revenue per visitor fell by more than attendance rose.' },
+      { text: 'The price cut applied mainly to group tickets already discounted, so revenue per visitor fell more than attendance rose.' },
       { text: 'A nearby zoo raised its admission prices during the same season, prompting complaints from local families.' },
       { text: 'The aquarium\u2019s most popular exhibit was closed for renovation for part of the season, reopening before the holidays.' },
     ],
@@ -631,7 +631,7 @@ export const QUESTIONS_LR_G: Question[] = [
       { text: 'The newly planted trees were saplings that will not provide meaningful shade for at least a decade.' },
       { text: 'The city also expanded its bus network during the same year.' },
       { text: 'Residents were encouraged to water the new trees during dry spells.' },
-      { text: 'The planting required clearing mature shade trees, and the saplings cannot replace their cooling effect for years.' },
+      { text: 'The planting cleared mature shade trees; saplings cannot match their cooling for years' },
       { text: 'Tree-planting initiatives are popular with voters in the region.' },
     ],
     correctIndex: 3,
@@ -679,7 +679,7 @@ export const QUESTIONS_LR_G: Question[] = [
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
       { text: 'The new beds are located in a newly built wing with modern equipment that improved care quality and patient outcomes.' },
-      { text: 'News of the expansion drew patients from neighboring counties with overcrowded hospitals, and demand outgrew the new capacity.' },
+      { text: 'News of the expansion drew patients from neighboring counties, and demand outgrew the new capacity.' },
       { text: 'The hospital also hired additional nurses during the same year to staff the new wing.' },
       { text: 'Emergency-room wait times had been falling for three years before the expansion began.' },
       { text: 'The hospital raised its parking fees last year, prompting complaints from visitors.' },
@@ -727,7 +727,7 @@ export const QUESTIONS_LR_G: Question[] = [
       { text: 'Regional water consumption rose to an all-time high last year, although the Halston Reservoir supplies less than five percent of the region\'s water.' },
       { text: 'The record rainfall figure was confirmed by three independent weather services.' },
       { text: 'Climate models predict more extreme rainfall for the region in coming decades.' },
-      { text: 'The storms dropped their rain outside the reservoir\'s watershed, while managers released large volumes preventively to protect downstream towns from flooding.' },
+      { text: 'Storms dropped rain outside the watershed; managers released large volumes to prevent downstream flooding.' },
       { text: 'The reservoir\'s dam underwent routine maintenance last spring.' },
     ],
     correctIndex: 3,
@@ -778,7 +778,7 @@ export const QUESTIONS_LR_G: Question[] = [
 'A beloved independent bookstore added a café to attract more foot traffic. In the year that followed, the store\'s book sales fell by 22 percent.',
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
-      { text: 'To make room for the café, the store removed a third of its bookshelves, reducing the range of titles on display.' },
+      { text: 'To make room for the café, the store removed a third of its bookshelves, cutting displayed titles' },
       { text: 'The café itself was profitable in its first year, drawing steady crowds on weekends.' },
       { text: 'Book sales fell at independent bookstores nationwide during the same year, reflecting broader trends.' },
       { text: 'The store extended its opening hours when the café was added, staying open two hours later.' },
@@ -882,7 +882,7 @@ export const QUESTIONS_LR_G: Question[] = [
       { text: 'The wage increase applied only to workers over the age of 21, leaving teenage employment patterns largely unaffected.' },
       { text: 'Neighboring states that did not raise the minimum wage saw employment hold steady in low-wage sectors throughout the same period.' },
       { text: 'Several large employers announced layoffs in the same year, citing automation rather than wage levels in their public statements.' },
-      { text: 'Chronic unfilled vacancies plagued low-wage sectors, and the higher wage drew in workers from neighboring counties, filling long-empty positions.' },
+      { text: 'Chronic unfilled vacancies plagued low-wage sectors, and the higher wage drew workers from neighboring counties, filling empty posts' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -925,7 +925,7 @@ export const QUESTIONS_LR_G: Question[] = [
     stem: 'Which one of the following, if true, most helps to explain the apparent discrepancy described above?',
     choices: [
       { text: 'Smooth new pavement encourages faster driving, which wears out tires more quickly over time.' },
-      { text: 'During repaving, detours routed traffic over rough gravel roads for weeks, damaging suspensions and alignments.' },
+      { text: 'During repaving, detours sent traffic over rough gravel roads, damaging suspensions and alignment' },
       { text: 'The repaving project finished several weeks ahead of schedule.' },
       { text: 'Car repair shops raised their prices after the repaving was completed last summer.' },
       { text: 'The town also repaved its bicycle paths during the same summer construction season.' },
@@ -982,7 +982,7 @@ export const QUESTIONS_LR_G: Question[] = [
       { text: 'The tutoring program was expensive, but it was paid for entirely from a dedicated state grant, and no other academic programs were cut that year.' },
       { text: 'High-performing students took the test at exactly the same rate as in previous years, so the decline in the average did not come from them.' },
       { text: 'Teachers reported that tutored students seemed more confident and engaged in class afterward.' },
-      { text: 'The program drew in low-performing students who had never taken the test; their newly counted scores lowered the average even as tutored students improved.' },
+      { text: 'The program drew low-performing students new to the test; their newly counted scores lowered the mean as tutored students improved' },
       { text: 'The test was redesigned that year to include more difficult questions in every subject \u2014 yet statewide average scores rose that year.' },
     ],
     correctIndex: 3,

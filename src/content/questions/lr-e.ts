@@ -75,7 +75,7 @@ export const QUESTIONS_LR_E: Question[] = [
       "The university museum's director was right to lend its rare twelfth-century manuscript to a small regional college for a semester. The loan gives students who cannot afford to travel a chance to study the manuscript firsthand, and the college's vault meets the same international security standards as the museum's own.",
     stem: 'Which one of the following principles, if valid, most helps to justify the reasoning above?',
     choices: [
-      { text: 'It is appropriate to lend a fragile artifact to a less prominent institution when doing so expands scholarly access without compromising the artifact\'s safety' },
+      { text: 'It is appropriate to lend a fragile object to a less prominent institution when doing so expands scholarly access without compromising its safety' },
       { text: 'Museums should always lend their rarest artifacts to any institution that requests them, regardless of the circumstances or the risks involved' },
       { text: 'Museums should sell artifacts they cannot display in order to fund new acquisitions and facility upgrades' },
       { text: 'Expanding scholarly access justifies lending artifacts even when their security cannot be fully guaranteed' },
@@ -129,7 +129,7 @@ export const QUESTIONS_LR_E: Question[] = [
       { text: 'Lifeguards should be strong swimmers' },
       { text: 'Certification programs for lifeguards should be offered free of charge' },
       { text: 'Jamal has more rescue certifications than the other applicants' },
-      { text: 'The most qualified applicant — the one with the greatest number of current qualifications — should be hired for a position' },
+      { text: 'The best-qualified applicant — the one with the most recent qualifications — should be hired for a position' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -176,7 +176,7 @@ export const QUESTIONS_LR_E: Question[] = [
     stem: 'Which one of the following principles, if valid, most helps to justify the reasoning above?',
     choices: [
       { text: 'No developer that has ever failed to complete a project should ever be granted a rezoning' },
-      { text: 'A record of abandoning past projects is good reason to doubt a developer\'s promises about a new project' },
+      { text: 'A record of abandoned projects is reason to doubt a developer\u2019s promises about a new project' },
       { text: 'Job-creation promises should be discounted because developers routinely exaggerate employment figures' },
       { text: 'Towns should require developers to post bonds covering the full cost of any proposed project' },
       { text: 'Millerton should sue Hartwell Development for abandoning its housing project' },
@@ -228,7 +228,7 @@ export const QUESTIONS_LR_E: Question[] = [
       { text: 'Those who contribute the most to a public service should pay the highest fares for using it' },
       { text: 'Every public service should charge nonresidents more than residents in all circumstances' },
       { text: 'Tourist attractions should be funded entirely by visitor fees rather than by local taxes' },
-      { text: 'It is fair for users of a publicly funded service who do not help fund it to pay more than those who do' },
+      { text: 'Users of a public service who do not fund it should pay more than those who do so' },
       { text: 'Residents deserve lower fares because they ride the trains more frequently than tourists do' },
     ],
     correctIndex: 3,
@@ -274,7 +274,7 @@ export const QUESTIONS_LR_E: Question[] = [
       "The school board should not close the South Ward branch library. It is the only place where the ward's 4,000 households can get free public internet access, and many residents rely on it to apply for jobs.",
     stem: 'Which one of the following principles, if valid, most helps to justify the reasoning above?',
     choices: [
-      { text: 'A public facility that is the sole source of an essential service for a community should not be eliminated' },
+      { text: 'A public facility that alone provides an essential service should not be eliminated' },
       { text: 'Budget decisions should prioritize system-wide efficiency over the needs of any single neighborhood' },
       { text: 'No public library branch should ever be closed for any reason' },
       { text: 'Internet content on public library computers should be filtered to block inappropriate material' },
@@ -326,7 +326,7 @@ export const QUESTIONS_LR_E: Question[] = [
     choices: [
       { text: 'Researchers may report misconduct if they feel personally comfortable doing so' },
       { text: 'Drug companies should be legally required to publish all of their trial data' },
-      { text: 'Professionals should report misconduct when remaining silent would put others at risk of harm' },
+      { text: 'Professionals should report misconduct when silence endangers others' },
       { text: "Dr. Alvarez's colleague should lose his medical license for falsifying data" },
       { text: 'Most cases of research fraud are discovered by colleagues rather than by audits' },
     ],
@@ -378,7 +378,7 @@ export const QUESTIONS_LR_E: Question[] = [
       { text: 'Grain prices fluctuate with global weather patterns' },
       { text: 'Farmers should always sell their entire harvest immediately, regardless of market conditions' },
       { text: 'Storage fees are rising and grain prices are at a five-year high' },
-      { text: 'It is wise to sell a stored commodity when carrying costs are climbing and prices are unusually high' },
+      { text: 'It is wise to sell a stored commodity when costs climb and prices are high' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -425,7 +425,7 @@ export const QUESTIONS_LR_E: Question[] = [
     stem: 'Which one of the following principles, if valid, most helps to justify the reasoning above?',
     choices: [
       { text: 'Board members should try to keep an open mind during hearings' },
-      { text: 'A decision should be reconsidered when the deciding vote was cast by someone who had prejudged the outcome' },
+      { text: 'A decision should be reconsidered when the deciding voter prejudged the outcome' },
       { text: 'Any administrative decision must be reheard whenever any participant voices an opinion about it' },
       { text: 'Criminal defendants are entitled to a jury that has not been exposed to pretrial publicity' },
       { text: 'Only decisions made by fully impartial boards are ever subject to rehearing' },
@@ -477,7 +477,7 @@ export const QUESTIONS_LR_E: Question[] = [
       { text: 'Newspapers should never correct published articles, since corrections undermine their credibility' },
       { text: 'The Gazette misattributed a quote to Councilwoman Park' },
       { text: 'Any article containing any error, however trivial, must be retracted in full' },
-      { text: 'A publication should correct a factual error when the person harmed by the error requests a correction' },
+      { text: 'A publication should correct a factual error if the person harmed requests one' },
       { text: 'Journalists should verify quotes with their sources before publishing' },
     ],
     correctIndex: 3,
@@ -726,7 +726,7 @@ export const QUESTIONS_LR_E: Question[] = [
     choices: [
       { text: 'A small bakery grants a costly accommodation that forces it to close within a year' },
       { text: 'A manager denies a simple schedule change because it would be mildly inconvenient to redraw the rota' },
-      { text: 'A bookstore installs a $200 ramp for a cashier who uses a wheelchair; the store\'s profits are unaffected' },
+      { text: 'A bookstore installs a $200 ramp for a cashier using a wheelchair; profits are unaffected' },
       { text: 'A factory fires a worker with a disability rather than consider any accommodation' },
       { text: 'All employers must grant every accommodation request immediately, regardless of cost' },
     ],
@@ -775,7 +775,7 @@ export const QUESTIONS_LR_E: Question[] = [
     stem: 'Which one of the following most clearly conforms to the principle stated above?',
     choices: [
       { text: "A reporter reveals an accurate source's identity because a rival newspaper offered her a higher-paying job" },
-      { text: 'After learning her source deliberately fabricated documents, a reporter names the source in a follow-up article' },
+      { text: 'Learning her source fabricated documents, a reporter names the source in a follow-up article' },
       { text: 'A reporter continues to protect a source even after discovering the source knowingly lied to her' },
       { text: "A reporter publishes a source's name because the resulting story proved unpopular with readers" },
       { text: 'Editors should never publish claims that rely on anonymous sources' },
@@ -874,7 +874,7 @@ export const QUESTIONS_LR_E: Question[] = [
 'Principle: A student may retake a missed exam only if illness or a documented emergency prevented attendance.',
     stem: 'Which one of the following most clearly conforms to the principle stated above?',
     choices: [
-      { text: 'After missing the final with a doctor-verified flu, Ana retakes it the following week' },
+      { text: 'Missing the final with doctor-verified flu, Ana retakes it the next week' },
       { text: 'Ben retakes an exam he attended but failed, hoping for a better grade' },
       { text: 'Cara missed the exam to attend a concert and is allowed to retake it' },
       { text: 'Dan missed the exam because of a car accident but is denied a retake' },
@@ -977,7 +977,7 @@ export const QUESTIONS_LR_E: Question[] = [
       { text: 'A driver speeds through a crosswalk where a pedestrian is waiting to cross' },
       { text: 'A driver stops for a pedestrian who is jaywalking in the middle of the block' },
       { text: 'A driver brakes for a pedestrian who is standing on the sidewalk, not crossing' },
-      { text: 'Seeing an elderly man step into the crosswalk, a driver brakes and waves him across' },
+      { text: 'Seeing an old man enter the crosswalk, a driver brakes, waving him across' },
       { text: 'Pedestrians should wear bright clothing when walking at night' },
     ],
     correctIndex: 3,

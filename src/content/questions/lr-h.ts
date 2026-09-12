@@ -79,7 +79,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: 'The statement that the lighthouse should be preserved as a working navigational aid, not merely as a museum piece, plays which one of the following roles in the argument?',
     choices: [
       { text: 'It is evidence cited to show that the lighthouse is historically significant.' },
-      { text: 'It is the argument\u2019s main conclusion, supported by the comparison with automated beacons.' },
+      { text: 'It is the main conclusion, supported by the beacon comparison.' },
       { text: 'It is an intermediate conclusion that supports a further claim about museum funding.' },
       { text: 'It is background information about the maritime authority\u2019s decommissioning proposal.' },
       { text: 'It is a premise reporting the reliability record of automated beacons.' },
@@ -130,7 +130,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'It is the argument\u2019s main conclusion.' },
       { text: 'It is a premise reporting the cost of the treatment-plant upgrade, offered as evidence for the cost comparison.' },
-      { text: 'It is an intermediate conclusion, supported by the cost comparison and supporting the approval recommendation.' },
+      { text: 'An intermediate conclusion from the cost comparison, backing approval.' },
       { text: 'It is background information about the county\u2019s finances.' },
       { text: 'It is a prediction about how marsh restoration costs will change in the future.' },
     ],
@@ -181,7 +181,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'It is the argument\u2019s main conclusion.' },
       { text: 'It is an intermediate conclusion about when the wait-time decline began.' },
       { text: 'It is the evidence that establishes that wait times declined at all.' },
-      { text: 'It is a premise ruling out alternative explanations and supporting the causal conclusion.' },
+      { text: 'A premise ruling out alternatives and supporting the causal claim' },
       { text: 'It is an unstated assumption that the argument requires but never asserts.' },
     ],
     correctIndex: 3,
@@ -232,7 +232,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'It is background information about the city\u2019s parking history.' },
       { text: 'It is a claim the argument is offered to refute.' },
       { text: 'It is an intermediate conclusion supported by the claim about the Riverside mall.' },
-      { text: 'It is a premise supporting the intermediate conclusion that the merchants wrongly blame the meters.' },
+      { text: 'A premise backing the intermediate conclusion that merchants wrongly blame the meters' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -282,7 +282,7 @@ export const QUESTIONS_LR_H: Question[] = [
       'Requiring cyclists to wear helmets is like requiring pedestrians to wear shin guards. In both cases the rule would impose a burden on a safe activity in the name of preventing rare injuries. Just as a shin-guard mandate for pedestrians would be an overreach, so too is a helmet mandate for cyclists.',
     stem: 'The argument proceeds by',
     choices: [
-      { text: 'drawing an analogy between two cases, treating what holds for one as holding for the other.' },
+      { text: 'drawing an analogy, treating what holds for one case as holding for the other.' },
       { text: 'citing statistical evidence about the frequency of cycling injuries.' },
       { text: 'deriving a contradiction from the assumptions of supporters of the mandate.' },
       { text: 'appealing to the authority of medical experts on head injuries.' },
@@ -333,7 +333,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: 'The argument proceeds by',
     choices: [
       { text: 'questioning the motives of the critics rather than addressing the substance of their argument against anonymity.' },
-      { text: 'drawing a distinction between two kinds of anonymous sourcing and arguing that an objection to one does not apply to the other.' },
+      { text: 'distinguishing two kinds of anonymous sourcing, arguing an objection to one does not apply to the other' },
       { text: 'disputing the definition of trustworthy reporting without offering a clearer definition in its place.' },
       { text: 'presenting survey data on how readers view anonymous sources, then generalizing from that limited sample.' },
       { text: 'arguing that anonymous sourcing is common in journalism and therefore an acceptable practice.' },
@@ -434,7 +434,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'questioning whether the fingerprint evidence is authentic.' },
       { text: 'relying on character evidence about the defendant\u2019s past.' },
-      { text: 'arguing that the two explanations of the fingerprints are equally likely.' },
+      { text: 'arguing that the two explanations of the fingerprints are equally likely to be true.' },
       { text: 'presenting two alternatives as exhaustive, each undermining the same opposing claim.' },
       { text: 'appealing to legal precedent about planted evidence.' },
     ],
@@ -638,7 +638,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'laboratory tests are generally unreliable.' },
       { text: 'the coating reflects more sunlight than asphalt in laboratory tests.' },
-      { text: 'the reflective-pavement program will reduce summer street temperatures.' },
+      { text: 'reflective pavement will cut summer road temperatures' },
       { text: 'heavy traffic degrades the coating.' },
       { text: 'the city\u2019s streets carry more traffic than the test roads did.' },
     ],
@@ -790,7 +790,7 @@ export const QUESTIONS_LR_H: Question[] = [
       'A clinical trial found that patients taking Verdalex reported fewer migraines than patients taking a placebo. The trial was double-blind and included 2,000 participants. Therefore Verdalex is an effective migraine treatment.',
     stem: 'Which one of the following would be most useful to know in order to evaluate the argument?',
     choices: [
-      { text: 'Were the Verdalex and placebo groups similar in age, migraine history, and other medications?' },
+      { text: 'Were Verdalex and placebo groups alike in age, migraine history, and medications?' },
       { text: 'How much does a month\u2019s supply of Verdalex cost for the average patient?' },
       { text: 'Do the researchers who ran the trial personally use Verdalex themselves?' },
       { text: 'What is the chemical formula of Verdalex\u2019s active ingredient?' },
@@ -841,7 +841,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: 'Which one of the following would be most useful to know in order to evaluate the argument?',
     choices: [
       { text: 'Do Riverton residents approve of the bag ban, and would their approval survive if the ban raised grocery prices?' },
-      { text: 'Did any other changes, such as the volunteer river cleanup begun last spring, coincide with the decline in plastic litter?' },
+      { text: 'Did other changes, like last spring\u2019s river cleanup, coincide with the plastic-litter decline?' },
       { text: 'What share of river litter was plastic before the ban took effect, and how was that share measured?' },
       { text: 'How many towns neighbor Riverton, and do any of them share the same river system?' },
       { text: 'Are paper bags more expensive than plastic bags for Riverton retailers to purchase in bulk?' },
@@ -892,7 +892,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'How large were the pay cuts that the CEOs took, and how long did those reductions remain in effect?' },
       { text: 'Did shareholders formally approve the pay cuts, or were the reductions imposed unilaterally by the boards?' },
-      { text: 'Were the companies that cut CEO pay otherwise similar — in size, industry, and financial health — to those that did not?' },
+      { text: 'Were companies cutting CEO pay similar in size, industry, and finances to those that did not?' },
       { text: 'What is the average salary of a CEO at a large company, and how did that figure change during the recession?' },
       { text: 'Did any companies raise CEO pay during the recession, and if so, how did their performance compare afterward?' },
     ],
@@ -943,7 +943,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'Do students enjoy having access to lecture recordings for exam review?' },
       { text: 'How many courses were included in the department\u2019s published study, and over how many semesters?' },
       { text: 'Did the professors teaching the courses know that a study of their classes was being conducted?' },
-      { text: 'Were recorded-lecture courses comparable to unrecorded ones in subject difficulty and student strength?' },
+      { text: 'Were recorded and unrecorded courses comparable in difficulty and student strength?' },
       { text: 'What recording software was used to capture the course lectures?' },
     ],
     correctIndex: 3,
@@ -994,7 +994,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'How many stars did the second-highest-rated mattress receive?' },
       { text: 'Is the SleepWell mattress sold in physical retail stores?' },
       { text: 'How long has the company that makes SleepWell been in business?' },
-      { text: 'Did the company offer discounts or other incentives for positive reviews?' },
+      { text: 'Did the company give incentives for good reviews?' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1045,7 +1045,7 @@ export const QUESTIONS_LR_H: Question[] = [
       'The 1911 courthouse should be demolished. It has stood vacant for a decade, restoration would cost twice what demolition and a new building would cost, and no civic group has offered to fund its preservation.',
     stem: 'Which one of the following principles, if valid, most helps to justify the reasoning above?',
     choices: [
-      { text: 'A historic building should be demolished when preserving it is prohibitively expensive and no one will pay for its preservation.' },
+      { text: 'A historic building should be demolished when preserving it is unaffordable and none will pay for its preservation' },
       { text: 'Historic buildings should never be demolished, regardless of their condition or the cost of preserving them.' },
       { text: 'Cost should never be a factor in decisions about historic preservation, no matter how tight the public budget.' },
       { text: 'Vacant buildings should always be restored, no matter how expensive restoration would be for the community.' },
@@ -1096,7 +1096,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: 'Which one of the following principles, if valid, most helps to justify the reasoning above?',
     choices: [
       { text: 'Neighbors should never be charged for work done without their explicit consent.' },
-      { text: 'A person asked to remedy a hazard on their property who refuses may fairly be charged for the remedy.' },
+      { text: 'Someone refusing to fix a hazard on their property may fairly be billed for it' },
       { text: 'Anyone may trim any tree at any time, regardless of who owns it.' },
       { text: 'Property owners are responsible for all damage caused by storms.' },
       { text: 'Neighborhood disputes should always be resolved through lawsuits rather than direct action.' },
@@ -1147,7 +1147,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'Newspapers should publish anything that increases readership.' },
       { text: 'Stolen documents should always be published, since the public has a right to know everything.' },
-      { text: 'Newspapers should not publish stolen private material that harms innocent people and serves no genuine public interest.' },
+      { text: 'Newspapers should not publish stolen private material that harms innocent people and serves no public good' },
       { text: 'Curiosity about private companies is by itself a sufficient reason to publish their internal documents.' },
       { text: 'Newspapers should never publish any leaked material under any circumstances.' },
     ],
@@ -1198,7 +1198,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'Schools should require whatever reduces absences, regardless of the burden such requirements impose on families.' },
       { text: 'Vaccination requirements should be entirely voluntary and never mandated by school districts under any circumstances.' },
       { text: 'Only health requirements that impose literally no burden on families can ever be justified by a school district.' },
-      { text: 'A district should adopt a health requirement when evidence shows it substantially reduces illness and compliance imposes minimal burden.' },
+      { text: 'A district should adopt a health requirement when shown to substantially reduce illness with minimal compliance burdens.' },
       { text: 'Districts should adopt whatever health policies neighboring districts have adopted, without independent evaluation.' },
     ],
     correctIndex: 3,
@@ -1300,7 +1300,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: 'Which one of the following most clearly violates the principle stated above?',
     choices: [
       { text: 'Mei finished all her deliverables by Thursday evening and worked from home on Friday.' },
-      { text: 'Jonah worked from home on Friday even though two of his deliverables were still unfinished on Thursday evening.' },
+      { text: 'Jonah worked from home Friday, though two deliverables were unfinished on Thursday night' },
       { text: 'Priya finished all her deliverables by Thursday evening but chose to come into the office on Friday.' },
       { text: 'Sam finished all his deliverables by Wednesday and worked from home on both Thursday and Friday.' },
       { text: 'Alex had no deliverables due this week and worked from home on Friday.' },
@@ -1402,8 +1402,8 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'Dr. Chen described the risks of surgery to a patient who asked for full information.' },
       { text: 'Dr. Osei withheld risk information at the explicit request of her patient.' },
       { text: 'Dr. Kim disclosed the risks of a procedure to a patient who said, "Tell me everything."' },
-      { text: 'Dr. Patel did not mention the risks of a new drug to a patient who had never discussed the topic.' },
-      { text: 'Dr. Rao\u2019s patient refused all treatment, so the risks of treatment were never discussed.' },
+      { text: 'Dr. Patel did not mention a new drug\'s risks to a patient who was new to the topic.' },
+      { text: 'Dr. Rao\u2019s patient refused all treatment, so the risks of treatment were never once discussed.' },
     ],
     correctIndex: 3,
     explanationQuick:
@@ -1453,7 +1453,7 @@ export const QUESTIONS_LR_H: Question[] = [
       'Every successful marathoner follows a strict training plan. Jamal follows a strict training plan. Therefore, Jamal will be a successful marathoner.',
     stem: 'The flawed reasoning in the argument above is most similar to that in which one of the following?',
     choices: [
-      { text: 'All genuine Rolex watches have a serial number on the case. This watch has a serial number on the case. So this watch is a genuine Rolex.' },
+      { text: 'All genuine Rolex watches have a serial number on the case. This watch has one on the case. So this watch is a genuine Rolex.' },
       { text: 'All licensed pilots pass a medical exam. Ana passed a medical exam, but that alone does not make her a licensed pilot.' },
       { text: 'No budget airline offers first-class seating. SwiftAir is a budget airline, so it offers no first-class seating.' },
       { text: 'Most successful authors write every day. Lee writes every day, so Lee will probably become a successful author.' },
@@ -1504,7 +1504,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: 'The flawed reasoning in the argument above is most similar to that in which one of the following?',
     choices: [
       { text: 'The river study\u2019s conclusions are unreliable because its lead author has no training in hydrology.' },
-      { text: 'Ruiz claims the tax bill will raise middle-class taxes, but she cheated on her exams, so her analysis must be wrong.' },
+      { text: 'Ruiz says the tax bill will raise middle-class taxes, but she cheated on exams, so her analysis fails' },
       { text: 'The dam will harm fish migration, as demonstrated by three independent field studies.' },
       { text: 'Vance\u2019s warning should be rejected because dams never harm fish migration.' },
       { text: 'We should trust the engineer\u2019s safety report because she is a renowned expert in her field.' },
@@ -1555,7 +1555,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'The dean promised transparency but held the meeting in secret, so she broke her promise.' },
       { text: 'The airline promised more legroom and added two inches of it, which is genuinely more legroom.' },
-      { text: 'The airline promised "room to breathe." The cabin has slightly wider aisles, which is more room. So the airline kept its promise.' },
+      { text: 'The airline promised "room to breathe." Wider aisles give more room. So the airline kept its promise.' },
       { text: 'The gym promised results in 30 days, and members who followed the program lost weight, so the gym kept its promise.' },
       { text: 'The candidate promised lower taxes and then raised municipal fees, so voters were misled.' },
     ],
@@ -1661,7 +1661,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'Most of the newly hired officers were assigned to desk duty rather than patrol.' },
       { text: 'Residents report feeling safer now than they did a year ago.' },
       { text: 'Neighboring towns also saw their crime rates rise last year.' },
-      { text: 'The larger force encouraged more residents to report crimes that previously went unreported.' },
+      { text: 'The larger force boosted reporting of previously unreported crimes' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1711,7 +1711,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'The city repaved several downtown streets in the same year the new express line launched.' },
       { text: 'A recent survey found that most residents like the new express buses.' },
       { text: 'Gasoline is heavily subsidized in the neighboring county this year.' },
-      { text: 'The express line cut three local stops, forcing most former riders to walk over a mile to the nearest stop.' },
+      { text: 'The express line cut three local stops, so most riders must walk over a mile to the next stop' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1761,7 +1761,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'More farmers entered the wheat market this year than in any previous year.' },
       { text: 'The valley\u2019s soil is among the most fertile in the entire region.' },
       { text: 'Last year\u2019s harvest was the largest in the valley\u2019s recorded history by a wide margin.' },
-      { text: 'A late frost destroyed the early-planted crop on much of the expanded acreage; replanting yielded far less per acre.' },
+      { text: 'A late frost destroyed the early crop on much of the new acreage; replanting yielded far less per acre.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1963,7 +1963,7 @@ export const QUESTIONS_LR_H: Question[] = [
     choices: [
       { text: 'The Cefalyne headband is considerably more expensive than most migraine medications on the market today.' },
       { text: 'Some patients in the trial found the headband uncomfortable to wear for extended periods.' },
-      { text: 'Most headband users also adopted regular sleep schedules during the trial; the control group\u2019s habits did not change.' },
+      { text: 'Most headband users adopted regular sleep schedules in trial; control-group habits were unchanged' },
       { text: 'The manufacturer of Cefalyne has previously been sued for false advertising of other products.' },
       { text: 'A headband made by a different company showed no effect on migraines in an unrelated clinical trial.' },
     ],
@@ -2067,7 +2067,7 @@ export const QUESTIONS_LR_H: Question[] = [
     stem: "The claim that the ferry's real value is in its cargo service, not its passenger service, plays which one of the following roles in the argument?",
     choices: [
       { text: "It is the argument's main conclusion, which the consulting firm's report is offered to support." },
-      { text: "It is an intermediate conclusion, inferred from the facts about refrigerated freight and hospital deliveries, supporting the funding claim in turn." },
+      { text: "An intermediate conclusion, inferred from facts about cold freight and hospital runs, supporting the funding claim in turn" },
       { text: 'It is a premise that directly supports the funding claim even though no other statement in the argument supports it, standing entirely on its own.' },
       { text: 'It is background information describing how the ferry has traditionally been used by island residents.' },
       { text: 'It is the concession the author makes to critics of the ferry before rebutting them directly.' },
@@ -2119,7 +2119,7 @@ export const QUESTIONS_LR_H: Question[] = [
       { text: 'It shows that a principle underlying the airline practice leads to an unacceptable consequence when applied to restaurants, and it rejects the restaurant practice on that basis.' },
       { text: "It cites the airlines' overbooking records as statistical evidence proving that no-show fees lower menu prices." },
       { text: 'It argues that because the airline and restaurant cases are alike in every relevant respect, the restaurant practice must be acceptable.' },
-      { text: 'It uses the airline case to articulate a general principle about spreading the costs of predictable no-shows, applies it to restaurant reservations, and concludes the ban should be rejected.' },
+      { text: 'It uses the airline case to state a principle about spreading the costs of no-shows, applies to restaurant reservations, and concludes the ban should be rejected.' },
       { text: 'It demonstrates that supporters of the ban overlooked the effect of no-shows on menu prices, and it rejects the ban solely because of that oversight.' },
     ],
     correctIndex: 3,

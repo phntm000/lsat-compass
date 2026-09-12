@@ -25,7 +25,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'The reasoning in Mr. Patel\'s argument is most vulnerable to criticism on the grounds that it',
     choices: [
       { text: 'presumes that a proposal supported by a cyclist could never benefit drivers who share the same downtown streets.' },
-      { text: 'rejects the bike-lane proposal by attacking Alvarez\u2019s personal circumstances rather than addressing the proposal\u2019s merits' },
+      { text: 'rejects the bike-lane proposal by attacking Alvarez\u2019s circumstances rather than addressing its merits' },
       { text: 'fails to consider that some downtown business owners might support the proposal for their own commercial reasons.' },
       { text: 'confuses a necessary condition for impartiality with a sufficient condition for it, misapplying basic logic.' },
       { text: 'draws a conclusion about all commuters from the observed habits of a single commuter interviewed downtown.' },
@@ -77,7 +77,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'fails to establish that the new menu is more profitable than the old one' },
       { text: 'confuses the popularity of the restaurant with the quality of its menu' },
       { text: 'presumes without justification that regular customers are the restaurant\'s most important patrons' },
-      { text: 'generalizes about all of the restaurant\'s customers from a small sample of regulars surveyed on a single evening' },
+      { text: 'generalizes about all customers from a sample of regulars surveyed on a single evening' },
       { text: 'overlooks the possibility that diners\' tastes will change over time' },
     ],
     correctIndex: 3,
@@ -124,7 +124,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'Curator Dr. Ellis proposed keeping the natural history museum open two hours later on Thursday evenings to accommodate working visitors. Board chair Mr. Okafor rejected the idea, saying, "We simply cannot afford to keep this museum open around the clock."',
     stem: 'Mr. Okafor\'s response is most vulnerable to criticism on the grounds that it',
     choices: [
-      { text: 'misrepresents Ellis\'s proposal as calling for far more extensive hours than she actually proposed' },
+      { text: 'misrepresents Ellis\u2019s proposal as calling for longer hours than she proposed' },
       { text: 'presumes without evidence that working visitors would not visit the museum at other times' },
       { text: 'fails to consider the museum\'s budget constraints when evaluating the proposal' },
       { text: 'attacks Dr. Ellis\'s character rather than addressing her proposal' },
@@ -176,7 +176,7 @@ export const QUESTIONS_LR_C: Question[] = [
     choices: [
       { text: 'appeals to the authority of nutritionists without identifying any of them' },
       { text: 'presumes without justification that shoppers care more about a product\'s color than about its nutrition' },
-      { text: 'uses the word "light" in two different senses — low in calories and light in color — as if they were the same thing' },
+      { text: 'uses \u2019light\u2019 in two senses — low-calorie and light-colored — as if they were the same' },
       { text: 'fails to prove that the Light Harvest products are unhealthy' },
       { text: 'generalizes from the opinions of a few nutritionists to nutritionists as a group' },
     ],
@@ -228,7 +228,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'ignores the possibility that the budget shortfall is only temporary' },
       { text: 'attacks the supporters of the music program instead of addressing their arguments' },
       { text: 'concludes that athletics should be preserved merely by restating the premise that it keeps students engaged' },
-      { text: 'presents the choice as limited to two alternatives without ruling out other ways of addressing the shortfall' },
+      { text: 'presents the choice as limited to two alternatives without ruling out other options' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -374,7 +374,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'A county health report notes that towns with the most ice cream shops per capita also have the highest rates of heat-related illness. The report concludes that the wide availability of ice cream is causing the elevated illness rates, and recommends restricting ice cream sales during heat waves.',
     stem: 'The report\'s reasoning is most vulnerable to criticism on the grounds that it',
     choices: [
-      { text: 'infers causation from correlation without ruling out a common cause like high temperatures.' },
+      { text: 'infers causation from correlation without ruling out a common cause.' },
       { text: 'relies on a sample of towns too small to support any conclusion about ice cream' },
       { text: 'presumes that restricting ice cream sales would be unpopular without surveying residents' },
       { text: 'confuses the rate of heat-related illness with the total number of cases' },
@@ -425,7 +425,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Chief Rivera\'s reasoning is flawed because it',
     choices: [
       { text: 'compares Greenville\'s crime trend with the statewide trend without evidence the two are related' },
-      { text: 'treats a large percentage increase as significant without considering the tiny absolute numbers behind it' },
+      { text: 'treats a large percentage increase as significant, ignoring the absolute numbers' },
       { text: 'assumes that past crime trends will continue into the future' },
       { text: 'fails to consider that some violent crimes may go unreported' },
       { text: 'draws a conclusion about danger from statistics about violent crime alone' },
@@ -474,7 +474,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'Brightline Software\'s flagship app has been the top-selling productivity app for three years running. The company\'s CEO therefore predicts that next year\'s redesigned version will also be the top seller, and has committed the entire marketing budget to that single product.',
     stem: 'The CEO\'s prediction is most vulnerable to criticism on the grounds that it',
     choices: [
-      { text: 'assumes past success will continue even though market conditions may have changed.' },
+      { text: 'assumes past success will continue amid changed market conditions' },
       { text: 'ignores the possibility that the redesign will be worse than the original' },
       { text: 'confuses the app\'s sales ranking with its quality' },
       { text: 'relies on sales data that may have been manipulated by the company' },
@@ -524,7 +524,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'The county library\'s new policy states that only cardholders may borrow books. James is a cardholder. The head librarian concludes that James therefore borrows books.',
     stem: 'The librarian\'s reasoning is flawed because it',
     choices: [
-      { text: 'treats a necessary condition for borrowing books as though it were a sufficient condition' },
+      { text: 'treats a necessary condition for borrowing books as a sufficient condition' },
       { text: 'presumes that James uses his library card without any evidence of his borrowing habits' },
       { text: 'confuses the library\'s policy with the actual behavior of its patrons' },
       { text: 'draws a conclusion about James from a policy that applies only to cardholders in general' },
@@ -576,7 +576,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'The flaw in the mayor\'s reasoning is that it',
     choices: [
       { text: 'presumes that voters care about the deficit without offering evidence of their priorities' },
-      { text: 'relies on a city-household analogy without showing the two are similar in the relevant respects.' },
+      { text: 'relies on a city-household analogy without showing relevant similarity.' },
       { text: 'confuses a balanced budget with an eliminated deficit' },
       { text: 'ignores the possibility that the deficit resulted from necessary emergency spending' },
       { text: 'assumes that households always pay off their debts, which is not always true' },
@@ -625,7 +625,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'A ballot-measure campaign announced: "Sixty percent of this town\'s residents support the new school levy. With support that broad, the levy is certain to pass." Voter turnout in the town\'s last three local elections averaged 40 percent of residents.',
     stem: 'The campaign\'s reasoning is most vulnerable to criticism on the grounds that it',
     choices: [
-      { text: 'treats the opinions of all residents as equivalent to the opinions of the residents who will actually vote' },
+      { text: 'treats the opinions of all residents as equivalent to those of residents who will vote' },
       { text: 'relies on a poll that may have surveyed an unrepresentative sample of residents' },
       { text: 'presumes that voter turnout in the upcoming election will match the historical average' },
       { text: 'confuses the percentage of residents who support the levy with the percentage who voted in past elections' },
@@ -730,7 +730,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Several of TechCorp\'s competitors have also adopted flexible work hours.' },
       { text: 'Some employees say they preferred the old fixed schedule.' },
       { text: 'Productivity is difficult to measure with complete precision.' },
-      { text: 'Productivity rose by similar amounts at comparable companies that kept fixed schedules.' },
+      { text: 'Productivity rose as well at comparable companies on set schedules' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -777,10 +777,10 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Which of the following, if true, most weakens the researchers\' conclusion?',
     choices: [
       { text: 'Green tea contains antioxidants that are known to benefit the heart.' },
-      { text: 'The daily tea drinkers also exercised substantially more than the non-drinkers.' },
+      { text: 'The daily tea drinkers also exercised more than the non-drinkers.' },
       { text: 'The study was funded by a company that sells green tea.' },
       { text: 'Some participants dropped out of the study before it was completed.' },
-      { text: 'Cholesterol levels naturally vary a great deal from person to person.' },
+      { text: 'Cholesterol levels naturally vary a great deal from one person to another.' },
     ],
     correctIndex: 1,
     explanationQuick:
@@ -829,7 +829,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Plastic bags had been one of the most common forms of litter found in the parks.' },
       { text: 'The bag ban was popular with a majority of the city\'s residents.' },
       { text: 'Some park visitors now bring their own reusable bags when they visit.' },
-      { text: 'The same year the ban took effect, the city doubled the size of its volunteer park-cleanup program.' },
+      { text: 'The same year the ban took effect, the city grew its volunteer park-cleanup program' },
       { text: 'Park attendance remained steady throughout the period studied.' },
     ],
     correctIndex: 3,
@@ -876,7 +876,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'Psychologist Dr. Vance argues that willpower works like a muscle: it grows stronger with regular exercise. She identifies daily meditation as the ideal willpower workout, concluding that people who meditate daily will develop greater self-control than people who do not.',
     stem: 'Which of the following, if true, most weakens Dr. Vance\'s argument?',
     choices: [
-      { text: 'A controlled trial found daily meditators improved no more on self-control tasks than non-meditators.' },
+      { text: 'A trial found meditators did no better on self-control tasks than others.' },
       { text: 'Some psychologists dispute whether the muscle metaphor accurately describes willpower.' },
       { text: 'Meditation has been shown to reduce stress and improve sleep quality.' },
       { text: 'Baseline willpower varies considerably from person to person.' },
@@ -980,7 +980,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Competing gyms also offer workout-tracking apps to their members.' },
       { text: 'The survey was conducted online rather than on paper.' },
       { text: 'Satisfied customers are more likely than dissatisfied ones to recommend the gym to friends.' },
-      { text: 'The survey invitation was sent only through the app itself, so members who never use the app could not respond.' },
+      { text: 'The survey invitation went only through the app, so members who never use it could not respond' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1027,7 +1027,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Which of the following, if true, most weakens the leaders\' argument?',
     choices: [
       { text: 'Downtown arenas are expensive to build and costly to maintain.' },
-      { text: 'In most cited cities, downtown businesses were already thriving before the arenas were built.' },
+      { text: 'In most cited cities, downtown businesses had thrived before the arenas opened' },
       { text: 'Some residents oppose spending tax money on a downtown arena.' },
       { text: 'The civic leaders did not consult any economists before making their claim.' },
       { text: 'Thriving local businesses generate substantial tax revenue for a city.' },
@@ -1079,7 +1079,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Some employees report finding the mandatory morning meetings unpleasant.' },
       { text: 'Meridian\'s main competitors do not hold mandatory morning meetings.' },
       { text: 'Project delivery times at Meridian have naturally fluctuated from quarter to quarter in the past.' },
-      { text: 'The month meetings became mandatory, Meridian also rolled out software that automatically flags delays.' },
+      { text: 'The month meetings became mandatory, Meridian adopted software that flags delays' },
       { text: 'A few teams were exempted from the morning-meeting requirement for logistical reasons.' },
     ],
     correctIndex: 3,
@@ -1126,7 +1126,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'A school district study found that students who ate breakfast at school scored higher on standardized tests than students who skipped breakfast. The district concluded that providing breakfast improves academic performance.',
     stem: 'Which of the following, if true, most weakens the district\'s conclusion?',
     choices: [
-      { text: 'The breakfast program began at the same time as an after-school tutoring program serving the same students.' },
+      { text: 'A breakfast program began alongside an after-school tutoring program serving the same pupils' },
       { text: 'Students who ate the school breakfast reported feeling more alert during morning classes.' },
       { text: 'The study was funded by a cereal manufacturer with an interest in the results.' },
       { text: 'Some students who ate breakfast every day still scored poorly on the tests.' },
@@ -1178,7 +1178,7 @@ export const QUESTIONS_LR_C: Question[] = [
     choices: [
       { text: 'Construction of the subway line will temporarily disrupt traffic on several downtown streets.' },
       { text: 'Main Street carries the heaviest rush-hour traffic of any street in the city.' },
-      { text: 'Most Main Street commuters travel to suburban office parks that the subway line will not serve.' },
+      { text: 'Most Main Street commuters work at places the subway line will not serve.' },
       { text: 'The new subway line is expected to be popular with residents of the downtown core.' },
       { text: 'Some commuters enjoy driving so much that they will never switch to public transit.' },
     ],
@@ -1230,7 +1230,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Repaving also reduced wear and tear on ambulance tires and suspensions.' },
       { text: 'Response times are measured from the moment an emergency call is received to the moment the ambulance arrives.' },
       { text: 'Traffic congestion on major roads has worsened slightly since the repaving was completed.' },
-      { text: 'The month the repaving finished, the dispatch center installed software that cut call-processing delays by two minutes on average.' },
+      { text: 'The month the repaving finished, the dispatch center installed software that cut call-processing time two minutes' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1277,7 +1277,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Which of the following, if true, most weakens the critics\' conclusion?',
     choices: [
       { text: 'Riverton residents now recycle less than residents of neighboring cities with mandatory programs.' },
-      { text: 'In year two, Riverton ended curbside pickup, forcing residents to drive recyclables to a distant drop-off site.' },
+      { text: 'Riverton ended curbside pickup, forcing residents to drive recycling to a drop-off site' },
       { text: 'Markets for recycled materials were unusually strong during the program\'s first year.' },
       { text: 'Some residents reported finding the program\'s sorting rules confusing.' },
       { text: 'Mandatory recycling programs in other cities have also seen participation decline over time.' },
@@ -1329,7 +1329,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Walking is excellent cardiovascular exercise for people of all ages and fitness levels.' },
       { text: 'The survey included several thousand commuters from diverse neighborhoods across the city.' },
       { text: 'The researchers who conducted the survey walk to work themselves every day, rain or shine.' },
-      { text: 'When road construction forced a group of drivers to walk to work for a month, their reported moods improved.' },
+      { text: 'When road building required a group of drivers to walk to work, their reported moods improved' },
       { text: 'A person\'s mood can affect how they answer survey questions about their daily commute.' },
     ],
     correctIndex: 3,
@@ -1376,7 +1376,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'After the city opened a new library branch in the Westside neighborhood, teen book borrowing in Westside rose 40 percent. Librarians concluded that the new branch caused teens to read more.',
     stem: 'Which of the following, if true, most strengthens the librarians\' conclusion?',
     choices: [
-      { text: 'Teen borrowing fell elsewhere without new branches over the same period.' },
+      { text: 'Teen borrowing fell elsewhere over the period.' },
       { text: 'The new branch has comfortable seating and long opening hours.' },
       { text: 'Teenagers generally enjoy spending time at the library.' },
       { text: 'The new branch was expensive for the city to build.' },
@@ -1480,7 +1480,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Parking downtown is very expensive.' },
       { text: 'Cycling is healthy cardiovascular exercise.' },
       { text: 'Some downtown drivers say they would never consider cycling to work.' },
-      { text: 'In a comparable city, a bike-share program cut downtown car trips by 12 percent.' },
+      { text: 'In a similar city, bike-share cut car trips 12 percent' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1626,11 +1626,11 @@ export const QUESTIONS_LR_C: Question[] = [
       'Salmon populations have declined sharply in rivers with hydroelectric dams. Conservationists argue that the dams caused the decline by blocking salmon migration routes.',
     stem: 'Which of the following, if true, most strengthens the conservationists\' argument?',
     choices: [
-      { text: 'Where fish ladders were installed around dams, salmon populations remained stable.' },
+      { text: 'Where fish ladders were installed, salmon numbers remained stable' },
       { text: 'Hydroelectric dams provide a major source of renewable electricity.' },
       { text: 'Salmon populations fluctuate naturally from year to year.' },
       { text: 'Some dammed rivers never supported large salmon populations.' },
-      { text: 'The conservationists have long opposed the construction of new dams.' },
+      { text: 'The conservationists have long opposed the construction of any new dams.' },
     ],
     correctIndex: 0,
     explanationQuick:
@@ -1730,7 +1730,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Telehealth appointments cost patients less than emergency room visits.' },
       { text: 'The hospital also hired several additional emergency room nurses during the same period.' },
       { text: 'Some patients say they still prefer in-person medical care.' },
-      { text: 'ER visits for minor complaints fell sharply while serious-emergency visits were unchanged.' },
+      { text: 'ER visits for minor complaints fell sharply; serious visits were flat.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1826,7 +1826,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'In a taste test, 9 out of 10 participants preferred the new recipe for Marlowe\'s tomato soup to the old one. The company concluded that most of its customers will prefer the new recipe.',
     stem: 'Which of the following, if true, most strengthens the company\'s conclusion?',
     choices: [
-      { text: 'The participants were randomly selected from the company\'s customer database.' },
+      { text: 'Participants were randomly selected from the customer database' },
       { text: 'The company\'s marketing team designed and supervised the taste test.' },
       { text: 'Tomato soup is the company\'s best-selling product.' },
       { text: 'Nine out of ten is a decisive majority of the participants.' },
@@ -1879,7 +1879,7 @@ export const QUESTIONS_LR_C: Question[] = [
     choices: [
       { text: 'Congestion pricing is unpopular with many drivers who must pay the charge, several of whom have organized protests.' },
       { text: 'Bus ridership has been rising steadily nationwide for the past decade, a trend predating most pricing schemes.' },
-      { text: 'Within those cities, ridership rose only on bus routes serving the priced downtown zone, not on routes elsewhere in the same cities.' },
+      { text: 'Within those cities, ridership rose only on bus routes serving the priced downtown zone, not on routes elsewhere.' },
       { text: 'The researchers who conducted the study publicly support congestion pricing and have advocated for its expansion.' },
       { text: 'Some cities that adopted congestion pricing saw no increase in bus ridership, though their pricing zones were quite small.' },
     ],
@@ -1981,7 +1981,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'How many traffic circles the city built in other neighborhoods last year' },
       { text: 'Whether the traffic circle was completed on schedule' },
       { text: 'Whether drivers initially found the traffic circle confusing to navigate' },
-      { text: 'Whether other safety changes were made at the intersection when the circle was installed.' },
+      { text: 'Whether any other safety changes were made at the intersection at that time' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -2028,7 +2028,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Which of the following would be most useful to know in order to evaluate Dr. Rao\'s argument?',
     choices: [
       { text: 'Whether organic produce tastes better than conventional produce' },
-      { text: 'Whether conventional produce carries synthetic pesticide residues at levels harmful to health' },
+      { text: 'Whether conventional produce has pesticide residue at unsafe levels' },
       { text: 'Whether organic farming is better for the environment than conventional farming' },
       { text: 'Whether Dr. Rao eats organic produce herself' },
       { text: 'Whether organic produce costs more than conventional produce' },
@@ -2077,7 +2077,7 @@ export const QUESTIONS_LR_C: Question[] = [
       'The city council proposes extending public library hours into the evening, arguing that greater access to books will improve adult literacy rates.',
     stem: 'Which of the following would be most useful to know in order to evaluate the council\'s argument?',
     choices: [
-      { text: 'Whether adults with low literacy currently lack library access because of the limited hours' },
+      { text: 'Whether low-literacy adults lack library access given the limited hours' },
       { text: 'Whether the city\'s librarians support extending the evening hours' },
       { text: 'Whether other cities have extended their library hours in recent years' },
       { text: 'Whether evening hours would significantly increase the library\'s operating costs' },
@@ -2130,7 +2130,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Whether teachers prefer working at small schools or large schools' },
       { text: 'Whether large schools offer more extracurricular activities than small schools' },
       { text: 'Whether test scores at small schools have been rising over the past decade' },
-      { text: 'Whether small schools enroll students from wealthier families on average than large schools do' },
+      { text: 'Whether small schools enroll wealthier students, on average, than large schools do' },
       { text: 'Whether Klein attended a small school as a child' },
     ],
     correctIndex: 3,
@@ -2179,7 +2179,7 @@ export const QUESTIONS_LR_C: Question[] = [
     choices: [
       { text: 'Whether the mayor remains popular with voters' },
       { text: 'Whether the jobs program was expensive for the city to operate' },
-      { text: 'Whether unemployment also fell in comparable cities that introduced no such jobs program' },
+      { text: 'Whether unemployment also fell in similar cities with no such jobs program' },
       { text: 'Whether some program participants found jobs without the program\'s help' },
       { text: 'Whether the jobs program will continue operating next year' },
     ],
@@ -2231,7 +2231,7 @@ export const QUESTIONS_LR_C: Question[] = [
       { text: 'Whether most readers say they still prefer the feel of a print book' },
       { text: 'Whether e-book reading devices remain too expensive for most buyers' },
       { text: 'Whether total book sales across all formats are growing or shrinking overall' },
-      { text: 'Whether e-book growth has come at the expense of print sales or reflects new readers' },
+      { text: 'Whether e-book growth cuts print sales or reflects new readers' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -2278,7 +2278,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Which of the following would be most useful to know in order to evaluate the district\'s conclusion?',
     choices: [
       { text: 'Whether the district\'s alumni tend to volunteer for causes related to their school service projects' },
-      { text: 'Whether district students already volunteered more than other students before the requirement began.' },
+      { text: 'Whether district students volunteered more than others before the requirement began.' },
       { text: 'Whether the community-service requirement is popular with parents in the district' },
       { text: 'Whether required service helps students gain admission to selective colleges' },
       { text: 'Whether other school districts are considering adopting similar requirements' },
@@ -2379,8 +2379,8 @@ export const QUESTIONS_LR_C: Question[] = [
     choices: [
       { text: 'Whether the governor personally supported the tax incentive or merely signed it' },
       { text: 'Whether the tax incentive significantly reduced the state\'s tax revenue overall' },
-      { text: 'Whether neighboring states offer similar tax incentives to new businesses locating there' },
-      { text: 'Whether the new applicants are businesses that would have come to the state even without the incentive' },
+      { text: 'Whether neighboring states offer similar tax incentives to new businesses that locate there' },
+      { text: 'Whether the new applicants would have come to the state even without the incentive' },
       { text: 'Whether business license applications are processed quickly and efficiently by the state' },
     ],
     correctIndex: 3,
@@ -2429,7 +2429,7 @@ export const QUESTIONS_LR_C: Question[] = [
     choices: [
       { text: 'Whether City X\'s bike lane network was expensive to construct' },
       { text: 'Whether our city\'s cyclists support building protected bike lanes' },
-      { text: 'Whether our city\'s traffic patterns and cycling rates are similar to City X\'s' },
+      { text: 'Whether our traffic and cycling rates match City X\u2019s' },
       { text: 'Whether cycling injuries in our city have increased in recent years' },
       { text: 'Whether City X\'s mayor was reelected after the bike lanes were built' },
     ],
@@ -2479,7 +2479,7 @@ export const QUESTIONS_LR_C: Question[] = [
     stem: 'Which of the following would be most useful to know in order to evaluate the director\'s conclusion?',
     choices: [
       { text: 'Whether other hospitals have adopted similar surgical checklists' },
-      { text: 'Whether the hospital\'s surgical teams actually followed the checklist consistently' },
+      { text: 'Whether the hospital surgical teams followed the checklist' },
       { text: 'Whether implementing the checklist was costly for the hospital' },
       { text: 'Whether the hospital\'s director has received awards for management excellence' },
       { text: 'Whether surgical complications increase the cost of treating patients' },

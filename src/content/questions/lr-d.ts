@@ -26,7 +26,7 @@ export const QUESTIONS_LR_D: Question[] = [
     choices: [
       { text: 'The Harper Bridge will be the longest bridge in the county.' },
       { text: 'Downtown congestion is the city\'s most serious traffic problem.' },
-      { text: 'Drivers currently using congested routes will actually use the new bridge.' },
+      { text: 'Drivers now using congested routes will use the new bridge' },
       { text: 'The bridge will be completed exactly on schedule.' },
       { text: 'Two new lanes are enough to eliminate downtown congestion entirely.' },
     ],
@@ -128,7 +128,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'Televised debates always change candidates\' poll numbers.' },
       { text: 'Most voters watched the entire debate from start to finish.' },
       { text: 'Morales\'s opponents performed poorly in the debate.' },
-      { text: 'No other major event that week could account for the poll rise.' },
+      { text: 'No other major event could account for the poll rise' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -175,7 +175,7 @@ export const QUESTIONS_LR_D: Question[] = [
     stem: 'The director\'s reasoning depends on which of the following assumptions?',
     choices: [
       { text: 'The marketing campaign was expensive to run.' },
-      { text: 'The record crowds were at least partly due to the marketing campaign.' },
+      { text: 'The record crowds were partly due to the marketing campaign.' },
       { text: 'The exhibit itself was too uninteresting to draw crowds on its own.' },
       { text: 'Every visitor to the exhibit had seen the marketing campaign.' },
       { text: 'The museum had never advertised its exhibits before this campaign.' },
@@ -274,9 +274,9 @@ export const QUESTIONS_LR_D: Question[] = [
       'Sales of organic produce have doubled in the past five years, which shows that consumers care more about health than they used to.',
     stem: 'Which of the following is an assumption on which the argument depends?',
     choices: [
-      { text: 'Organic produce is actually healthier than conventional produce in every respect.' },
+      { text: 'All organic produce is actually healthier than conventional produce in every respect.' },
       { text: 'Consumers now buy only organic produce and avoid conventional produce entirely.' },
-      { text: 'The sales increase reflects consumer demand rather than greater availability or lower prices.' },
+      { text: 'The sales increase reflects demand rather than availability or lower prices.' },
       { text: 'All consumers care deeply about their health and act on that concern.' },
       { text: 'Sales of organic produce will continue to rise in the future indefinitely.' },
     ],
@@ -324,7 +324,7 @@ export const QUESTIONS_LR_D: Question[] = [
       'A survey of 500 town residents found that 60 percent support the new park. Therefore, most of the town\'s residents support it.',
     stem: 'The argument requires the assumption that',
     choices: [
-      { text: 'the 500 residents surveyed were representative of the town\'s population.' },
+      { text: 'the 500 residents polled reflected the town population' },
       { text: 'the survey questions about the park were worded clearly.' },
       { text: 'all 500 residents answered the survey completely honestly.' },
       { text: 'the town has exactly 500 residents.' },
@@ -378,7 +378,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'Downtown merchants support the installation of the cameras.' },
       { text: 'The cameras were the most expensive crime-prevention option available.' },
       { text: 'Crime would have risen downtown if the cameras had not been installed.' },
-      { text: 'The decline in crime was not entirely due to factors other than the cameras.' },
+      { text: 'The crime decline was not due to factors other than the cameras' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -425,7 +425,7 @@ export const QUESTIONS_LR_D: Question[] = [
     stem: 'The argument depends on assuming which of the following?',
     choices: [
       { text: 'Composting is beneficial for the environment.' },
-      { text: 'The claimed $3 million in landfill savings will actually be realized.' },
+      { text: 'The claimed $3 million in landfill savings will occur' },
       { text: 'Landfill fees will continue to rise in future years.' },
       { text: 'No other city program saves more money than the composting program.' },
       { text: 'Residents strongly support the composting program.' },
@@ -478,7 +478,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'The painting is highly valuable.' },
       { text: 'Art experts have examined the painting in person.' },
       { text: 'The artist always signed every painting in exactly the same way.' },
-      { text: 'A genuine painting by this artist would bear the known signature.' },
+      { text: 'A real painting by the artist has the signature' },
       { text: 'Forgeries of this artist\'s work are common.' },
     ],
     correctIndex: 3,
@@ -527,7 +527,7 @@ export const QUESTIONS_LR_D: Question[] = [
     choices: [
       { text: 'Developers support the new zoning law.' },
       { text: 'Affordable housing is currently in short supply.' },
-      { text: 'Developers will continue to build new apartment buildings under the law.' },
+      { text: 'Developers will keep building apartments under it' },
       { text: 'The law will make all new housing affordable.' },
       { text: 'Rents for existing apartments will fall as a result of the law.' },
     ],
@@ -575,7 +575,7 @@ export const QUESTIONS_LR_D: Question[] = [
       'The county plans to abolish the $5 park entry fee. Since cost deters visits, abolishing the fee will increase park attendance.',
     stem: 'The argument depends on which of the following assumptions?',
     choices: [
-      { text: 'The entry fee actually deters at least some potential visitors.' },
+      { text: 'The fee deters at least some potential visitors' },
       { text: 'Park attendance is currently low.' },
       { text: 'The county can afford to lose the fee revenue.' },
       { text: 'Everyone who wants to visit the park is deterred by the fee.' },
@@ -630,7 +630,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'Literacy is a valuable skill for residents to have in the modern economy.' },
       { text: 'Towns without libraries never build them, no matter how much funding is available.' },
       { text: 'Every town with a public library has high literacy rates without exception.' },
-      { text: 'The correlation is not fully explained by already-literate towns choosing to build libraries.' },
+      { text: 'The correlation is not explained by literate towns building libraries' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -728,9 +728,9 @@ export const QUESTIONS_LR_D: Question[] = [
     stem: 'Which of the following is an assumption on which the board\'s reasoning depends?',
     choices: [
       { text: 'The new manager is personally popular with employees.' },
-      { text: 'Employee morale was low before the new manager arrived.' },
+      { text: 'Employee morale was low even before the new manager arrived.' },
       { text: 'The board strongly supports the new manager.' },
-      { text: 'The two surveys measured employee satisfaction in comparable ways.' },
+      { text: 'The surveys measured employee satisfaction comparably' },
       { text: 'Every employee answered both satisfaction surveys.' },
     ],
     correctIndex: 3,
@@ -888,7 +888,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'New engines are expensive to manufacture.' },
       { text: 'Reliable cars have brand-new engines.' },
       { text: 'This car has no other mechanical problems.' },
-      { text: 'Any car with a brand-new engine is reliable.' },
+      { text: 'Cars with new engines are reliable' },
       { text: 'This car\'s owner maintains it carefully.' },
     ],
     correctIndex: 3,
@@ -935,7 +935,7 @@ export const QUESTIONS_LR_D: Question[] = [
       'Bella\'s Bistro passed its health inspection yesterday. Therefore, its kitchen is clean.',
     stem: 'Which of the following, if assumed, would allow the conclusion to be properly drawn?',
     choices: [
-      { text: 'Any restaurant that passes a health inspection has a clean kitchen.' },
+      { text: 'Eateries passing health inspection have clean kitchens' },
       { text: 'Bella\'s Bistro has never failed a health inspection.' },
       { text: 'Restaurants with clean kitchens always pass health inspections.' },
       { text: 'The health inspector who visited Bella\'s Bistro was thorough.' },
@@ -1089,7 +1089,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: "Private cars are downtown's only significant pollution source." },
       { text: 'Downtown residents strongly support the car ban.' },
       { text: 'Downtown air quality is currently poor.' },
-      { text: 'The car ban will be strictly enforced by the city.' },
+      { text: 'The car ban will be strictly and consistently enforced by the city.' },
     ],
     correctIndex: 1,
     explanationQuick:
@@ -1185,7 +1185,7 @@ export const QUESTIONS_LR_D: Question[] = [
       'The museum offers free admission on Sundays, the only day it does so. Therefore, Sunday attendance exceeds attendance on any other day.',
     stem: 'Which of the following, if assumed, would allow the conclusion to be properly drawn?',
     choices: [
-      { text: 'On any free-admission day, attendance is higher than on any day the museum charges admission.' },
+      { text: 'On free-admission days, attendance tops any day the museum charges entry' },
       { text: 'The museum is closed on Mondays, when attendance would be low anyway.' },
       { text: 'Visitors say they prefer free admission to paid admission when surveyed.' },
       { text: 'Sunday attendance at the museum has been rising steadily for the past two years.' },
@@ -1237,7 +1237,7 @@ export const QUESTIONS_LR_D: Question[] = [
     choices: [
       { text: 'The defendant\'s alibi witness is telling the truth.' },
       { text: 'The defendant has no prior criminal record.' },
-      { text: 'No one who was across town at the time could have committed the robbery.' },
+      { text: 'Nobody across town could have committed the crime' },
       { text: 'The robbery was committed by a single person acting alone.' },
       { text: 'The defendant is a law-abiding citizen.' },
     ],
@@ -1289,7 +1289,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'Elena firmly believes that the medicine cured her.' },
       { text: 'The new medicine has no serious side effects.' },
       { text: 'Elena took the medicine exactly as directed.' },
-      { text: 'Elena\'s illness resolves only when this medicine cures it.' },
+      { text: 'Only this medicine cures Elena\'s illness' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1435,7 +1435,7 @@ export const QUESTIONS_LR_D: Question[] = [
       'The jury found the defendant liable. Therefore, the evidence must have proved negligence.',
     stem: 'Which of the following, if assumed, would allow the conclusion to be properly drawn?',
     choices: [
-      { text: 'Juries find defendants liable only when the evidence proves negligence.' },
+      { text: 'Liability requires evidence proving negligence' },
       { text: 'The jury deliberated carefully before reaching its verdict.' },
       { text: 'The defendant was in fact negligent.' },
       { text: 'The jury system is generally reliable.' },
@@ -1588,7 +1588,7 @@ export const QUESTIONS_LR_D: Question[] = [
     choices: [
       { text: 'The team wants to win the championship.' },
       { text: 'Daily practice improves a team\'s performance.' },
-      { text: 'Any team practicing daily for a month wins the championship.' },
+      { text: 'Month of daily practice wins titles' },
       { text: 'The team\'s opponents have not practiced at all.' },
       { text: 'The championship game is scheduled for next week.' },
     ],
@@ -1640,7 +1640,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'Everyone who fishes in state waters holds a fishing license.' },
       { text: 'Maria applied for a fishing license last year.' },
       { text: 'Fishing licenses are inexpensive and easy to obtain.' },
-      { text: 'The licensing requirement applies to the activity Maria was engaged in.' },
+      { text: 'The licensing rule applies to Maria\'s activity.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1838,7 +1838,7 @@ export const QUESTIONS_LR_D: Question[] = [
     choices: [
       { text: 'It confuses a sufficient condition for graduation with a necessary one.' },
       { text: 'It confuses the exam requirement with the graduation ceremony itself.' },
-      { text: 'It treats passing the exam, a necessary condition for graduation, as if it guaranteed graduation.' },
+      { text: 'It treats passing the exam, needed for graduation, as ensuring graduation' },
       { text: 'It draws a conclusion about Jamal from a rule that applies only to students in general.' },
       { text: 'It presumes without evidence that Jamal studied for the exam.' },
     ],
@@ -1886,7 +1886,7 @@ export const QUESTIONS_LR_D: Question[] = [
       'The city will build the new park only if voters approve the bond measure. Voters approved the bond measure. Therefore, the city will build the park.',
     stem: 'Which of the following, if assumed, would guarantee the conclusion but is not required by the argument?',
     choices: [
-      { text: 'Whenever voters approve a bond measure, the city carries out the project it funds.' },
+      { text: 'When voters approve a bond, the city carries out the project it funds' },
       { text: 'The city currently has enough money to build the park without issuing any bonds.' },
       { text: 'Voters usually approve bond measures for parks when they appear on the ballot.' },
       { text: 'The mayor personally supports building the park and has said so publicly.' },
@@ -1939,7 +1939,7 @@ export const QUESTIONS_LR_D: Question[] = [
       { text: 'assumes without evidence that Ana will take the medicine exactly as prescribed.' },
       { text: 'confuses a sufficient condition for the medicine\'s working with a necessary one, reversing their logical roles.' },
       { text: 'ignores the possibility that Ana\'s disease will progress to a later stage before treatment begins.' },
-      { text: 'mistakes a necessary condition for the medicine\'s working, being in the early stages, for a guarantee that it will work.' },
+      { text: 'mistakes a needed condition for the medicine\'s working, early stage, for a guarantee it will work' },
       { text: 'presumes without evidence that the medicine has no serious side effects for most patients.' },
     ],
     correctIndex: 3,

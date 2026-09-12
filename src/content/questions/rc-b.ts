@@ -53,7 +53,7 @@ const RC_RC_P14: Question[] = [
     choices: [
       { text: 'Textualism is the superior approach to statutory interpretation because it constrains judicial discretion and gives citizens fair notice of the law.' },
       { text: 'The debate between textualists and purposivists is largely illusory, since judges in practice always follow the plain meaning of the text.' },
-      { text: 'Although textualists and purposivists present their methods as opposites, the two often converge, and neither can fully separate interpretation from judgment.' },
+      { text: 'Although textualists and purposivists present their methods as opposites, the two often converge, and neither can separate interpretation from judgment' },
       { text: 'New technologies such as smartphones have rendered both textualism and purposivism obsolete as methods of statutory interpretation.' },
       { text: 'The plain-meaning rule should be abandoned because statutory language is inherently too imprecise to be applied as written.' }
     ],
@@ -104,7 +104,7 @@ const RC_RC_P14: Question[] = [
     stem: 'The primary purpose of the passage is to',
     choices: [
       { text: 'argue that courts should abandon textualism in favor of a purpose-driven approach to statutes' },
-      { text: 'describe a longstanding debate in legal interpretation and show its opposing positions are less stark than they appear' },
+      { text: 'describe an old debate in legal interpretation and show its opposing positions are closer than claimed' },
       { text: 'explain how the plain-meaning rule is applied by courts in cases involving new technologies' },
       { text: 'defend the claim that legislative purpose is a discoverable fact that judges can reliably identify' },
       { text: 'survey the history of statutory interpretation from early common law to the present day' }
@@ -157,7 +157,7 @@ const RC_RC_P14: Question[] = [
       { text: 'legislators deliberately conceal their true purposes when drafting statutes' },
       { text: 'the plain meaning of statutory language is always sufficiently clear to decide every case' },
       { text: 'dictionaries and canons of construction are themselves products of judicial choice' },
-      { text: 'a statute typically serves several purposes that may conflict, and selecting among them requires discretion' },
+      { text: 'a statute serves several purposes that may conflict, and choosing among them takes discretion' },
       { text: 'purposivists refuse to consider the text of a statute at all' }
     ],
     correctIndex: 3,
@@ -207,7 +207,7 @@ const RC_RC_P14: Question[] = [
     stem: 'It can most reasonably be inferred from the passage that the author believes the plain-meaning rule',
     choices: [
       { text: 'is the only interpretive method consistent with democratic lawmaking' },
-      { text: 'expresses a valuable commitment though it cannot mechanically decide cases on its own' },
+      { text: 'a valuable commitment that cannot mechanically decide cases alone' },
       { text: 'was originally designed to handle statutes involving new technologies' },
       { text: 'has been rejected by most contemporary judges in favor of purposivism' },
       { text: 'requires judges to ignore the broader context of neighboring provisions' }
@@ -262,7 +262,7 @@ const RC_RC_P14: Question[] = [
       { text: 'demonstrate that legislatures are incapable of drafting unambiguous statutes' },
       { text: 'provide a historical example of the first case in which purposivism was applied' },
       { text: 'show that textualists secretly rely on legislative purpose when deciding difficult cases' },
-      { text: 'illustrate the purposivist claim that a statute\'s meaning depends on the problem it was meant to solve' }
+      { text: 'show the purposivist claim: a statute\u2019s meaning turns on the problem it addressed' }
     ],
     correctIndex: 4,
     explanationQuick: 'The example appears in paragraph 2 as the purposivists\' exhibit A: courts deny the murderer the inheritance because "the legislature could not have meant to reward murder" — i.e., meaning follows the law\'s purpose, not just its words. Choice E states that function.',
@@ -311,7 +311,7 @@ const RC_RC_P14: Question[] = [
     stem: 'Which one of the following best describes the organization of the passage?',
     choices: [
       { text: 'A historical narrative traces the development of an interpretive doctrine from its origins to its current crisis.' },
-      { text: 'A scholarly debate is presented, each side\'s arguments are examined, and the opposition is shown to be less stark than claimed.' },
+      { text: 'A scholarly debate is presented, each side\u2019s arguments are examined, and the opposition proves less sharp than claimed' },
       { text: 'A proposed legal reform is introduced, objections to it are rebutted one by one, and its adoption is urged.' },
       { text: 'Two competing theories are shown to be logically incompatible, and a third theory is proposed to reconcile them.' },
       { text: 'A series of court decisions is analyzed to demonstrate a gradual shift in judicial philosophy over time.' }
@@ -364,7 +364,7 @@ const RC_RC_P14: Question[] = [
     stem: 'A 1986 statute prohibits the use of "mechanical listening devices" to intercept private conversations. A court must decide whether the statute covers a smartphone application that records nearby conversations. A textualist reasoning as the passage\u2019s textualists do would most likely',
     choices: [
       { text: 'ask what problem the legislature was trying to solve in 1986 and how that problem appears in the age of smartphones' },
-      { text: 'ask what the statutory words covered at the time of enactment, rather than what problem the legislature was trying to solve' },
+      { text: 'ask what the statutory words covered at enactment, not what problem the legislature was trying to solve' },
       { text: 'consult the statute\u2019s underlying purpose and depart freely from the text whenever technology has changed since enactment' },
       { text: 'conclude that no interpretive method can decide the case, since interpretation cannot be fully separated from judgment' },
       { text: 'refuse to apply the statute at all, since its words cannot possibly cover any technology invented after 1986' },
@@ -476,7 +476,7 @@ const RC_RC_P15: Question[] = [
       { text: 'Art restoration is inherently unethical because every intervention permanently destroys historical evidence.' },
       { text: 'The cleaning of the Sistine Chapel ceiling was a mistake that art historians have now definitively proven.' },
       { text: 'Digital reconstruction has resolved the ethical dilemmas of physical art restoration.' },
-      { text: 'Restoration is an interpretive act torn between preserving and altering objects, and the question of whom it serves remains open.' },
+      { text: 'Restoration is an interpretive act torn between preserving and altering objects, and whom it serves stays unresolved' },
       { text: 'Conservators and art historians agree that the principle of reversibility provides a reliable ethical standard.' }
     ],
     correctIndex: 3,
@@ -525,7 +525,7 @@ const RC_RC_P15: Question[] = [
     stem: 'According to the passage, critics of the Sistine Chapel cleaning argued that the restoration',
     choices: [
       { text: 'was performed with materials that could not be removed by future conservators' },
-      { text: 'destroyed authentic features, including the patina of age and possibly Michelangelo\'s own final glazes' },
+      { text: 'destroyed authentic features — age patina and possibly Michelangelo\u2019s final glazes' },
       { text: 'was motivated primarily by a desire to attract more tourists to the Vatican' },
       { text: 'failed to document the interventions with sufficient care for future generations' },
       { text: 'ignored the principle of reversibility that the conservators themselves claimed to follow' }
@@ -578,7 +578,7 @@ const RC_RC_P15: Question[] = [
     choices: [
       { text: 'Museums should exhibit only unrestored works to avoid misrepresenting the artist\'s intentions.' },
       { text: 'The dispute over restoration ultimately turns on incompatible factual claims about chemistry and materials science.' },
-      { text: 'Even approaches presented as compromises in the restoration debate require the same judgment that makes restoration controversial.' },
+      { text: 'Even compromise approaches in the restoration debate require the judgment making restoration controversial' },
       { text: 'Future generations will likely reverse most twentieth-century restorations once better techniques emerge.' },
       { text: 'Art historians and conservators fundamentally agree on the goals of restoration but disagree only about methods.' }
     ],
@@ -629,7 +629,7 @@ const RC_RC_P15: Question[] = [
     stem: 'The fourth paragraph functions primarily to',
     choices: [
       { text: 'introduce a new objection to restoration that neither side had previously considered' },
-      { text: 'establish shared ground between the opposing sides in order to narrow the real disagreement' },
+      { text: 'establish common ground between the sides to narrow the real disagreement' },
       { text: 'argue that structural repairs are ethically distinct from aesthetic restorations' },
       { text: 'provide scientific evidence that paintings inevitably disintegrate without intervention' },
       { text: 'conclude the debate by showing that the critics\' position is ultimately untenable' }
@@ -683,7 +683,7 @@ const RC_RC_P15: Question[] = [
     choices: [
       { text: 'wholehearted endorsement of it as the solution to restoration\'s ethical problems' },
       { text: 'dismissal of it as a self-serving invention of the conservation profession' },
-      { text: 'neutral reporting of it as one side\'s position, complicated by serious objections' },
+      { text: 'neutral reporting of it as one side\u2019s view, tempered by serious objections' },
       { text: 'indifference, since the passage is concerned only with digital restoration' },
       { text: 'hostility toward conservators for failing to live up to it' }
     ],
@@ -734,7 +734,7 @@ const RC_RC_P15: Question[] = [
     stem: 'Based on the passage, a critic of restoration as described in the third paragraph would most likely object to which one of the following proposals?',
     choices: [
       { text: 'A museum\'s decision to leave a flaking medieval altarpiece untreated until better conservation methods are developed' },
-      { text: 'A proposal to clean a landscape painting to remove yellowed varnish, with every step photographed and all materials fully removable' },
+      { text: 'A proposal to clean a landscape of yellowed varnish, every step photographed and all materials removable' },
       { text: 'A plan to build a climate-controlled storage facility to slow the deterioration of textile collections' },
       { text: 'A project to create a digital archive of photographs documenting a fresco\'s current condition' },
       { text: 'A conservator\'s refusal to reconstruct missing sections of a damaged mosaic' }
@@ -801,7 +801,7 @@ const RC_RC_P16: Question[] = [
       { text: 'Basic income pilots have conclusively proven that a universal basic income would succeed if adopted nationally, in any economy' },
       { text: 'The debate over basic income is purely ideological, and empirical evidence has no role to play in it.' },
       { text: 'Critics have shown that basic income pilots are methodologically worthless and should be discontinued.' },
-      { text: 'Pilot programs provide genuine but limited evidence: useful for policy design yet unable to settle whether societies should adopt a basic income.' },
+      { text: 'Pilots give real but limited evidence: useful for policy design yet unable to settle whether societies should adopt a basic income' },
       { text: 'The primary value of basic income pilots is demonstrating that recipients spend cash payments responsibly.' }
     ],
     correctIndex: 3,
@@ -859,7 +859,7 @@ const RC_RC_P16: Question[] = [
     stem: 'Supporters of a basic income, as described in the passage, would most likely agree with which one of the following statements?',
     choices: [
       { text: 'Pilot programs are too small to provide any information relevant to basic income policy.' },
-      { text: 'The absence of large-scale evidence for basic income justifies larger experiments rather than dismissing the idea.' },
+      { text: 'The lack of large-scale evidence on basic income justifies larger experiments, not dismissing the idea' },
       { text: 'Taxes required to fund a permanent basic income would have no effect on labor markets.' },
       { text: 'Monthly payments and lump-sum payments produce identical outcomes for recipients.' },
       { text: 'Questions about work, security, and the state\'s obligations can be settled by randomized trials.' }
@@ -919,7 +919,7 @@ const RC_RC_P16: Question[] = [
     choices: [
       { text: 'enroll only participants who are already employed full-time' },
       { text: 'measure outcomes using inconsistent methods across different countries' },
-      { text: 'are typically funded by outside grants rather than by the taxes a permanent program would require' },
+      { text: 'are funded by grants rather than by taxes a permanent program would require' },
       { text: 'give participants payments that are too small to affect their behavior' },
       { text: 'fail to collect data on health and educational outcomes, focusing only on employment statistics' }
     ],
@@ -978,7 +978,7 @@ const RC_RC_P16: Question[] = [
     stem: 'It can most reasonably be inferred that the author believes the most important product of basic income pilots is',
     choices: [
       { text: 'proof that unconditional cash payments do not reduce work effort' },
-      { text: 'clarification of the practical questions involved in designing a basic income program' },
+      { text: 'clarifying practical questions in designing a basic income' },
       { text: 'evidence that basic income would be politically popular with voters' },
       { text: 'demonstration that small-scale experiments can fully predict economy-wide effects' },
       { text: 'confirmation that the critics\' objections to basic income are unfounded' }
@@ -1098,7 +1098,7 @@ const RC_RC_P16: Question[] = [
     choices: [
       { text: 'enthusiastic advocacy for their immediate expansion into permanent policy' },
       { text: 'outright rejection of them as a waste of research resources' },
-      { text: 'qualified appreciation: valuable for design questions, but incapable of settling the fundamental debate' },
+      { text: 'qualified appreciation: useful for design questions, but unable to settle the core debate' },
       { text: 'indifference, since the passage focuses on theoretical rather than empirical questions' },
       { text: 'skepticism that any empirical findings about basic income are trustworthy' }
     ],
@@ -1149,7 +1149,7 @@ const RC_RC_P17: Question[] = [
     stem: 'Which one of the following most accurately expresses the main point of the passage?',
     choices: [
       { text: 'Marine parks have proven useless against ocean warming and should be abolished entirely, with their waters and budgets transferred to large-scale genetic engineering of reefs.' },
-      { text: 'Coral conservation shifted from marine-park protection to a hybrid regime where public programs engineer reefs for a hotter ocean, raising governance questions the old laws never anticipated.' },
+      { text: 'Coral conservation shifted from marine-park protection to a hybrid regime where programs engineer reefs for a hotter ocean, raising governance questions old laws never anticipated' },
       { text: 'The 1998 mass-bleaching event demonstrated that coral reefs are doomed regardless of conservation policy, so further spending is unjustified.' },
       { text: 'The Reef Restoration and Adaptation Program has already completed the full restoration of the Great Barrier Reef’s northern sector.' },
       { text: 'Conservation agencies should abandon all intervention programs and return to the preservation model that prevailed in the 1970s.' },
@@ -1203,7 +1203,7 @@ const RC_RC_P17: Question[] = [
       { text: 'establishing marine reserves would reverse the warming of the ocean itself over time.' },
       { text: 'mass-bleaching events were caused primarily by overfishing inside the parks’ boundaries.' },
       { text: 'governments should finance the genetic engineering of wild reef species directly.' },
-      { text: 'undisturbed reefs would recover on their own once local stresses like fishing and development were removed.' },
+      { text: 'untouched reefs would recover on their own once stresses like fishing and development ended' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1254,7 +1254,7 @@ const RC_RC_P17: Question[] = [
       { text: 'it declined to coordinate its research agenda with the United States’ 2000 coral conservation legislation or share its breeding protocols and field-trial data internationally.' },
       { text: 'agency scientists disputed whether the widely reported 2016–2017 bleaching events had actually occurred at all.' },
       { text: 'it proposed eliminating all existing water-quality targets in favor of purely genetic research programs.' },
-      { text: 'it broke with the protection paradigm to engineer reef populations, raising fears that intervention spending would displace emissions and water-quality work.' },
+      { text: 'it broke with the protection paradigm to engineer reefs, raising fears such spending would displace emissions and water-quality work.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1305,7 +1305,7 @@ const RC_RC_P17: Question[] = [
       { text: 'Four competing explanations of a single phenomenon are surveyed in turn and treated as complementary analytical tools.' },
       { text: 'A puzzling paradox is introduced and then resolved by drawing a sharp new conceptual distinction.' },
       { text: 'A specific policy proposal is advanced at length and a series of objections to it are systematically rebutted.' },
-      { text: 'An institutional shift is traced chronologically: the protection paradigm, the shocks undermining it, the new programs, and the resulting governance problems.' },
+      { text: 'An institutional shift is traced chronologically: the protection paradigm, the shocks undermining it, the new programs, and the governance issues' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1356,7 +1356,7 @@ const RC_RC_P17: Question[] = [
       { text: 'demonstrate that marine parks had never possessed any clear legal authority over the areas they administered.' },
       { text: 'explain the underlying oceanographic causes of the 1998 mass-bleaching event in detail.' },
       { text: 'praise regulators for having fully and finally resolved the legal challenges of reef intervention.' },
-      { text: 'show that active restoration created governance problems the existing legal framework was not designed to handle.' },
+      { text: 'show that active restoration created governance problems existing law was not designed to handle.' },
     ],
     correctIndex: 4,
     explanationQuick:
@@ -1471,7 +1471,7 @@ const RC_RC_P18: Question[] = [
     stem: 'Which one of the following most accurately expresses the main point of the passage?',
     choices: [
       { text: 'Eyewitness testimony is so unreliable that courts should bar it from criminal trials entirely, relying instead only on physical evidence.' },
-      { text: 'DNA exonerations and memory research exposed eyewitness fallibility, prompting science-informed reforms led by New Jersey—though the new framework remains incomplete and contested.' },
+      { text: 'DNA exonerations and memory research exposed eyewitness fallibility, prompting science-informed reforms led by New Jersey—though the framework remains incomplete and contested' },
       { text: 'The Supreme Court was correct in Manson to treat a witness’s confidence as the strongest indicator of an identification’s reliability.' },
       { text: 'Police departments nationwide have now adopted double-blind sequential lineups, and researchers agree these procedures have effectively eliminated mistaken identifications.' },
       { text: 'Psychological research proves that stressful conditions invariably make accurate eyewitness identification impossible in every case.' }
@@ -1587,7 +1587,7 @@ const RC_RC_P18: Question[] = [
     passageId: 'rc-p18',
     stem: 'Which one of the following is most strongly supported by the passage?',
     choices: [
-      { text: 'A witness who reports high confidence only after receiving confirming feedback provides weaker evidence than the reported confidence level suggests.' },
+      { text: 'A witness who reports high confidence only after confirming feedback gives weaker evidence than the reported confidence level suggests' },
       { text: 'Double-blind sequential lineups have been proven to eliminate mistaken identifications without reducing the number of correct ones.' },
       { text: 'The New Jersey Supreme Court in Henderson abolished the use of eyewitness testimony in New Jersey criminal trials.' },
       { text: 'Estimator variables such as stress and brief exposure can be fully corrected through improved lineup procedures.' },
@@ -1648,7 +1648,7 @@ const RC_RC_P18: Question[] = [
       { text: 'prohibited the use of any identification procedure that could be described as suggestive' },
       { text: 'required pretrial hearings examining both estimator variables and system variables' },
       { text: 'was established by a state supreme court rather than the United States Supreme Court' },
-      { text: 'counted the witness’s own certainty as a factor supporting the identification’s reliability' },
+      { text: 'counted the witness\u2019s certainty as supporting the identification\u2019s accuracy' },
       { text: 'required that all lineups be administered on a double-blind and sequential basis' }
     ],
     correctIndex: 3,
@@ -1705,7 +1705,7 @@ const RC_RC_P18: Question[] = [
     stem: 'The author discusses estimator variables (paragraph 2) primarily in order to',
     choices: [
       { text: 'argue that identifications affected by stress or brief exposure should be automatically excluded from trial as unreliable' },
-      { text: 'distinguish sources of eyewitness error the legal system can control from those it cannot, thereby defining the limits of procedural reform' },
+      { text: 'distinguish eyewitness-error sources the legal system controls from those it cannot, defining the limits of procedural reform' },
       { text: 'demonstrate that system variables such as lineup construction have no measurable effect on identification accuracy' },
       { text: 'suggest that psychological research on memory has little relevance to how courts should handle eyewitness evidence' },
       { text: 'prove that cross-racial identifications are always mistaken and therefore should be disregarded by juries' }
@@ -1827,7 +1827,7 @@ const RC_RC_P19: Question[] = [
     choices: [
       { text: 'All cultural artifacts held in Western museums should be immediately returned to their countries of origin without exception.' },
       { text: 'Universal museums have decisively refuted the case for repatriation by demonstrating their superior conservation resources and expertise.' },
-      { text: 'The repatriation debate is about cultural identity and moral obligation; while practice has found compromises, the criterion for return remains unresolved.' },
+      { text: 'The repatriation debate is about cultural identity and moral obligation; while practice has found compromises, the criterion for return stays unresolved' },
       { text: 'The repatriation debate is primarily a legal dispute that courts are well equipped to resolve through established property law.' },
       { text: 'Digital archives have made the physical location of cultural artifacts irrelevant to the repatriation debate, which can now proceed entirely online.' }
     ],
@@ -1885,7 +1885,7 @@ const RC_RC_P19: Question[] = [
     passageId: 'rc-p19',
     stem: 'Advocates of the "universal museum" position, as described in the passage, would most likely agree with which one of the following?',
     choices: [
-      { text: 'Museums holding contested artifacts serve humanity best by keeping collections together, preserving them, and enabling cross-cultural encounters.' },
+      { text: 'Museums with contested artifacts serve humanity by keeping collections whole, preserving them, and enabling cross-cultural contact' },
       { text: 'Any artifact acquired under colonial rule should be returned immediately regardless of its condition or available conservation' },
       { text: 'Source nations are generally better equipped than Western museums to conserve fragile artifacts.' },
       { text: 'The repatriation debate is fundamentally a moral question rather than a legal one.' },
@@ -1949,7 +1949,7 @@ const RC_RC_P19: Question[] = [
       { text: 'Western museums have refused to participate in any repatriation efforts' },
       { text: 'returns have been limited to objects looted within living memory' },
       { text: 'legal disputes over ownership have increased as a result of the returns' },
-      { text: 'returns were generally celebrated, and some receiving institutions built impressive new museums' }
+      { text: 'returns were mostly celebrated, and some receiving institutions built new museums' }
     ],
     correctIndex: 4,
     explanationQuick: 'Paragraph 4 states this directly: returns "have generally been celebrated rather than mourned, and several receiving institutions have built impressive new museums to house returned works, undercutting the claim that they cannot care for them." Choice E restates it.',
@@ -2005,7 +2005,7 @@ const RC_RC_P19: Question[] = [
     stem: 'Based on the final paragraph, it can most reasonably be inferred that the author believes',
     choices: [
       { text: 'a clear legal rule could resolve most repatriation disputes if courts applied it consistently' },
-      { text: 'agreement exists only at the extremes, while most contested holdings fall in a disputed middle ground' },
+      { text: 'agreement exists at extremes; most contested holdings fall in disputed middle ground' },
       { text: 'most contested artifacts will eventually be returned as moral consensus emerges' },
       { text: 'the distinction between recent lootings and ancient transfers is morally irrelevant' },
       { text: 'museums and source nations will never reach any compromise on contested objects' }
@@ -2067,7 +2067,7 @@ const RC_RC_P19: Question[] = [
       { text: 'prove that all colonial-era artifacts will soon be returned to their countries of origin' },
       { text: 'provide an example of a return that was widely condemned by art historians' },
       { text: 'illustrate how digital archives can substitute for physical repatriation' },
-      { text: 'support the claim that actual returns have gone well and undercut the universalists\' preservation argument' },
+      { text: 'support the claim that returns went well and undercut the universalists\u2019 preservation claims' },
       { text: 'show that European museums initiated the repatriation movement without external pressure' }
     ],
     correctIndex: 3,
@@ -2193,7 +2193,7 @@ const RC_RC_C01: Question[] = [
       { text: 'automated hiring systems are currently widely used by large employers' },
       { text: 'employers should be permitted to consider educational background when hiring' },
       { text: 'human hiring managers are ever influenced by unconscious bias' },
-      { text: 'algorithmic screening reduces hiring bias or merely reproduces it in harder-to-challenge form' }
+      { text: 'algorithmic screening reduces hiring bias or reproduces it in harder-to-beat form' }
     ],
     correctIndex: 4,
     explanationQuick: 'Passage A claims algorithms can be audited and corrected, making hiring fairer than the "demonstrably discriminatory" human system; Passage B claims algorithms launder old biases into mathematics that is harder to recognize and challenge. Choice E states that disagreement.',
@@ -2314,7 +2314,7 @@ const RC_RC_C01: Question[] = [
       { text: 'regulators should ban all automated hiring tools until perfect transparency can be guaranteed by independent third-party auditors' },
       { text: 'black-box systems have been proven to outperform human managers in every industry studied so far' },
       { text: 'trade secrecy is necessary to protect innovation in hiring technology firms' },
-      { text: 'the ability to log, test, and retrain algorithmic decisions makes them more accountable than human judgment even when vendors resist scrutiny' }
+      { text: 'logging, testing, and retraining make algorithms more accountable than human judgment despite vendor resistance' }
     ],
     correctIndex: 4,
     explanationQuick: 'A\'s core commitments are that algorithmic decisions are logged and explicit, that disparate outcomes "can be detected and corrected," and that models can be retrained — i.e., the technology is inherently improvable in ways human prejudice is not. Choice E extends that position to answer B\'s black-box objection.',
@@ -2488,7 +2488,7 @@ const RC_RC_C01: Question[] = [
     passageId: 'rc-c01',
     stem: 'Which one of the following is most strongly suggested by Passage B?',
     choices: [
-      { text: 'Rejecting caregivers because past top performers worked uninterrupted hours perpetuates bias rather than removing it.' },
+      { text: 'Rejecting caregivers because past stars worked long hours keeps bias rather than removing it' },
       { text: 'Vendors of hiring software deliberately design their systems to discriminate against protected groups.' },
       { text: 'Human hiring managers should be given even greater discretion to compensate for algorithmic flaws.' },
       { text: 'Statistical parity is the only meaningful measure of fairness in hiring.' },
@@ -2544,7 +2544,7 @@ const RC_RC_C02: Question[] = [
       { text: 'the California condor was brought back from 22 birds to more than 500 through captive breeding' },
       { text: 'lead poisoning from spent ammunition was the main driver of the condor\u2019s decline' },
       { text: 'conservation programs should openly acknowledge the costs they impose rather than pretending coexistence is free' },
-      { text: 'successful recoveries like the condor\u2019s show that reintroduction should be pursued broadly rather than decided case by case' },
+      { text: 'recoveries like the condor\u2019s show reintroduction should be pursued broadly, not case by case' },
       { text: 'wolves were reintroduced to Yellowstone in the mid-1990s, a historical fact neither passage disputes' }
     ],
     correctIndex: 3,
@@ -2590,7 +2590,7 @@ const RC_RC_C02: Question[] = [
     ],
     stem: 'Which one of the following best describes the relationship between the two passages?',
     choices: [
-      { text: 'Passage B disputes the evidence behind celebrated reintroduction narratives and urges site-specific decisions, while Passage A treats the condor recovery as validating broad reintroduction.' },
+      { text: 'Passage B disputes the evidence behind celebrated reintroductions and urges site-specific decisions; Passage A treats condor recovery as validating broad reintroduction.' },
       { text: 'Passage A and Passage B present complementary accounts that together give a complete and balanced picture of condor biology and of the modern policy debates surrounding species reintroduction.' },
       { text: 'Passage A directly refutes Passage B\u2019s claims about rancher compensation programs by showing that payments now fully cover livestock losses.' },
       { text: 'Passage B ignores every ecological question entirely and focuses solely on the tourism revenue that wolves generate for gateway towns each year.' },
@@ -2737,7 +2737,7 @@ const RC_RC_C02: Question[] = [
     ],
     stem: 'According to Passage A, the recovery of the California condor involved which one of the following sequences?',
     choices: [
-      { text: 'Lead poisoning drove the decline; the last 22 wild birds were taken into captivity for breeding; releases began and the population grew past 500.' },
+      { text: 'Lead poisoning drove the decline; the last 22 wild birds were captured for breeding; releases began and the population topped 500' },
       { text: 'Hunting was banned outright across all condor habitat, which caused condors to abandon scavenging and hunt live prey instead.' },
       { text: 'Condors were moved permanently into zoos after wildlife agencies concluded that any wild release was impossible.' },
       { text: 'The population rebounded on its own once wolf packs reduced elk herds and restored streamside nesting habitat.' },
@@ -2785,7 +2785,7 @@ const RC_RC_C02: Question[] = [
     ],
     stem: 'Which one of the following is most strongly suggested by Passage B?',
     choices: [
-      { text: 'Wolf reintroduction decisions should be made locally, acknowledging uncertainties and including affected communities.' },
+      { text: 'Wolf reintroduction should be local, noting uncertainty and including affected communities.' },
       { text: 'The Yellowstone reintroduction was based on fabricated data and deliberate deception.' },
       { text: 'Compensation programs for ranchers are unnecessary because wolf predation causes no real economic harm.' },
       { text: 'Wolves have no ecological value and should be removed from all protected areas.' },
@@ -2933,7 +2933,7 @@ const RC_RC_C03: Question[] = [
     ],
     stem: 'Which one of the following best describes the relationship between the two passages?',
     choices: [
-      { text: 'Passage B accepts Passage A\'s economic claims but argues they should be subordinate to a cultural justification for preservation.' },
+      { text: 'Passage B accepts Passage A\u2019s economic claims but argues they should yield to a cultural rationale for preservation' },
       { text: 'Passage B refutes Passage A\'s economic claims by showing that preservation consistently loses money.' },
       { text: 'Passage A and Passage B make identical arguments using different examples.' },
       { text: 'Passage B argues that historic districts should be demolished to make way for affordable housing.' },
@@ -2984,7 +2984,7 @@ const RC_RC_C03: Question[] = [
       { text: 'are always more profitable than new commercial developments' },
       { text: 'should be preserved without any new construction nearby' },
       { text: 'were originally built to attract tourists' },
-      { text: 'have distinctive character setting them apart from generic new development' },
+      { text: 'have distinct character unlike generic new development' },
       { text: 'are valued by their residents primarily for economic reasons' }
     ],
     correctIndex: 3,
@@ -3033,7 +3033,7 @@ const RC_RC_C03: Question[] = [
       { text: 'Preservation restricts housing supply and therefore harms the cities it claims to help.' },
       { text: 'The only reason to preserve historic districts is to attract wealthy tourists.' },
       { text: 'Museums should replace historic districts as the primary custodians of cultural memory.' },
-      { text: 'Historic preservation pays economically: higher property values, tourism, and thriving local businesses.' }
+      { text: 'Historic preservation pays economically: higher property values, tourism, and local businesses.' }
     ],
     correctIndex: 4,
     explanationQuick: 'A\'s thesis is stated in paragraph 1: "its strongest justification may be economic," followed by property values, tourism spending, and business clustering, plus the virtuous-cycle mechanism. Choice E summarizes this.',
@@ -3131,7 +3131,7 @@ const RC_RC_C04: Question[] = [
     choices: [
       { text: 'whether carbon dioxide can be removed from the atmosphere by any means' },
       { text: 'whether emissions reductions are desirable at all' },
-      { text: 'what priority direct air capture should receive relative to cutting emissions' },
+      { text: 'what priority direct air capture merits versus emissions cuts' },
       { text: 'whether solar panels were expensive forty years ago' },
       { text: 'whether climate models are capable of predicting future temperatures' }
     ],
@@ -3181,7 +3181,7 @@ const RC_RC_C04: Question[] = [
       { text: 'Passage A and Passage B agree that emissions reductions are unnecessary because DAC will solve the problem.' },
       { text: 'Passage B is a point-by-point refutation proving that direct air capture violates the laws of physics.' },
       { text: 'Passage A proposes an unrelated technology that has no bearing on Passage B\'s concerns.' },
-      { text: 'Passage B concedes some carbon removal will eventually be needed but disputes the priority and scale Passage A gives DAC.' }
+      { text: 'Passage B concedes carbon removal is needed but disputes the priority and scale Passage A gives DAC' }
     ],
     correctIndex: 4,
     explanationQuick: 'B\'s third paragraph explicitly concedes eventual need ("some removal capacity will eventually be needed") while arguing DAC should be "a backstop rather than a centerpiece" — disputing A\'s urgency and emphasis, not the technology\'s eventual role. Choice E describes this concessive challenge.',
@@ -3228,7 +3228,7 @@ const RC_RC_C04: Question[] = [
       { text: 'direct air capture is already cheaper than all emissions-reduction measures' },
       { text: 'moral hazard is a concept from economics that has no application to climate policy' },
       { text: 'climate strategy should abandon emissions reductions and rely entirely on carbon removal' },
-      { text: 'carbon removal and emissions cuts are complementary, and delaying removal only makes mitigation more expensive' },
+      { text: 'carbon removal and emissions cuts are complementary; delaying removal only raises costs' },
       { text: 'fossil fuel companies have never attempted to use carbon removal as a justification for continued emissions' }
     ],
     correctIndex: 3,
@@ -3371,7 +3371,7 @@ const RC_RC_C04: Question[] = [
     choices: [
       { text: 'carbon removal technologies will never work under any circumstances' },
       { text: 'fire departments should be responsible for climate policy' },
-      { text: 'leading with carbon removal mistakes a secondary later task for the urgent primary one of stopping emissions' },
+      { text: 'leading with carbon removal mistakes a secondary task for the primary one: stopping emissions' },
       { text: 'cleanup crews are generally more effective than fire departments at handling emergencies' },
       { text: 'climate change is no longer an emergency requiring urgent action' }
     ],
@@ -3424,7 +3424,7 @@ const RC_RC_C05: Question[] = [
       { text: 'whether children are capable of learning a second language at school' },
       { text: 'whether bilingual education should aim at academic proficiency or conversational fluency' },
       { text: 'whether literacy skills developed in one language can transfer to another' },
-      { text: 'how to sequence instruction: maximum target-language exposure first versus home-language literacy first' },
+      { text: 'sequencing: target-language exposure first versus home-language literacy first' },
       { text: 'whether teachers should be native speakers of the target language' }
     ],
     correctIndex: 3,
@@ -3517,11 +3517,11 @@ const RC_RC_C05: Question[] = [
     ],
     stem: 'The author of Passage B would most likely respond to Passage A\'s "time on task" argument by claiming that',
     choices: [
-      { text: 'exposure time is irrelevant to language learning under all circumstances, a claim no researcher in the debate accepts' },
+      { text: 'exposure time is irrelevant to language learning under all circumstances, a claim that no researcher in the debate accepts' },
       { text: 'immersion students never achieve strong second-language skills, regardless of program quality or duration' },
       { text: 'teachers in immersion programs are generally unqualified, which explains the mixed results better than any theory' },
       { text: 'maximum exposure is the only factor that determines language-learning success, rendering all other variables moot' },
-      { text: 'strong first-language literacy accelerates second-language learning, so early home-language support is an investment, not a delay' }
+      { text: 'strong first-language literacy speeds second-language gains, so early home-language help is investment, not delay' }
     ],
     correctIndex: 4,
     explanationQuick: 'B\'s counter is the transfer research: "Students with strong first-language literacy acquire second-language academic skills faster, not slower," and the early lag is "not temporary at all" for many — so foundation-building speeds rather than slows acquisition. Choice E states this reply.',
@@ -3565,10 +3565,10 @@ const RC_RC_C05: Question[] = [
     ],
     stem: 'Which one of the following best describes the relationship between the two passages?',
     choices: [
-      { text: 'Passage B disputes Passage A\'s sequencing while sharing its goal of genuine bilingual proficiency.' },
+      { text: 'Passage B disputes A\u2019s sequencing while sharing its goal of bilingual proficiency.' },
       { text: 'Passage B agrees with Passage A\'s methods but disputes its stated goals.' },
       { text: 'The two passages discuss entirely different age groups and are therefore incomparable.' },
-      { text: 'Passage A refutes Passage B\'s claims about literacy transfer with contradictory research.' },
+      { text: 'Passage A refutes Passage B\u2019s claims about literacy transfer with contradictory new research.' },
       { text: 'Passage B argues that bilingual education itself is unattainable and should be abandoned.' }
     ],
     correctIndex: 0,
@@ -3618,7 +3618,7 @@ const RC_RC_C05: Question[] = [
       { text: 'immersion has no measurable effect on second-language skills' },
       { text: 'immersion students permanently lose proficiency in their native language' },
       { text: 'immersion students consistently outperform their peers in mathematics but not in science' },
-      { text: 'immersion students perform at grade level in their native language by late elementary school' }
+      { text: 'immersion students meet grade level in their native language by fifth grade' }
     ],
     correctIndex: 4,
     explanationQuick: 'A\'s second paragraph states: "follow-up studies consistently show immersion students performing at grade level in their native language by late elementary school, with the temporary lag of the early years fully closed." Choice E restates this.',
@@ -3664,7 +3664,7 @@ const RC_RC_C05: Question[] = [
     choices: [
       { text: 'All bilingual programs, regardless of design, produce identical outcomes.' },
       { text: 'Parents should choose schools based solely on class size.' },
-      { text: 'Weaker bilingual outcomes when immersion programs dilute intensive target-language exposure.' },
+      { text: 'Weaker bilingual outcomes when immersion dilutes target-language input' },
       { text: 'Children cannot learn academic subjects in a language they are still acquiring.' },
       { text: 'Home-language literacy is the primary driver of second-language success.' }
     ],
@@ -3718,7 +3718,7 @@ const RC_RC_C06: Question[] = [
       { text: 'authors should have no rights whatsoever over works used in AI training' },
       { text: 'a new legal regime unrelated to copyright must be invented for AI' },
       { text: 'licensing every work in a training corpus would meaningfully compensate individual authors' },
-      { text: 'copyright law, with its machinery of rights, exceptions, and remedies, is the proper framework for the dispute' }
+      { text: 'copyright law, with its rights, exceptions, and remedies, is the best framework for the dispute' }
     ],
     correctIndex: 4,
     explanationQuick: 'B states this explicitly: "Both sides of this dispute, notably, accept the same starting premise: that copyright law — with its familiar machinery of exclusive rights, exceptions, and remedies — is the proper framework." A likewise argues entirely within fair-use doctrine. Choice E states the shared assumption.',
@@ -3767,7 +3767,7 @@ const RC_RC_C06: Question[] = [
       { text: 'human authors learn from the works they read' },
       { text: 'copyright law should continue to exist in any form' },
       { text: 'AI models were trained on large quantities of copyrighted text and images' },
-      { text: 'training AI models on copyrighted works without permission is fair use or needs licensing' }
+      { text: 'training AI models on copyrighted works without permission: fair use or licensing' }
     ],
     correctIndex: 4,
     explanationQuick: 'A argues training is "a textbook case of fair use" (transformative, non-substitutive); B argues it is "uncompensated commercial exploitation" requiring permission/licensing. B itself frames the fight: "whether mass ingestion for model training is the kind of transformative learning fair use was meant to shelter, or the kind of uncompensated commercial exploitation it was meant to prevent." Choice E states the disagreement.',
@@ -3811,7 +3811,7 @@ const RC_RC_C06: Question[] = [
     ],
     stem: 'The author of Passage B would most likely respond to Passage A\'s "student with a library card" analogy by arguing that',
     choices: [
-      { text: 'the analogy fails because commercial model training differs in scale and purpose from personal study' },
+      { text: 'the analogy fails because commercial training differs in scale and purpose from study' },
       { text: 'students should also be required to obtain licenses before reading library books' },
       { text: 'library cards are obsolete and no longer provide a useful comparison for anything' },
       { text: 'AI models are actually more transformative than human students are' },
@@ -3861,7 +3861,7 @@ const RC_RC_C06: Question[] = [
     choices: [
       { text: 'collective licensing works well for music and therefore must work for AI training data' },
       { text: 'authors whose works are used in training deserve no compensation under any circumstances' },
-      { text: 'licensing billions of works would yield negligible per-work payments, entrenching only the largest companies' },
+      { text: 'licensing billions of works yields tiny per-work payments, entrenching the largest companies' },
       { text: 'copyright law should be abolished so that no licensing is ever required' },
       { text: 'AI companies are too poor to afford any licensing fees' }
     ],
@@ -3912,7 +3912,7 @@ const RC_RC_C06: Question[] = [
       { text: 'The per-work value of training data is so high that authors are owed substantial royalties.' },
       { text: 'Copyright was originally designed to give authors veto power over new technologies.' },
       { text: 'Human students should be subject to the same copyright rules as AI training systems.' },
-      { text: 'AI training on copyrighted works is transformative fair use; licensing would be unworkable and counterproductive.' }
+      { text: 'AI training on copyrighted works is transformative fair use; licensing is unworkable and harmful' }
     ],
     correctIndex: 4,
     explanationQuick: 'A\'s thesis spans its three paragraphs: training is "a textbook case of fair use" (transformative, non-substitutive), licensing is "unworkable" (negligible per-work value, entrenches big tech), and output infringement remains actionable. Choice E summarizes this.',
@@ -3961,7 +3961,7 @@ const RC_RC_C06: Question[] = [
       { text: 'the music industry has been destroyed by collective licensing and cannot recover' },
       { text: 'AI training is legally identical to playing a song on the radio, so the same royalties apply' },
       { text: 'songwriters are the only creators who deserve compensation for the use of their work' },
-      { text: 'licensing training data at scale is administratively feasible and can direct real money to creators' }
+      { text: 'licensing training data at scale is feasible and sends real money to creators' }
     ],
     correctIndex: 4,
     explanationQuick: 'B\'s second paragraph: collective licensing bodies "already manage rights for millions of musical works, distributing royalties to songwriters"; therefore "a similar regime for training data is administratively feasible and would direct real money to creators." Choice E restates this.',
