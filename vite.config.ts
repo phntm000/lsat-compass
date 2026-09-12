@@ -41,9 +41,10 @@ export default defineConfig({
         runtimeCaching: [],
         cleanupOutdatedCaches: true,
         // The bundled original content bank is split into per-area chunks
-        // via advancedChunks above; allow each precached chunk up to 2MB
-        // (largest is ~1.7MB of question data).
-        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
+        // via advancedChunks above; allow each precached chunk up to 4MB
+        // (largest is ~2.2MB of question data after the 2026-09-12 RC
+        // expansion). The bank MUST be precached: the app is offline-first.
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
     }),
   ],
