@@ -422,6 +422,55 @@ Bank totals: **440 questions** (264 LR, 176 RC) · **25 RC passage sets**
 | tier 1 (adversarial-reviewed) | **0 (empty)** |
 | tier 2 (below exam gate) | **0 (empty)** |
 
+## Drills (separate bank — micro-drill / guided-practice layer)
+
+Total: **252 drills** (foundation 152, contrast 100). Drills do not carry `itemPurpose`; by design they serve the micro-drill and guided-practice purposes. Question-bank purposes with zero items (worked-example, transfer for LR, timed-assessment, section-simulation) remain genuinely unpopulated and are shown as empty above.
+
+### Drills by kind
+
+| Kind | Count |
+|---|---|
+| translate | 19 |
+| identify | 90 |
+| classify | 82 |
+| contrast | 49 |
+| complete | 10 |
+| order | 2 |
+
+### Drills by difficulty
+
+| Difficulty | Count |
+|---|---|
+| 1 | 54 |
+| 2 | 104 |
+| 3 | 94 |
+
+### Drills by skill
+
+| Skill | Count |
+|---|---|
+| f-analogy | 8 |
+| f-argument | 10 |
+| f-assumption | 12 |
+| f-causation | 20 |
+| f-comparison | 8 |
+| f-conditional | 12 |
+| f-deduction | 20 |
+| f-flaws | 10 |
+| f-indicators | 10 |
+| f-numbers | 8 |
+| f-premise-conclusion | 22 |
+| f-quantifiers | 20 |
+| f-samples | 8 |
+| f-structure | 12 |
+| f-translate | 12 |
+| lr-must-be-true | 10 |
+| lr-nec-vs-suff | 10 |
+| lr-necessary-assumption | 10 |
+| lr-strengthen | 10 |
+| lr-weaken | 10 |
+| rc-author-viewpoint | 10 |
+
 ## Passage inventory
 
 | Passage | Domain | Form | Set size | Tier |

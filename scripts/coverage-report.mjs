@@ -5,7 +5,7 @@
  * displaying empty categories explicitly (a zero row is a finding,
  * not an omission).
  */
-import { QUESTIONS, PASSAGES } from '../src/content/index.ts';
+import { QUESTIONS, PASSAGES, DRILLS } from '../src/content/index.ts';
 import { writeFileSync } from 'node:fs';
 
 const PURPOSES = [
@@ -116,6 +116,23 @@ out.push(table('RC questions by item purpose',
 out.push(table('Passage sets by exam tier (cold status)',
   [...count(PASSAGES, tierOf).entries()],
   ['tier 0 (fully validated)', 'tier 1 (adversarial-reviewed)', 'tier 2 (below exam gate)'], 'Tier'));
+
+/* ---------------- Drills (§19 context) ---------------- */
+/* Drills are a separate bank from QUESTIONS: they carry no itemPurpose field
+ * because every drill IS the micro-drill / guided-practice layer of the
+ * taxonomy. Report them explicitly so zero-purpose rows in the question bank
+ * are read in context rather than as missing content. */
+out.push('## Drills (separate bank — micro-drill / guided-practice layer)', '');
+out.push(`Total: **${DRILLS.length} drills** (foundation ${DRILLS.filter((d) => d.id.startsWith('d-f')).length}, contrast ${DRILLS.filter((d) => d.id.startsWith('d-c')).length}). Drills do not carry \`itemPurpose\`; by design they serve the micro-drill and guided-practice purposes. Question-bank purposes with zero items (worked-example, transfer for LR, timed-assessment, section-simulation) remain genuinely unpopulated and are shown as empty above.`, '');
+out.push(table('Drills by kind',
+  [...count(DRILLS, (d) => d.kind).entries()].sort((a, b) => b[1] - a[1]),
+  ['translate', 'identify', 'classify', 'contrast', 'complete', 'order'], 'Kind'));
+out.push(table('Drills by difficulty',
+  [...count(DRILLS, (d) => d.difficulty).entries()].sort((a, b) => a[0] - b[0]),
+  [1, 2, 3], 'Difficulty'));
+out.push(table('Drills by skill',
+  [...count(DRILLS, (d) => d.skillIds[0] ?? '(none)').entries()].sort((a, b) => b[1] - a[1]),
+  [...new Set(DRILLS.map((d) => d.skillIds[0] ?? '(none)'))].sort(), 'Skill'));
 
 /* ---------------- Passage inventory ---------------- */
 out.push('## Passage inventory', '');
