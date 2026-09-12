@@ -6,7 +6,7 @@
  * (LSAC: comparative is not guaranteed every section).
  */
 import { describe, it, expect } from 'vitest';
-import { createRun } from '../src/features/exam/examStore';
+import { createRun, buildRCQuestionIds } from '../src/features/exam/examStore';
 import { QUESTIONS, PASSAGES, getQuestion, getPassage } from '../src/content';
 
 const NON_ASSESSMENT = new Set(['worked-example', 'micro-drill', 'guided-practice', 'skill-acquisition']);
@@ -81,6 +81,68 @@ describe('RC comparative distribution', () => {
         .map((id) => (getPassage(id) as { topicCluster?: string } | undefined)?.topicCluster)
         .filter(Boolean);
       expect(new Set(clusters).size, `cluster clash in ${ids.join(',')}`).toBe(clusters.length);
+    }
+  });
+});
+
+describe('RC blueprint composition (§44 rewrite)', () => {
+  const sizeOf = (pid: string) => getPassage(pid)?.questionIds.length ?? 0;
+  const domainOf = (pid: string) => (getPassage(pid) as { domain?: string } | undefined)?.domain;
+
+  it('is deterministic: the same seed builds the same section', () => {
+    for (const seed of [1, 42, 777, 123456]) {
+      const a = buildRCQuestionIds(new Set(), seed);
+      const b = buildRCQuestionIds(new Set(), seed);
+      expect(b.passageIds).toEqual(a.passageIds);
+      expect(b.questionIds).toEqual(a.questionIds);
+    }
+  });
+
+  it('uses only the two legal families (3S+1C or 4S+0C) across a seed sweep', () => {
+    let withComp = 0;
+    let withoutComp = 0;
+    for (let seed = 0; seed < 60; seed++) {
+      const { passageIds } = buildRCQuestionIds(new Set(), seed);
+      expect(passageIds).toHaveLength(4);
+      const comps = passageIds.filter((id) => getPassage(id)?.comparative).length;
+      expect(comps === 0 || comps === 1, `illegal family at seed ${seed}`).toBe(true);
+      if (comps === 1) withComp++; else withoutComp++;
+    }
+    // Both families must actually occur across seeds (~50/50 by seed bit).
+    expect(withComp).toBeGreaterThan(0);
+    expect(withoutComp).toBeGreaterThan(0);
+  });
+
+  it('varies set sizes within sections and keeps totals in the 24–30 band', () => {
+    let sawVariety = 0;
+    for (let seed = 0; seed < 60; seed++) {
+      const { passageIds, questionIds } = buildRCQuestionIds(new Set(), seed);
+      const sizes = passageIds.map(sizeOf);
+      const total = sizes.reduce((a, b) => a + b, 0);
+      expect(total, `total ${total} out of band at seed ${seed}`).toBeGreaterThanOrEqual(24);
+      expect(total, `total ${total} out of band at seed ${seed}`).toBeLessThanOrEqual(30);
+      expect(questionIds.length).toBe(total);
+      if (new Set(sizes).size >= 2) sawVariety++;
+    }
+    // §43: real size variation must appear across sections, not 22×6 sameness.
+    expect(sawVariety).toBeGreaterThan(40);
+  });
+
+  it('covers at least 3 distinct passage domains per section', () => {
+    for (let seed = 0; seed < 60; seed++) {
+      const { passageIds } = buildRCQuestionIds(new Set(), seed);
+      const domains = new Set(passageIds.map(domainOf));
+      expect(domains.size, `domain monoculture at seed ${seed}: ${passageIds.join(',')}`).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it('keeps the topic-cluster guard under the seeded picker', () => {
+    for (let seed = 0; seed < 60; seed++) {
+      const { passageIds } = buildRCQuestionIds(new Set(), seed);
+      const clusters = passageIds
+        .map((id) => (getPassage(id) as { topicCluster?: string } | undefined)?.topicCluster)
+        .filter(Boolean);
+      expect(new Set(clusters).size).toBe(clusters.length);
     }
   });
 });

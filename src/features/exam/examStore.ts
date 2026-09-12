@@ -267,7 +267,28 @@ function buildLRQuestionIds(
   return buildLRBlueprint(25, seen, seed);
 }
 
-function buildRCQuestionIds(excludePassages: Set<string>): { questionIds: string[]; passageIds: string[]; provisional: boolean } {
+/**
+ * RC exam blueprint (§44, rewritten 2026-09-12). A section is 4 sets drawn
+ * from the two legal families — 3 single + 1 comparative, or 4 single + 0
+ * comparative (LSAC: "either one or no comparative reading passage"; a
+ * comparative set is NOT guaranteed every section, verified 2026-09-11).
+ * The family choice and every pick are deterministic functions of the run
+ * seed — no Math.random in content selection — so a run is reproducible
+ * from its seed and section composition is auditable.
+ *
+ * Beyond the family, the blueprint enforces, in strict feasibility order:
+ *  1. Part LI gate: tier-0 (fully validated) passages only, else throw.
+ *  2. Topic-cluster guard (P1-4): no two sets from one cluster.
+ *  3. Family quota: exactly 1 comparative when the seed selects 3S+1C,
+ *     exactly 0 for 4S+0C (relaxed only when the pool makes it impossible).
+ *  4. Archetype diversity: ≥3 distinct passage domains per section.
+ *  5. Set-size variety: never four sets of identical size when avoidable,
+ *     and total questions in the realistic 24–30 band (§43 sizes 5–8).
+ */
+export function buildRCQuestionIds(
+  excludePassages: Set<string>,
+  seed: number,
+): { questionIds: string[]; passageIds: string[]; provisional: boolean } {
   // Part LI gate for RC: only passages whose questions are ALL validated
   // may enter simulations. If fewer than 4 fully-validated passages are
   // available, creation is blocked with a clear error — no fallback to
@@ -286,54 +307,86 @@ function buildRCQuestionIds(excludePassages: Set<string>): { questionIds: string
   if (pool.length < 4) {
     throw new InsufficientValidatedPoolError('RC', pool.length, 4);
   }
-  // Topic-cluster guard (P1-4): never serve two passages from the same
-  // topic cluster in one section.
+
+  const wantComparative = (seed & 1) === 0;
+  const sizeOf = (pid: string) => getPassage(pid)?.questionIds.length ?? 0;
+  const domainOf = (pid: string) => (getPassage(pid) as { domain?: string } | undefined)?.domain;
+  const clusterOf = (pid: string) => (getPassage(pid) as { topicCluster?: string } | undefined)?.topicCluster;
+
+  const ordered = seededShuffle(pool, seed);
   const picked: string[] = [];
-  const usedClusters = new Set<string>();
-  for (const p of pool) {
-    if (picked.length >= 4) break;
-    const cluster = (p as { topicCluster?: string }).topicCluster;
-    if (cluster && usedClusters.has(cluster)) continue;
-    if (cluster) usedClusters.add(cluster);
-    picked.push(p.id);
-  }
-  if (picked.length < 4) {
-    for (const p of pool) {
-      if (picked.length >= 4) break;
-      if (!picked.includes(p.id)) picked.push(p.id);
-    }
-  }
-  let ids = picked.slice(0, 4);
-  // LSAC: a section has "either one or no comparative reading passage" — a
-  // comparative set is NOT guaranteed every section (verified 2026-09-11).
-  // Include one ~50% of the time to mirror that distribution.
-  const wantComparative = Math.random() < 0.5;
-  const hasComparative = ids.some((id) => getPassage(id)?.comparative);
-  // Cluster-aware swap: the replacement must not share a topic cluster
-  // with any passage already in the set (P1-4 duplication guard).
-  const clustersInUse = new Set(
-    ids.map((id) => (getPassage(id) as { topicCluster?: string } | undefined)?.topicCluster).filter(Boolean),
-  );
-  const clusterOk = (pid: string) => {
-    const c = (getPassage(pid) as { topicCluster?: string } | undefined)?.topicCluster;
-    return !c || !clustersInUse.has(c);
+  const compsUsed = () => picked.filter((id) => getPassage(id)?.comparative).length;
+
+  const familyOk = (pid: string, slot: number): boolean => {
+    const isComp = !!getPassage(pid)?.comparative;
+    const slotsLeft = 4 - slot; // including this slot
+    if (wantComparative) {
+      if (isComp && compsUsed() >= 1) return false;
+      // Reserve room to place the required comparative set.
+      if (!isComp && compsUsed() === 0 && slotsLeft === 1) return false;
+    } else if (isComp) return false;
+    return true;
   };
-  if (wantComparative && !hasComparative) {
-    const comp = pool.find(
-      (p) => p.comparative && !ids.includes(p.id) && !excludePassages.has(p.id) && clusterOk(p.id),
-    );
-    if (comp && ids.length > 0) ids[ids.length - 1] = comp.id;
-  } else if (!wantComparative && hasComparative) {
-    const swap = pool.find(
-      (p) => !p.comparative && !ids.includes(p.id) && !excludePassages.has(p.id) && clusterOk(p.id),
-    );
-    const idx = ids.findIndex((id) => getPassage(id)?.comparative);
-    if (swap && idx >= 0) ids[idx] = swap.id;
+  const clusterOk = (pid: string): boolean => {
+    const c = clusterOf(pid);
+    return !c || !picked.some((id) => clusterOf(id) === c);
+  };
+
+  for (let slot = 0; slot < 4; slot++) {
+    let cands = ordered.filter((p) => !picked.includes(p.id) && familyOk(p.id, slot) && clusterOk(p.id));
+    if (cands.length === 0) {
+      // Relax the family quota only (LSAC permits 0 comparatives); keep the
+      // cluster guard.
+      cands = ordered.filter((p) => !picked.includes(p.id) && clusterOk(p.id));
+    }
+    if (cands.length === 0) {
+      // Last resort: relax the cluster guard too — a full section beats an
+      // empty one.
+      cands = ordered.filter((p) => !picked.includes(p.id));
+    }
+    if (cands.length === 0) break;
+
+    // Hard preferences, applied only when feasible (restriction is skipped
+    // whenever it would empty the candidate set):
+    //  (a) ≥3 distinct domains across the section;
+    //  (b) not all four sets the same size;
+    //  (c) total questions within the realistic 24–30 band.
+    const domains = new Set(picked.map(domainOf));
+    const sizes = picked.map(sizeOf);
+    const total = sizes.reduce((a, b) => a + b, 0);
+    const restrict = (fn: (pid: string) => boolean) => {
+      const r = cands.filter((p) => fn(p.id));
+      if (r.length > 0) cands = r;
+    };
+    if (slot === 3) {
+      if (domains.size < 3) restrict((pid) => !domains.has(domainOf(pid)));
+      if (new Set(sizes).size === 1) restrict((pid) => sizeOf(pid) !== sizes[0]);
+      restrict((pid) => total + sizeOf(pid) >= 24 && total + sizeOf(pid) <= 30);
+    } else if (slot === 2 && domains.size < 2) {
+      restrict((pid) => !domains.has(domainOf(pid)));
+    }
+
+    // Soft scoring: prefer unused domains and unused sizes; the seeded
+    // shuffle order breaks ties deterministically.
+    const score = (pid: string) =>
+      (domains.has(domainOf(pid)) ? 0 : 2) + (sizes.includes(sizeOf(pid)) ? 0 : 2);
+    let best: string | null = null;
+    let bestScore = -1;
+    for (const p of cands) {
+      const s = score(p.id);
+      if (s > bestScore) {
+        bestScore = s;
+        best = p.id;
+      }
+    }
+    if (best) picked.push(best);
   }
+
+  const ids = picked.slice(0, 4);
   for (const id of ids) excludePassages.add(id);
   const questionIds = ids.flatMap((id) => getPassage(id)?.questionIds ?? []);
-  // The swap can introduce a passage from a lower tier than the pick set —
-  // recompute provisional from the final set.
+  // Recompute provisional from the final set (defensive: the relaxed paths
+  // could in principle introduce a lower-tier passage).
   const finalTier = Math.max(...ids.map((id) => passageTier(id)));
   return { questionIds, passageIds: ids, provisional: provisional || finalTier > 0 };
 }
@@ -345,6 +398,10 @@ export function createRun(
   seenQuestionIds: Set<string>,
 ): ExamRunState {
   const runId = `exam-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  // One seed per run governs ALL content selection (RC family + picks,
+  // variable-section position/kind). Run identity stays random; content is
+  // reproducible from the seed for audit.
+  const seed = (Date.now() ^ Math.floor(Math.random() * 1e9)) >>> 0;
   const excludeQ = new Set<string>(seenQuestionIds);
   const excludeP = new Set<string>();
   const sections: ExamSectionDef[] = [];
@@ -357,7 +414,7 @@ export function createRun(
       provisional = lr.provisional;
       sections.push({ index: 0, kind: 'LR', variable: false, questionIds: lr.ids });
     } else {
-      const rc = buildRCQuestionIds(excludeP);
+      const rc = buildRCQuestionIds(excludeP, seed);
       provisional = rc.provisional;
       sections.push({ index: 0, kind: 'RC', variable: false, questionIds: rc.questionIds, passageIds: rc.passageIds });
     }
@@ -369,10 +426,11 @@ export function createRun(
     };
   }
 
-  // Full simulation: variable section is LR or RC, hidden at a random
-  // position 1–4. The three scored slots are LR, LR, RC in position order.
-  const variablePosition = 1 + Math.floor(Math.random() * 4);
-  const variableKind: 'LR' | 'RC' = Math.random() < 0.5 ? 'LR' : 'RC';
+  // Full simulation: variable section is LR or RC, hidden at a position
+  // 1–4 derived from the run seed. The three scored slots are LR, LR, RC
+  // in position order.
+  const variablePosition = 1 + (seed % 4);
+  const variableKind: 'LR' | 'RC' = (seed & 8) !== 0 ? 'LR' : 'RC';
   const scoredKinds: ('LR' | 'RC')[] = ['LR', 'LR', 'RC'];
   let scoredCursor = 0;
   let provisional = false;
@@ -387,7 +445,7 @@ export function createRun(
         questionIds: lr.ids,
       });
     } else {
-      const rc = buildRCQuestionIds(excludeP);
+      const rc = buildRCQuestionIds(excludeP, seed + pos * 7919);
       provisional = provisional || rc.provisional;
       sections.push({
         index: pos - 1, kind: 'RC', variable: isVariable,
